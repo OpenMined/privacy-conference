@@ -17,6 +17,17 @@ const gridDimensions = {
   footerHeight: 90 // 90px
 };
 
+/*
+TODO:
+- Set primary color
+- Set typography settings
+- Do individual pages
+- Remove the console logs
+- Talk to team about share experience and loading a bunch of SDK's
+- Install GA
+- Deploy to pricon.openmined.org
+*/
+
 export default () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>

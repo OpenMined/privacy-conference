@@ -13,6 +13,8 @@ export default ({ headerHeight, sidebarWidth }) => (
       zIndex: 'base'
     }}
   >
-    <Pages />
+    <Box p={4}>
+      <Pages />
+    </Box>
   </Box>
 );

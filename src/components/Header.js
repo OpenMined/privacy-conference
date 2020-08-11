@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Flex, Image } from 'theme-ui';
+import { Link } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
 
 import theme from '../theme';
@@ -8,6 +9,8 @@ import logo from '../assets/logo.svg';
 
 export default ({ headerHeight, sidebarWidth }) => {
   const [isActive, setIsActive] = useState(false);
+
+  const size = 48;
 
   return (
     <Flex
@@ -20,18 +23,30 @@ export default ({ headerHeight, sidebarWidth }) => {
         bg: 'muted',
         justifyContent: 'space-between',
         alignItems: 'center',
-        px: 4
+        px: 4,
+        ':after': {
+          content: '""',
+          position: 'absolute',
+          left: 0,
+          bottom: -10,
+          width: '100%',
+          height: 10,
+          background: `linear-gradient(0deg, rgba(0,0,0,0) 0%, ${theme.colors.muted} 100%)`
+        }
       }}
     >
-      <Image src={logo} sx={{ height: 48 }} />
+      <Link to="/">
+        <Image src={logo} sx={{ width: size, height: size }} />
+      </Link>
       <Flex
         bg="white"
         sx={{
           borderRadius: 'round',
-          width: 48,
-          height: 48,
+          width: size,
+          height: size,
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          display: ['block', null, 'none']
         }}
       >
         <HamburgerMenu
@@ -39,8 +54,8 @@ export default ({ headerHeight, sidebarWidth }) => {
           menuClicked={() => setIsActive(!isActive)}
           animationDuration={0.25}
           color={theme.colors.text}
-          width={24}
-          height={18}
+          width={18}
+          height={12}
         />
       </Flex>
     </Flex>

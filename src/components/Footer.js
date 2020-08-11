@@ -1,9 +1,9 @@
 import React from 'react';
-import { Flex, Text, Link, Image } from 'theme-ui';
+import { Flex, Text, Link } from 'theme-ui';
 
-import FacebookIcon from '../assets/facebook-icon.svg';
-import TwitterIcon from '../assets/twitter-icon.svg';
-import LinkedInIcon from '../assets/linkedin-icon.svg';
+import FacebookIcon from '../assets/facebook-icon';
+import TwitterIcon from '../assets/twitter-icon';
+import LinkedInIcon from '../assets/linkedin-icon';
 
 export default ({ footerHeight }) => (
   <Flex
@@ -13,8 +13,12 @@ export default ({ footerHeight }) => (
       height: `${footerHeight}px`,
       bottom: 0,
       justifyContent: 'space-between',
+      alignItems: 'center',
       zIndex: 'main',
-      bg: 'muted'
+      bg: 'muted',
+      borderTop: 'thin',
+      borderColor: 'lightGray',
+      px: 4
     }}
   >
     <Text>
@@ -23,16 +27,16 @@ export default ({ footerHeight }) => (
         openmined.org
       </Link>
     </Text>
-    <Flex>
-      <Text sx={{ display: ['none', null, 'inline'] }}>Share:</Text>
-      <Link href={process.env.REACT_APP_FACEBOOK_PAGE}>
-        <Image src={FacebookIcon} />
+    <Flex sx={{ height: 24 }}>
+      <Text sx={{ display: ['none', 'inline'] }}>Share:</Text>
+      <Link ml={3} href={process.env.REACT_APP_FACEBOOK_PAGE}>
+        <FacebookIcon />
       </Link>
-      <Link href={process.env.REACT_APP_TWITTER_PAGE}>
-        <Image src={TwitterIcon} />
+      <Link ml={3} href={process.env.REACT_APP_TWITTER_PAGE}>
+        <TwitterIcon />
       </Link>
-      <Link href={process.env.REACT_APP_LINKEDIN_PAGE}>
-        <Image src={LinkedInIcon} />
+      <Link ml={3} href={process.env.REACT_APP_LINKEDIN_PAGE}>
+        <LinkedInIcon />
       </Link>
     </Flex>
   </Flex>

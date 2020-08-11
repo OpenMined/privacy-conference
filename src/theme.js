@@ -1,10 +1,15 @@
+import { merge } from 'theme-ui';
 import { base } from '@theme-ui/presets';
-import merge from 'lodash.merge';
 
 export default merge(base, {
+  borders: {
+    thin: '1px solid'
+  },
   colors: {
     text: '#323232',
-    muted: '#e5e5e5'
+    muted: '#f5f5f5',
+    lightGray: '#dfdfdf',
+    darkGray: '#606060'
   },
   radii: {
     round: '9999em'
@@ -14,6 +19,13 @@ export default merge(base, {
     main: 1
   },
   styles: {
+    a: {
+      color: 'text',
+      transition: 'color 0.25s ease-in-out',
+      '&:hover': {
+        color: 'primary'
+      }
+    },
     root: {
       bg: 'muted'
     }
