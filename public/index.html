@@ -4,27 +4,42 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#62a4ae" />
+    <meta name="msapplication-TileColor" content="#62a4ae" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- General -->
+    <title>%REACT_APP_PAGE_TITLE%</title>
+    <meta name="description" content="%REACT_APP_PAGE_DESCRIPTION%" />
+    <link rel="canonical" href="%REACT_APP_CANONICAL_URL%" />
+    <link rel="image_src" href="%PUBLIC_URL%/facebook.jpg" />
+    <meta itemprop="name" content="%REACT_APP_PAGE_TITLE%" />
+    <meta itemprop="description" content="%REACT_APP_PAGE_DESCRIPTION%" />
+    <meta itemprop="image" content="%PUBLIC_URL%/facebook.jpg" />
+
+    <!-- Facebook -->
+    <meta property="og:site_name" content="%REACT_APP_PAGE_TITLE%" />
+    <meta property="fb:pages" content="%REACT_APP_FACEBOOK_URL%" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="%REACT_APP_CANONICAL_URL%" />
+    <meta property="og:title" content="%REACT_APP_PAGE_TITLE%" />
+    <meta property="og:description" content="%REACT_APP_PAGE_DESCRIPTION%" />
+    <meta property="og:image" content="%PUBLIC_URL%/facebook.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="%REACT_APP_TWITTER_HANDLE%" />
+    <meta name="twitter:url" content="%REACT_APP_CANONICAL_URL%" />
+    <meta name="twitter:title" content="%REACT_APP_PAGE_TITLE%" />
+    <meta name="twitter:description" content="%REACT_APP_PAGE_DESCRIPTION%" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter.jpg" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
