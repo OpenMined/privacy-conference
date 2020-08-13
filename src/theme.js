@@ -46,6 +46,9 @@ export default merge(base, {
     heading: 500,
     bold: 700
   },
+  lineHeights: {
+    heading: 1.35
+  },
   radii: {
     round: '9999em'
   },

@@ -13,12 +13,6 @@ const gridDimensions = {
   footerHeight: '90px'
 };
 
-/*
-TODO:
-- Do individual pages
-- Deploy to pricon.openmined.org
-*/
-
 export default () => {
   let location = useLocation();
 

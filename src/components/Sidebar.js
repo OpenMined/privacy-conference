@@ -5,6 +5,10 @@ import { Link as RRDLink } from 'react-router-dom';
 // TODO: Copy
 const description = `Description of what the OpenMined Privacy conference is about. Can also include inline links to further information like becoming a sponsor.`;
 
+export const speakerLink = 'https://forms.gle/wpKY6cTL6p5k43as7';
+export const registerLink =
+  'https://www.eventbrite.co.uk/e/openmined-privacy-conference-2020-tickets-116575230653';
+
 const linkStyles = {
   borderTop: 'thin',
   borderColor: 'lightGray',
@@ -77,16 +81,10 @@ export const SidebarCTAs = ({ headerHeight }) => (
       px: 4
     }}
   >
-    <Button variant="black" as="a" target="_blank" href="https://forms.gle/wpKY6cTL6p5k43as7">
+    <Button variant="black" as="a" target="_blank" href={speakerLink}>
       Become a Speaker
     </Button>
-    <Button
-      variant="black"
-      as="a"
-      target="_blank"
-      ml={3}
-      href="https://www.eventbrite.co.uk/e/openmined-privacy-conference-2020-tickets-116575230653"
-    >
+    <Button variant="black" as="a" target="_blank" ml={3} href={registerLink}>
       Register
     </Button>
   </Flex>

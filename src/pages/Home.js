@@ -1,9 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Flex, Box, Heading, Image, Text } from 'theme-ui';
 
+import { agenda } from './Agenda';
+
 // TODO: Copy
 const title = 'OpenMined Privacy Conference';
-const description = 'Join us on 26.09.2020 - 27.09.2020';
+const description = `Join us on ${agenda[0].datetime.format('DD.MM.YYYY')} - ${agenda[
+  agenda.length - 1
+].datetime.format('DD.MM.YYYY')}`;
 const slides = [
   {
     image:
@@ -81,13 +85,13 @@ const Carousel = ({ slides }) => {
           alignItems: 'center'
         }}
       >
-        <Text sx={{ fontSize: 4, cursor: 'pointer' }} onClick={prevSlide}>
+        <Text sx={{ fontSize: 4, cursor: 'pointer', userSelect: 'none' }} onClick={prevSlide}>
           ←
         </Text>
         <Text>
           {slideNum + 1} of {slides.length}
         </Text>
-        <Text sx={{ fontSize: 4, cursor: 'pointer' }} onClick={nextSlide}>
+        <Text sx={{ fontSize: 4, cursor: 'pointer', userSelect: 'none' }} onClick={nextSlide}>
           →
         </Text>
       </Flex>
