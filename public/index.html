@@ -25,7 +25,7 @@
 
     <!-- Facebook -->
     <meta property="og:site_name" content="%REACT_APP_PAGE_TITLE%" />
-    <meta property="fb:pages" content="%REACT_APP_FACEBOOK_URL%" />
+    <meta property="fb:pages" content="%REACT_APP_FACEBOOK_PAGE%" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:url" content="%REACT_APP_CANONICAL_URL%" />
     <meta property="og:title" content="%REACT_APP_PAGE_TITLE%" />
@@ -40,9 +40,33 @@
     <meta name="twitter:title" content="%REACT_APP_PAGE_TITLE%" />
     <meta name="twitter:description" content="%REACT_APP_PAGE_DESCRIPTION%" />
     <meta name="twitter:image" content="%PUBLIC_URL%/twitter.jpg" />
+
+    <!-- Imports -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <script>
+      window.fbAsyncInit = function () {
+        window.FB.init({
+          appId: '308339039653695',
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: 'v8.0'
+        });
+      };
+    </script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

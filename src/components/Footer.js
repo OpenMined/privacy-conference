@@ -5,16 +5,22 @@ import FacebookIcon from '../assets/facebook-icon';
 import TwitterIcon from '../assets/twitter-icon';
 import LinkedInIcon from '../assets/linkedin-icon';
 
+const onFacebookClick = () => {
+  window.FB.ui({
+    method: 'share',
+    href: window.location.href
+  });
+};
+
 export default ({ footerHeight }) => (
   <Flex
     sx={{
       position: 'fixed',
       width: '100%',
-      height: `${footerHeight}px`,
+      height: footerHeight,
       bottom: 0,
       justifyContent: 'space-between',
       alignItems: 'center',
-      zIndex: 'main',
       bg: 'muted',
       borderTop: 'thin',
       borderColor: 'lightGray',
@@ -29,13 +35,25 @@ export default ({ footerHeight }) => (
     </Text>
     <Flex sx={{ height: 24 }}>
       <Text sx={{ display: ['none', 'inline'] }}>Share:</Text>
-      <Link ml={3} href={process.env.REACT_APP_FACEBOOK_PAGE}>
+      <Link ml={3} onClick={onFacebookClick}>
         <FacebookIcon />
       </Link>
-      <Link ml={3} href={process.env.REACT_APP_TWITTER_PAGE}>
+      <Link
+        ml={3}
+        target="_blank"
+        href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+          `I'm going to privacy con! ${window.location.href}`
+        )}`}
+      >
         <TwitterIcon />
       </Link>
-      <Link ml={3} href={process.env.REACT_APP_LINKEDIN_PAGE}>
+      <Link
+        ml={3}
+        target="_blank"
+        href={`https://www.linkedin.com/sharing/share-offsite?url=${encodeURIComponent(
+          window.location.href
+        )}`}
+      >
         <LinkedInIcon />
       </Link>
     </Flex>
