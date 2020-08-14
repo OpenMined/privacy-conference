@@ -1,33 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Flex, Box, Heading, Image, Text } from 'theme-ui';
 
-import { agenda } from './Agenda';
-
-// TODO: Copy
-const title = 'OpenMined Privacy Conference';
-const description = `Join us on ${agenda[0].datetime.format('DD.MM.YYYY')} - ${agenda[
-  agenda.length - 1
-].datetime.format('DD.MM.YYYY')}`;
-const slides = [
-  {
-    image:
-      'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F108271127%2F113478476543%2F1%2Foriginal.20200811-091718?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=1d82b159c28458269d7bd1d3d24e281e',
-    title: 'Announcement',
-    text: 'This week will simply be a callout to register'
-  },
-  {
-    image:
-      'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F108271127%2F113478476543%2F1%2Foriginal.20200811-091718?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=1d82b159c28458269d7bd1d3d24e281e',
-    title: 'Announcement 2',
-    text: 'This week will simply be a callout to register'
-  },
-  {
-    image:
-      'https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F108271127%2F113478476543%2F1%2Foriginal.20200811-091718?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=1d82b159c28458269d7bd1d3d24e281e',
-    title: 'Announcement 3',
-    text: 'This week will simply be a callout to register'
-  }
-];
+import { title, description, slides } from '../content/home';
 
 const Carousel = ({ slides }) => {
   const slideSpeed = 5000;
@@ -71,7 +45,8 @@ const Carousel = ({ slides }) => {
             <Heading as="h4" sx={{ fontFamily: 'monospace', mb: 2 }}>
               {title}
             </Heading>
-            <Text>{text}</Text>
+            {typeof text === 'string' && <Text>{text}</Text>}
+            {typeof text !== 'string' && <Text as={text} />}
           </Box>
         </Box>
       ))}

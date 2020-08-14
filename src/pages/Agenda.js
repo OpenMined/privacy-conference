@@ -1,90 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Heading, Flex, Text } from 'theme-ui';
-import dayjs from 'dayjs';
-import utc from 'dayjs/plugin/utc';
 
-import { speakers, Modal } from './Speakers';
+import { Modal } from './Speakers';
 
-dayjs.extend(utc);
-
-// NOTE: Could do this recursively and be a lot more efficient... but... YOLO
-const groupSchedule = (schedule) => {
-  const agenda = [];
-
-  schedule.forEach(({ datetime }) => {
-    let match = false;
-
-    for (let day = 0; day < agenda.length; day++) {
-      if (datetime.isSame(agenda[day].datetime, 'day')) {
-        match = true;
-        break;
-      }
-    }
-
-    if (!match) agenda.push({ datetime, events: [] });
-  });
-
-  schedule.forEach((item) => {
-    for (let day = 0; day < agenda.length; day++) {
-      if (item.datetime.isSame(agenda[day].datetime, 'day')) {
-        agenda[day].events.push(item);
-        break;
-      }
-    }
-  });
-
-  return agenda;
-};
-
-// TODO: Copy
-const title = 'Agenda';
-const timeFormat = 'YYYY-MM-DD|HH:mm:ss';
-export const schedule = [
-  {
-    datetime: dayjs.utc('2020-09-26|08:00:00', timeFormat),
-    speaker: speakers[0],
-    title: 'Adoption of NLP models when Addressing Banking Compliance',
-    description:
-      'Id laboris dolor labore nostrud deserunt. Enim commodo culpa ut enim aute cillum elit eiusmod elit excepteur ea reprehenderit. Enim amet dolore in Lorem enim tempor magna et eu anim ex duis. In duis et irure est. Eu consequat et veniam officia ea. Minim laboris sit aliquip consequat velit duis eu et. Cupidatat dolore incididunt et sunt.'
-  },
-  {
-    datetime: dayjs.utc('2020-09-26|12:00:00', timeFormat),
-    speaker: speakers[0],
-    title: 'Adoption of NLP models when Addressing Banking Compliance',
-    description:
-      'Id laboris dolor labore nostrud deserunt. Enim commodo culpa ut enim aute cillum elit eiusmod elit excepteur ea reprehenderit. Enim amet dolore in Lorem enim tempor magna et eu anim ex duis. In duis et irure est. Eu consequat et veniam officia ea. Minim laboris sit aliquip consequat velit duis eu et. Cupidatat dolore incididunt et sunt.'
-  },
-  {
-    datetime: dayjs.utc('2020-09-26|18:00:00', timeFormat),
-    speaker: speakers[0],
-    title: 'Adoption of NLP models when Addressing Banking Compliance',
-    description:
-      'Id laboris dolor labore nostrud deserunt. Enim commodo culpa ut enim aute cillum elit eiusmod elit excepteur ea reprehenderit. Enim amet dolore in Lorem enim tempor magna et eu anim ex duis. In duis et irure est. Eu consequat et veniam officia ea. Minim laboris sit aliquip consequat velit duis eu et. Cupidatat dolore incididunt et sunt.'
-  },
-  {
-    datetime: dayjs.utc('2020-09-27|08:00:00', timeFormat),
-    speaker: speakers[0],
-    title: 'Adoption of NLP models when Addressing Banking Compliance',
-    description:
-      'Id laboris dolor labore nostrud deserunt. Enim commodo culpa ut enim aute cillum elit eiusmod elit excepteur ea reprehenderit. Enim amet dolore in Lorem enim tempor magna et eu anim ex duis. In duis et irure est. Eu consequat et veniam officia ea. Minim laboris sit aliquip consequat velit duis eu et. Cupidatat dolore incididunt et sunt.'
-  },
-  {
-    datetime: dayjs.utc('2020-09-28|08:00:00', timeFormat),
-    speaker: speakers[0],
-    title: 'Adoption of NLP models when Addressing Banking Compliance',
-    description:
-      'Id laboris dolor labore nostrud deserunt. Enim commodo culpa ut enim aute cillum elit eiusmod elit excepteur ea reprehenderit. Enim amet dolore in Lorem enim tempor magna et eu anim ex duis. In duis et irure est. Eu consequat et veniam officia ea. Minim laboris sit aliquip consequat velit duis eu et. Cupidatat dolore incididunt et sunt.'
-  },
-  {
-    datetime: dayjs.utc('2020-09-28|18:00:00', timeFormat),
-    speaker: speakers[0],
-    title: 'Adoption of NLP models when Addressing Banking Compliance',
-    description:
-      'Id laboris dolor labore nostrud deserunt. Enim commodo culpa ut enim aute cillum elit eiusmod elit excepteur ea reprehenderit. Enim amet dolore in Lorem enim tempor magna et eu anim ex duis. In duis et irure est. Eu consequat et veniam officia ea. Minim laboris sit aliquip consequat velit duis eu et. Cupidatat dolore incididunt et sunt.'
-  }
-];
-
-export const agenda = groupSchedule(schedule);
+import { agenda, title } from '../content/agenda';
 
 export default () => {
   const [speakerSelected, setSpeakerSelected] = useState(null);

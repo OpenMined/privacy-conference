@@ -4,129 +4,11 @@ import { Flex, Box, Heading, Link, Grid, AspectImage, Text, Image as UIImage } f
 import HamburgerMenu from 'react-hamburger-menu';
 import useResizeObserver from 'use-resize-observer';
 
+import { title, speakers } from '../content/speakers';
+// import { speakerLink } from '../content/sidebar';
 import theme from '../theme';
-import { speakerLink } from '../components/Sidebar';
 import TwitterIcon from '../assets/twitter-icon';
 import LinkedInIcon from '../assets/linkedin-icon';
-import morten from '../assets/morten.jpg';
-
-const pixelate = (url) => {
-  // Canvas, context, and image
-  const canvas = document.createElement('canvas');
-  const ctx = canvas.getContext('2d');
-  const img = new Image();
-  const value = 24;
-
-  img.src = url;
-  img.onload = () => {
-    canvas.width = img.width;
-    canvas.height = img.height;
-
-    // Calculate the factor
-    var fw = (img.width / value) | 0,
-      fh = (img.height / value) | 0;
-
-    // Turn off image smoothing (prefixed in some browsers)
-    ctx.imageSmoothingEnabled = ctx.mozImageSmoothingEnabled = ctx.msImageSmoothingEnabled = ctx.webkitImageSmoothingEnabled = false;
-
-    // Draw mini-version of image
-    ctx.drawImage(img, 0, 0, fw, fh);
-
-    // Draw the mini-version back up, voila, pixelated
-    ctx.drawImage(canvas, 0, 0, fw, fh, 0, 0, img.width, img.height);
-  };
-
-  return canvas;
-};
-
-// TODO: Copy
-const title = 'Speakers';
-export const speakers = [
-  {
-    image: morten,
-    pixelImage: pixelate(morten),
-    name: 'Morten Dahl',
-    title: 'Research Scientist at Dropout Labs',
-    about: [
-      'Aliqua exercitation irure exercitation irure voluptate officia pariatur qui esse ut voluptate. Dolore ad aute cupidatat amet do minim pariatur ullamco magna ullamco sit culpa non velit. In excepteur pariatur aliqua tempor dolore ea nisi anim occaecat fugiat exercitation. Officia consequat labore veniam occaecat id cillum aute amet officia aliqua excepteur. Sit eiusmod elit mollit incididunt voluptate Lorem. Amet ullamco anim elit anim exercitation irure officia est commodo tempor deserunt culpa eiusmod sint.',
-      'Est veniam occaecat labore consectetur velit duis amet ex in qui aliquip dolore amet excepteur. Veniam mollit aute labore irure elit ea irure culpa cupidatat ut officia. Reprehenderit et irure adipisicing eu sit proident. Pariatur deserunt nulla est ad cupidatat quis non sint do sit adipisicing reprehenderit duis. Esse exercitation ad incididunt ipsum tempor ipsum est excepteur fugiat occaecat. Pariatur deserunt laborum commodo amet voluptate esse irure proident culpa anim et veniam Lorem officia. Sint nostrud duis aliqua deserunt laborum amet eiusmod irure anim ex ut incididunt.'
-    ],
-    social: [
-      { type: 'twitter', url: 'https://twitter.com/openminedorg' },
-      { type: 'linkedin', url: 'https://linkedin.com/in/patrickcason' }
-    ]
-  },
-  {
-    image: morten,
-    pixelImage: pixelate(morten),
-    name: 'Morten Dahl',
-    title: 'Research Scientist at Dropout Labs',
-    about: [
-      'Aliqua exercitation irure exercitation irure voluptate officia pariatur qui esse ut voluptate. Dolore ad aute cupidatat amet do minim pariatur ullamco magna ullamco sit culpa non velit. In excepteur pariatur aliqua tempor dolore ea nisi anim occaecat fugiat exercitation. Officia consequat labore veniam occaecat id cillum aute amet officia aliqua excepteur. Sit eiusmod elit mollit incididunt voluptate Lorem. Amet ullamco anim elit anim exercitation irure officia est commodo tempor deserunt culpa eiusmod sint.',
-      'Est veniam occaecat labore consectetur velit duis amet ex in qui aliquip dolore amet excepteur. Veniam mollit aute labore irure elit ea irure culpa cupidatat ut officia. Reprehenderit et irure adipisicing eu sit proident. Pariatur deserunt nulla est ad cupidatat quis non sint do sit adipisicing reprehenderit duis. Esse exercitation ad incididunt ipsum tempor ipsum est excepteur fugiat occaecat. Pariatur deserunt laborum commodo amet voluptate esse irure proident culpa anim et veniam Lorem officia. Sint nostrud duis aliqua deserunt laborum amet eiusmod irure anim ex ut incididunt.'
-    ],
-    social: [
-      { type: 'twitter', url: 'https://twitter.com/openminedorg' },
-      { type: 'linkedin', url: 'https://linkedin.com/in/patrickcason' }
-    ]
-  },
-  {
-    image: morten,
-    pixelImage: pixelate(morten),
-    name: 'Morten Dahl',
-    title: 'Research Scientist at Dropout Labs',
-    about: [
-      'Aliqua exercitation irure exercitation irure voluptate officia pariatur qui esse ut voluptate. Dolore ad aute cupidatat amet do minim pariatur ullamco magna ullamco sit culpa non velit. In excepteur pariatur aliqua tempor dolore ea nisi anim occaecat fugiat exercitation. Officia consequat labore veniam occaecat id cillum aute amet officia aliqua excepteur. Sit eiusmod elit mollit incididunt voluptate Lorem. Amet ullamco anim elit anim exercitation irure officia est commodo tempor deserunt culpa eiusmod sint.',
-      'Est veniam occaecat labore consectetur velit duis amet ex in qui aliquip dolore amet excepteur. Veniam mollit aute labore irure elit ea irure culpa cupidatat ut officia. Reprehenderit et irure adipisicing eu sit proident. Pariatur deserunt nulla est ad cupidatat quis non sint do sit adipisicing reprehenderit duis. Esse exercitation ad incididunt ipsum tempor ipsum est excepteur fugiat occaecat. Pariatur deserunt laborum commodo amet voluptate esse irure proident culpa anim et veniam Lorem officia. Sint nostrud duis aliqua deserunt laborum amet eiusmod irure anim ex ut incididunt.'
-    ],
-    social: [
-      { type: 'twitter', url: 'https://twitter.com/openminedorg' },
-      { type: 'linkedin', url: 'https://linkedin.com/in/patrickcason' }
-    ]
-  },
-  {
-    image: morten,
-    pixelImage: pixelate(morten),
-    name: 'Morten Dahl',
-    title: 'Research Scientist at Dropout Labs',
-    about: [
-      'Aliqua exercitation irure exercitation irure voluptate officia pariatur qui esse ut voluptate. Dolore ad aute cupidatat amet do minim pariatur ullamco magna ullamco sit culpa non velit. In excepteur pariatur aliqua tempor dolore ea nisi anim occaecat fugiat exercitation. Officia consequat labore veniam occaecat id cillum aute amet officia aliqua excepteur. Sit eiusmod elit mollit incididunt voluptate Lorem. Amet ullamco anim elit anim exercitation irure officia est commodo tempor deserunt culpa eiusmod sint.',
-      'Est veniam occaecat labore consectetur velit duis amet ex in qui aliquip dolore amet excepteur. Veniam mollit aute labore irure elit ea irure culpa cupidatat ut officia. Reprehenderit et irure adipisicing eu sit proident. Pariatur deserunt nulla est ad cupidatat quis non sint do sit adipisicing reprehenderit duis. Esse exercitation ad incididunt ipsum tempor ipsum est excepteur fugiat occaecat. Pariatur deserunt laborum commodo amet voluptate esse irure proident culpa anim et veniam Lorem officia. Sint nostrud duis aliqua deserunt laborum amet eiusmod irure anim ex ut incididunt.'
-    ],
-    social: [
-      { type: 'twitter', url: 'https://twitter.com/openminedorg' },
-      { type: 'linkedin', url: 'https://linkedin.com/in/patrickcason' }
-    ]
-  },
-  {
-    image: morten,
-    pixelImage: pixelate(morten),
-    name: 'Morten Dahl',
-    title: 'Research Scientist at Dropout Labs',
-    about: [
-      'Aliqua exercitation irure exercitation irure voluptate officia pariatur qui esse ut voluptate. Dolore ad aute cupidatat amet do minim pariatur ullamco magna ullamco sit culpa non velit. In excepteur pariatur aliqua tempor dolore ea nisi anim occaecat fugiat exercitation. Officia consequat labore veniam occaecat id cillum aute amet officia aliqua excepteur. Sit eiusmod elit mollit incididunt voluptate Lorem. Amet ullamco anim elit anim exercitation irure officia est commodo tempor deserunt culpa eiusmod sint.',
-      'Est veniam occaecat labore consectetur velit duis amet ex in qui aliquip dolore amet excepteur. Veniam mollit aute labore irure elit ea irure culpa cupidatat ut officia. Reprehenderit et irure adipisicing eu sit proident. Pariatur deserunt nulla est ad cupidatat quis non sint do sit adipisicing reprehenderit duis. Esse exercitation ad incididunt ipsum tempor ipsum est excepteur fugiat occaecat. Pariatur deserunt laborum commodo amet voluptate esse irure proident culpa anim et veniam Lorem officia. Sint nostrud duis aliqua deserunt laborum amet eiusmod irure anim ex ut incididunt.'
-    ],
-    social: [
-      { type: 'twitter', url: 'https://twitter.com/openminedorg' },
-      { type: 'linkedin', url: 'https://linkedin.com/in/patrickcason' }
-    ]
-  },
-  {
-    image: morten,
-    pixelImage: pixelate(morten),
-    name: 'Morten Dahl',
-    title: 'Research Scientist at Dropout Labs',
-    about: [
-      'Aliqua exercitation irure exercitation irure voluptate officia pariatur qui esse ut voluptate. Dolore ad aute cupidatat amet do minim pariatur ullamco magna ullamco sit culpa non velit. In excepteur pariatur aliqua tempor dolore ea nisi anim occaecat fugiat exercitation. Officia consequat labore veniam occaecat id cillum aute amet officia aliqua excepteur. Sit eiusmod elit mollit incididunt voluptate Lorem. Amet ullamco anim elit anim exercitation irure officia est commodo tempor deserunt culpa eiusmod sint.',
-      'Est veniam occaecat labore consectetur velit duis amet ex in qui aliquip dolore amet excepteur. Veniam mollit aute labore irure elit ea irure culpa cupidatat ut officia. Reprehenderit et irure adipisicing eu sit proident. Pariatur deserunt nulla est ad cupidatat quis non sint do sit adipisicing reprehenderit duis. Esse exercitation ad incididunt ipsum tempor ipsum est excepteur fugiat occaecat. Pariatur deserunt laborum commodo amet voluptate esse irure proident culpa anim et veniam Lorem officia. Sint nostrud duis aliqua deserunt laborum amet eiusmod irure anim ex ut incididunt.'
-    ],
-    social: [
-      { type: 'twitter', url: 'https://twitter.com/openminedorg' },
-      { type: 'linkedin', url: 'https://linkedin.com/in/patrickcason' }
-    ]
-  }
-];
 
 export const Modal = ({ speaker, onClose }) => {
   if (speaker) {
@@ -183,14 +65,14 @@ export const Modal = ({ speaker, onClose }) => {
             bg: 'text',
             color: 'muted',
             transform: 'translate(-50%, -50%)',
-            width: ['90%', '75%', '60%'],
+            width: ['90%', '75%'],
             maxHeight: '90%',
             overflowX: 'hidden',
             overflowY: 'auto'
           }}
         >
           <Flex sx={{ flexDirection: ['column', null, 'row'], alignItems: 'center' }}>
-            <Box sx={{ mt: [5, null, 0], maxWidth: ['100%', null, 140, 200] }}>
+            <Box sx={{ mt: [5, null, 0], minWidth: ['100%', null, 80, 200] }}>
               <UIImage src={speaker.image} alt={speaker.name} />
             </Box>
             <Box ml={[0, null, 4]} mt={[3, null, 0]}>
@@ -200,11 +82,11 @@ export const Modal = ({ speaker, onClose }) => {
               <Heading as="h5" sx={{ fontSize: 2, mt: 2, fontFamily: 'monospace' }}>
                 {speaker.title}
               </Heading>
-              <Social />
-              <Biography sx={{ display: ['block', null, 'none'] }} />
+              {speaker.social.length > 0 && <Social />}
+              <Biography sx={{ display: ['block', null, 'none', 'block'] }} />
             </Box>
           </Flex>
-          <Biography sx={{ display: ['none', null, 'block'] }} />
+          <Biography sx={{ display: ['none', null, 'block', 'none'] }} />
           <Box
             sx={{ position: 'absolute', top: 4, right: 4, cursor: 'pointer', userSelect: 'none' }}
           >
@@ -234,11 +116,11 @@ export default () => {
         <Heading as="h2" sx={{ fontSize: [6, null, null, 7] }}>
           {title}
         </Heading>
-        <Heading as="h3" mt={[3, null, 4]}>
+        {/* <Heading as="h3" mt={[3, null, 4]}>
           <Link as="a" href={speakerLink} target="_blank" sx={{ textDecoration: 'none' }}>
             Submit a Talk →
           </Link>
-        </Heading>
+        </Heading> */}
       </Box>
       <Grid gap={[4, null, null, 5]} columns={[1, 2, null, 3]}>
         {speakers.map((speaker, index) => {
@@ -268,7 +150,15 @@ export default () => {
                   ratio={1}
                   src={speaker.image}
                   alt={speaker.name}
-                  sx={{ filter: 'grayscale(1)', position: 'absolute', top: 0, left: 0 }}
+                  sx={{
+                    filter: 'grayscale(1)',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
                 />
                 {speaker.pixelImage && (
                   <Box

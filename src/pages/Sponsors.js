@@ -1,43 +1,7 @@
 import React from 'react';
 import { Flex, Box, Heading, Link, Grid, AspectImage } from 'theme-ui';
 
-import morten from '../assets/morten.jpg';
-
-// TODO: Copy
-const title = 'Sponsors';
-const sponsorLink = 'https://openmined.org';
-const sponsors = [
-  {
-    image: morten,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  },
-  {
-    image: morten,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  },
-  {
-    image: morten,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  },
-  {
-    image: morten,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  },
-  {
-    image: morten,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  },
-  {
-    image: morten,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  }
-];
+import { sponsors, title, sponsorLink } from '../content/sponsors';
 
 export default () => (
   <Flex sx={{ flexDirection: 'column', justifyContent: 'space-between' }}>

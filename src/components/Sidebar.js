@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { Box, Text, Button, Flex, Link, Image } from 'theme-ui';
 import { Link as RRDLink } from 'react-router-dom';
 
-// TODO: Copy
-const description = `Description of what the OpenMined Privacy conference is about. Can also include inline links to further information like becoming a sponsor.`;
-
-export const speakerLink = 'https://forms.gle/wpKY6cTL6p5k43as7';
-export const registerLink =
-  'https://www.eventbrite.co.uk/e/openmined-privacy-conference-2020-tickets-116575230653';
+import { registerLink } from '../content/sidebar';
 
 const linkStyles = {
   borderTop: 'thin',
@@ -45,7 +40,9 @@ export const SidebarContent = ({ headerHeight, onClick }) => (
       justifyContent: 'space-between'
     }}
   >
-    <Text sx={{ p: 4, fontSize: 3, color: 'darkGray' }}>{description}</Text>
+    <Text sx={{ p: 4, fontSize: 3, color: 'darkGray' }}>
+      {process.env.REACT_APP_PAGE_DESCRIPTION}
+    </Text>
     <Flex sx={{ flexDirection: 'column' }}>
       <SidebarLink text="Speakers" to="/speakers" onClick={onClick}>
         <Image
@@ -81,9 +78,9 @@ export const SidebarCTAs = ({ headerHeight }) => (
       px: 4
     }}
   >
-    <Button variant="black" as="a" target="_blank" href={speakerLink}>
+    {/* <Button variant="black" as="a" target="_blank" href={speakerLink}>
       Become a Speaker
-    </Button>
+    </Button> */}
     <Button variant="black" as="a" target="_blank" ml={3} href={registerLink}>
       Register
     </Button>
