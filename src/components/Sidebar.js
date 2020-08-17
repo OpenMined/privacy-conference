@@ -73,10 +73,10 @@ export const SidebarCTAs = ({ headerHeight }) => (
       px: 4
     }}
   >
-    {/* <Button variant="black" as="a" target="_blank" href={speakerLink}>
+    {/* <Button variant="black" as="a" target="_blank" href={speakerLink} mr={3}>
       {speakerTitle}
     </Button> */}
-    <Button variant="black" as="a" target="_blank" ml={3} href={registerLink}>
+    <Button variant="black" as="a" target="_blank" href={registerLink}>
       {registerTitle}
     </Button>
   </Flex>

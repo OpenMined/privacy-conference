@@ -1,5 +1,5 @@
 export const speakerTitle = 'Become a Speaker';
-export const registerTitle = 'Register';
+export const registerTitle = 'Get Tickets';
 
 export const speakerLink = 'https://forms.gle/wpKY6cTL6p5k43as7';
 export const registerLink =
