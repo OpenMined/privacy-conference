@@ -13,9 +13,9 @@ import {
 const linkStyles = {
   borderTop: 'thin',
   borderColor: 'lightGray',
-  fontSize: 4,
+  fontSize: [3, null, 4],
   fontFamily: 'monospace',
-  p: 4,
+  p: [3, null, 4],
   display: 'flex',
   alignItems: 'center',
   height: `${(1 / 3) * 100}%`
@@ -47,7 +47,7 @@ export const SidebarContent = ({ headerHeight, onClick }) => (
       justifyContent: 'space-between'
     }}
   >
-    <Text sx={{ p: 4, fontSize: 3, color: 'darkGray', maxWidth: 540 }}>
+    <Text sx={{ p: [3, null, 4], fontSize: [2, null, 3], color: 'darkGray', maxWidth: 540 }}>
       {process.env.REACT_APP_PAGE_DESCRIPTION}
     </Text>
     <Flex sx={{ flexDirection: 'column', height: '100%' }}>
@@ -70,7 +70,7 @@ export const SidebarCTAs = ({ headerHeight }) => (
       height: headerHeight,
       justifyContent: ['flex-start', null, 'flex-end'],
       alignItems: 'center',
-      px: 4
+      px: [3, null, 4]
     }}
   >
     {/* <Button variant="black" as="a" target="_blank" href={speakerLink} mr={3}>
