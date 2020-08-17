@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Speakers from '../pages/Speakers';
 import Agenda from '../pages/Agenda';
-import Sponsors from '../pages/Sponsors';
+// import Sponsors from '../pages/Sponsors';
 import Home from '../pages/Home';
 
 import theme from '../theme';
@@ -32,9 +32,9 @@ export default ({ headerHeight, sidebarWidth, footerHeight }) => {
           <Route path="/agenda">
             <Agenda />
           </Route>
-          <Route path="/sponsors">
+          {/* <Route path="/sponsors">
             <Sponsors />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Home />
           </Route>

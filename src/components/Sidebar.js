@@ -6,8 +6,8 @@ import {
   registerTitle,
   registerLink,
   speakersEmoji,
-  agendaEmoji,
-  sponsorsEmoji
+  agendaEmoji
+  // sponsorsEmoji
 } from '../content/sidebar';
 
 const linkStyles = {
@@ -18,7 +18,8 @@ const linkStyles = {
   p: [3, null, 4],
   display: 'flex',
   alignItems: 'center',
-  height: `${(1 / 3) * 100}%`
+  // height: `${(1 / 3) * 100}%` // Uncomment this when we get sponsors...
+  height: `${(1 / 2) * 100}%`
 };
 
 const SidebarLink = ({ to, onClick, text, children }) => {
@@ -57,9 +58,9 @@ export const SidebarContent = ({ headerHeight, onClick }) => (
       <SidebarLink text="Agenda" to="/agenda" onClick={onClick}>
         <Image sx={{ height: 32, ml: 3 }} src={agendaEmoji} alt="Agenda" />
       </SidebarLink>
-      <SidebarLink text="Sponsors" to="/sponsors" onClick={onClick}>
+      {/* <SidebarLink text="Sponsors" to="/sponsors" onClick={onClick}>
         <Image sx={{ height: 32, ml: 3 }} src={sponsorsEmoji} alt="Sponsors" />
-      </SidebarLink>
+      </SidebarLink> */}
     </Flex>
   </Flex>
 );
