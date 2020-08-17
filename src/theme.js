@@ -34,6 +34,7 @@ export default merge(base, {
     text: '#323232',
     muted: '#f5f5f5',
     lightGray: '#dfdfdf',
+    gray: '#aaa',
     darkGray: '#606060'
   },
   fonts: {

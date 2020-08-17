@@ -35,7 +35,7 @@ export default ({ footerHeight }) => (
     </Text>
     <Flex sx={{ height: 24 }}>
       <Text sx={{ display: ['none', 'inline'] }}>Share:</Text>
-      <Link ml={3} onClick={onFacebookClick}>
+      <Link href="#" ml={3} onClick={onFacebookClick}>
         <FacebookIcon />
       </Link>
       <Link

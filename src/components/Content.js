@@ -19,7 +19,12 @@ export default ({ headerHeight, sidebarWidth, footerHeight }) => {
         minHeight: `calc(100% - ${headerHeight} - ${footerHeight})`
       }}
     >
-      <Box p={4} pb={`calc(${theme.space[4]}px + ${footerHeight})`} sx={{ height: '100%' }}>
+      <Box
+        py={4}
+        px={[4, null, null, 5]}
+        pb={`calc(${theme.space[4]}px + ${footerHeight})`}
+        sx={{ height: '100%' }}
+      >
         <Switch>
           <Route path="/speakers">
             <Speakers />

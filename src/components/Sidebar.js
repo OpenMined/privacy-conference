@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import { Box, Text, Button, Flex, Link, Image } from 'theme-ui';
 import { Link as RRDLink } from 'react-router-dom';
 
-import { registerLink } from '../content/sidebar';
+import {
+  registerTitle,
+  registerLink,
+  speakersEmoji,
+  agendaEmoji,
+  sponsorsEmoji
+} from '../content/sidebar';
 
 const linkStyles = {
   borderTop: 'thin',
@@ -11,7 +17,8 @@ const linkStyles = {
   fontFamily: 'monospace',
   p: 4,
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
+  height: `${(1 / 3) * 100}%`
 };
 
 const SidebarLink = ({ to, onClick, text, children }) => {
@@ -40,30 +47,18 @@ export const SidebarContent = ({ headerHeight, onClick }) => (
       justifyContent: 'space-between'
     }}
   >
-    <Text sx={{ p: 4, fontSize: 3, color: 'darkGray' }}>
+    <Text sx={{ p: 4, fontSize: 3, color: 'darkGray', maxWidth: 540 }}>
       {process.env.REACT_APP_PAGE_DESCRIPTION}
     </Text>
-    <Flex sx={{ flexDirection: 'column' }}>
+    <Flex sx={{ flexDirection: 'column', height: '100%' }}>
       <SidebarLink text="Speakers" to="/speakers" onClick={onClick}>
-        <Image
-          sx={{ height: 32, ml: 3 }}
-          src="https://emojis.slackmojis.com/emojis/images/1584726375/8272/blob-cool.gif"
-          alt="Speakers"
-        />
+        <Image sx={{ height: 32, ml: 3 }} src={speakersEmoji} alt="Speakers" />
       </SidebarLink>
       <SidebarLink text="Agenda" to="/agenda" onClick={onClick}>
-        <Image
-          sx={{ height: 32, ml: 3 }}
-          src="https://emojis.slackmojis.com/emojis/images/1568570821/6412/meow_popcorn.gif"
-          alt="Agenda"
-        />
+        <Image sx={{ height: 32, ml: 3 }} src={agendaEmoji} alt="Agenda" />
       </SidebarLink>
       <SidebarLink text="Sponsors" to="/sponsors" onClick={onClick}>
-        <Image
-          sx={{ height: 32, ml: 3 }}
-          src="https://emojis.slackmojis.com/emojis/images/1531847402/4229/blob-clap.gif"
-          alt="Sponsors"
-        />
+        <Image sx={{ height: 32, ml: 3 }} src={sponsorsEmoji} alt="Sponsors" />
       </SidebarLink>
     </Flex>
   </Flex>
@@ -79,10 +74,10 @@ export const SidebarCTAs = ({ headerHeight }) => (
     }}
   >
     {/* <Button variant="black" as="a" target="_blank" href={speakerLink}>
-      Become a Speaker
+      {speakerTitle}
     </Button> */}
     <Button variant="black" as="a" target="_blank" ml={3} href={registerLink}>
-      Register
+      {registerTitle}
     </Button>
   </Flex>
 );

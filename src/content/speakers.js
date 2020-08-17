@@ -1,12 +1,12 @@
 import austin from '../assets/austin-arensberg.jpg';
 import jackson from '../assets/jackson-cummings.jpg';
 import morgan from '../assets/morgan-mahlock.jpg';
-import laurens from '../assets/laurens-van-der-maaten.png';
+import laurens from '../assets/laurens-van-der-maaten.jpg';
 import fatemehsadat from '../assets/fatemehsadat-mireshghallah.jpg';
 import daniel from '../assets/daniel-escudero.jpg';
 import kritika from '../assets/kritika-prakash.jpg';
 import alan from '../assets/alan-aboudib.jpg';
-import suha from '../assets/suha-sabi-hussain.jpg';
+// import suha from '../assets/suha-sabi-hussain.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -41,6 +41,7 @@ export const getSpeakerByName = (input) => speakers.filter(({ name }) => name ==
 
 // TODO: Copy
 export const title = 'Speakers';
+export const titleLink = 'Submit a Talk →';
 export const speakers = [
   {
     image: austin,
@@ -121,15 +122,15 @@ export const speakers = [
       'Alan is leading the NLP team at OpenMined, focusing on building SyferText, a privacy preserving NLP library. He obtained a PhD in computer vision from Télécom Bretagne in France and he is currently the Head of Computer Vision at The Contillery; a Parisian startup aiming at providing quantitative metrics for evaluating the engaging power of visual social advertisement content. He is passionate about studying the role of visual attention in video action recognition, a project he had started as a post-doctoral researcher at Collège de France in 2018.'
     ],
     social: []
-  },
-  {
-    image: suha,
-    pixelImage: pixelate(suha),
-    name: 'Suha Sabi Hussain',
-    title: 'Security Engineering Intern at Trail of Bits',
-    about: [
-      'Suha S. Hussain is a security engineering intern at Trail of Bits primarily interested in trustworthy machine learning, applied cryptography, and program analysis. She is presently pursuing a BS in Computer Science at Georgia Tech where she also conducts research at the Institute for Information Security and Privacy. Her academic specializations are in theoretical computer science and human-computer interaction. In addition, she is a member of the RoboJackets RoboNav team and has previously worked at the NYU Center for Cybersecurity and Vengo Labs.'
-    ],
-    social: [{ type: 'twitter', url: 'https://twitter.com/suhackerr' }]
   }
+  // {
+  //   image: suha,
+  //   pixelImage: pixelate(suha),
+  //   name: 'Suha Sabi Hussain',
+  //   title: 'Security Engineering Intern at Trail of Bits',
+  //   about: [
+  //     'Suha S. Hussain is a security engineering intern at Trail of Bits primarily interested in trustworthy machine learning, applied cryptography, and program analysis. She is presently pursuing a BS in Computer Science at Georgia Tech where she also conducts research at the Institute for Information Security and Privacy. Her academic specializations are in theoretical computer science and human-computer interaction. In addition, she is a member of the RoboJackets RoboNav team and has previously worked at the NYU Center for Cybersecurity and Vengo Labs.'
+  //   ],
+  //   social: [{ type: 'twitter', url: 'https://twitter.com/suhackerr' }]
+  // }
 ];

@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const gridDimensions = {
   headerHeight: '90px',
-  sidebarWidth: '360px',
+  sidebarWidth: `${(1 / 3) * 100}%`,
   footerHeight: '90px'
 };
 

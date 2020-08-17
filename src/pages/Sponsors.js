@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Box, Heading, Link, Grid, AspectImage } from 'theme-ui';
 
-import { sponsors, title, sponsorLink } from '../content/sponsors';
+import { sponsors, title, titleLink, sponsorLink } from '../content/sponsors';
 
 export default () => (
   <Flex sx={{ flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -11,16 +11,18 @@ export default () => (
       </Heading>
       <Heading as="h3" mt={[3, null, 4]}>
         <Link as="a" href={sponsorLink} target="_blank" sx={{ textDecoration: 'none' }}>
-          Become a Sponsor →
+          {titleLink}
         </Link>
       </Heading>
     </Box>
     <Grid gap={[4, null, null, 5]} columns={[1, 2, null, 3]}>
-      {sponsors.map(({ image, name, url }, index) => (
-        <Link as="a" href={url} target="_blank" key={`sponsor-${index}`}>
-          <AspectImage ratio={1} src={image} alt={name} />
-        </Link>
-      ))}
+      {sponsors
+        .sort((a, b) => (a.name < b.name ? -1 : 1))
+        .map(({ image, name, url }, index) => (
+          <Link as="a" href={url} target="_blank" key={`sponsor-${index}`}>
+            <AspectImage ratio={1} src={image} alt={name} />
+          </Link>
+        ))}
     </Grid>
   </Flex>
 );

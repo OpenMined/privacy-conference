@@ -118,75 +118,77 @@ export default () => {
         </Heading>
         {/* <Heading as="h3" mt={[3, null, 4]}>
           <Link as="a" href={speakerLink} target="_blank" sx={{ textDecoration: 'none' }}>
-            Submit a Talk →
+            {titleLink}
           </Link>
         </Heading> */}
       </Box>
       <Grid gap={[4, null, null, 5]} columns={[1, 2, null, 3]}>
-        {speakers.map((speaker, index) => {
-          const [speakerHovered, setSpeakerHovered] = useState(false);
+        {speakers
+          .sort((a, b) => (a.name < b.name ? -1 : 1))
+          .map((speaker, index) => {
+            const [speakerHovered, setSpeakerHovered] = useState(false);
 
-          let ref;
+            let ref;
 
-          if (index === 0) {
-            const props = useResizeObserver({
-              onResize: ({ width }) => setGridWidth(width)
-            });
+            if (index === 0) {
+              const props = useResizeObserver({
+                onResize: ({ width }) => setGridWidth(width)
+              });
 
-            ref = props.ref;
-          }
+              ref = props.ref;
+            }
 
-          return (
-            <Box
-              key={`speaker-${index}`}
-              sx={{ cursor: 'pointer', userSelect: 'none' }}
-              onMouseEnter={() => !speakerHovered && setSpeakerHovered(true)}
-              onMouseLeave={() => speakerHovered && setSpeakerHovered(false)}
-              onClick={() => setSpeakerSelected(speaker)}
-            >
-              <Box sx={{ position: 'relative' }}>
-                <AspectImage
-                  ref={ref || null}
-                  ratio={1}
-                  src={speaker.image}
-                  alt={speaker.name}
-                  sx={{
-                    filter: 'grayscale(1)',
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover'
-                  }}
-                />
-                {speaker.pixelImage && (
-                  <Box
+            return (
+              <Box
+                key={`speaker-${index}`}
+                sx={{ cursor: 'pointer', userSelect: 'none' }}
+                onMouseEnter={() => !speakerHovered && setSpeakerHovered(true)}
+                onMouseLeave={() => speakerHovered && setSpeakerHovered(false)}
+                onClick={() => setSpeakerSelected(speaker)}
+              >
+                <Box sx={{ position: 'relative' }}>
+                  <AspectImage
+                    ref={ref || null}
+                    ratio={1}
+                    src={speaker.image}
+                    alt={speaker.name}
                     sx={{
-                      opacity: speakerHovered ? 1 : 0,
-                      transition: 'opacity 0.25s ease-in-out'
-                    }}
-                    ref={(e) => {
-                      speaker.pixelImage.style.width = `${gridWidth}px`;
-                      speaker.pixelImage.style.height = `${gridWidth}px`;
-                      speaker.pixelImage.style.position = 'absolute';
-                      speaker.pixelImage.style.top = 0;
-                      speaker.pixelImage.style.left = 0;
-
-                      e && e.appendChild(speaker.pixelImage);
+                      filter: 'grayscale(1)',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover'
                     }}
                   />
-                )}
+                  {speaker.pixelImage && (
+                    <Box
+                      sx={{
+                        opacity: speakerHovered ? 1 : 0,
+                        transition: 'opacity 0.25s ease-in-out'
+                      }}
+                      ref={(e) => {
+                        speaker.pixelImage.style.width = `${gridWidth}px`;
+                        speaker.pixelImage.style.height = `${gridWidth}px`;
+                        speaker.pixelImage.style.position = 'absolute';
+                        speaker.pixelImage.style.top = 0;
+                        speaker.pixelImage.style.left = 0;
+
+                        e && e.appendChild(speaker.pixelImage);
+                      }}
+                    />
+                  )}
+                </Box>
+                <Heading as="h4" sx={{ fontSize: 4, mt: 2 }}>
+                  {speaker.name}
+                </Heading>
+                <Heading as="h5" sx={{ fontFamily: 'monospace', fontSize: 2, mt: 2 }}>
+                  {speaker.title}
+                </Heading>
               </Box>
-              <Heading as="h4" sx={{ fontSize: 4, mt: 2 }}>
-                {speaker.name}
-              </Heading>
-              <Heading as="h5" sx={{ fontFamily: 'monospace', fontSize: 2, mt: 2 }}>
-                {speaker.title}
-              </Heading>
-            </Box>
-          );
-        })}
+            );
+          })}
       </Grid>
       <Modal speaker={speakerSelected} onClose={() => setSpeakerSelected(null)} />
     </Flex>
