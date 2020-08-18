@@ -57,6 +57,13 @@ export const schedule = [
       'Combining differential privacy and federated learning enables training ML models with on-device data while providing formal privacy guarantees for all users contributing data to the final model. In this talk the speaker will: (1) Discuss some important limitations that arise when trying to translate the strong privacy guarantees of DP-SGD obtained via subsampling/shuffling in the central model to the federated scenario; (2) Propose privacy accounting techniques tailored to federated learning based on replacements of privacy amplification by subsampling/shuffling which only leverage client-side randomness. The talk will focus on the high-level picture and will not assume familiarity with the mathematical analysis of DP-SGD. This talk is based on joint work with P. Kairouz, H. B. McMahan, O. Thakkar, and A. Thakurta.'
   },
   {
+    datetime: dayjs.utc('2020-09-26|15:00:00', timeFormat),
+    speakers: [getSpeakerByName('Nicolas Papernot')],
+    title: 'Tempered Sigmoid Activations for Deep Learning with Differential Privacy',
+    description:
+      'Because learning sometimes involves sensitive data, machine learning algorithms have been extended to offer privacy for training data. In practice, this has been mostly an afterthought, with privacy-preserving models obtained by re-running training with a different optimizer, but using the model architectures that already performed well in a non-privacy-preserving setting. This approach leads to less than ideal privacy/utility tradeoffs, as the speaker shows in this talk. Instead, the speaker propose that model architectures are chosen ab initio explicitly for privacy-preserving training. To provide guarantees under the gold standard of differential privacy, one must bound as strictly as possible how individual training points can possibly affect model updates. In this work, the speaker observes that the choice of activation function is central to bounding the sensitivity of privacy-preserving deep learning. The speaker demonstrates analytically and experimentally how a general family of bounded activation functions, the tempered sigmoids, consistently outperform unbounded activation functions like ReLU. Using this paradigm, we achieve new state-of-the-art accuracy on MNIST, FashionMNIST, and CIFAR10 without any modification of the learning procedure fundamentals or differential privacy analysis.'
+  },
+  {
     datetime: dayjs.utc('2020-09-26|16:30:00', timeFormat),
     speakers: [getSpeakerByName('Fatemehsadat Mireshghallah')],
     title: 'Privacy-preserving Natural language processing',

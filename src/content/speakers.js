@@ -12,6 +12,7 @@ import pranav from '../assets/default-speaker.jpg';
 import borja from '../assets/borja-balle.jpg';
 import kartik from '../assets/default-speaker.jpg';
 import sadegh from '../assets/default-speaker.jpg';
+import nicolas from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -187,5 +188,15 @@ export const speakers = [
       "Sadegh is a computer scientist working on the intersection of secure computation, machine learning, and computer architecture. Throughout his research, he has contributed to different cryptography-based and hardware-based solutions for privacy-preserving computation including the first privacy-preserving content-addressable memory in 2017. Sadegh has received the best B.Sc. thesis award from the Sharif University of Technology in 2014 based on his work on Brain-Computer Interfaces. He has received his M.Sc. degree from Rice University in 2016 where he worked on large-scale privacy-preserving matching and search. He received the best Ph.D. thesis award from University of California San Diego (UCSD) in 2020. He is a fellow of the Institute for the Global Entrepreneur at UCSD and recipient of Richard Newton Young fellow award and William Marshal Rice Fellowship."
     ],
     social: []
+  },
+  {
+    image: nicolas,
+    pixelImage: pixelate(nicolas),
+    name: 'Nicolas Papernot',
+    title: 'Assistant Professor at Universtiy of Toronto',
+    about: [
+      "Nicolas is an Assistant Professor in the Department of Electrical and Computer Engineering and the Department of Computer Science at the University of Toronto. He is also a faculty member at the Vector Institute where he holds a Canada CIFAR AI Chair, and a faculty affiliate at the Schwartz Reisman Institute. His research interests span the security and privacy of machine learning. Nicolas is a Connaught Researcher and was previously a Google PhD Fellow. His work on differentially private machine learning received a best paper award at ICLR 2017. He serves on the program committees of several conferences including ACM CCS, IEEE S&P, and USENIX Security. He is also the co-author of CleverHans and TensorFlow Privacy, two open-source libraries widely adopted in the technical community to benchmark the security and privacy of machine learning. He earned his Ph.D. at the Pennsylvania State University, working with Prof. Patrick McDaniel. Upon graduating, he spent a year as a research scientist at Google Brain in Úlfar Erlingsson's group."
+    ],
+    social: [{ type: 'twitter', 'url': 'https://twitter.com/NicolasPapernot' }]
   }
 ];
