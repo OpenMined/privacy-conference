@@ -11,8 +11,8 @@ import suha from '../assets/suha-sabi-hussain.jpg';
 import pranav from '../assets/default-speaker.jpg';
 import borja from '../assets/borja-balle.jpg';
 import kartik from '../assets/default-speaker.jpg';
-import sadegh from '../assets/default-speaker.jpg';
-import nicolas from '../assets/default-speaker.jpg';
+import sadegh from '../assets/m-sadegh-riazi.jpg';
+import nicolas from '../assets/nicolas-papernot.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
