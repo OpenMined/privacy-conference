@@ -123,7 +123,7 @@ export const speakers = [
     image: kritika,
     pixelImage: pixelate(kritika),
     name: 'Kritika Prakash',
-    title: 'MSc student at IIIT Hyderabad & Differential Privacy Research Ream Lead at OpenMined',
+    title: 'MSc student at IIIT Hyderabad & Differential Privacy Research Team Lead at OpenMined',
     about: [
       "Kritika leads the Differential Privacy Research Team at OpenMined. She is a Masters' student at the Machine Learning Lab, IIIT Hyderabad. Her areas of interest are Deep Learning and DIfferential Privacy."
     ],
