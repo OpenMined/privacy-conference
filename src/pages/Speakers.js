@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Flex, Box, Heading, Link, Grid, AspectImage, Text, Image as UIImage } from 'theme-ui';
 import HamburgerMenu from 'react-hamburger-menu';
-import useResizeObserver from 'use-resize-observer';
+import useResizeObserver from 'use-resize-observer/polyfilled';
 
 import { title, speakers } from '../content/speakers';
 // import { speakerLink } from '../content/sidebar';
@@ -83,7 +83,7 @@ export const Modal = ({ speaker, onClose }) => {
                 {speaker.title}
               </Heading>
               {speaker.social.length > 0 && <Social />}
-              <Biography sx={{ display: ['block', null, 'none', 'block'] }} />
+              <Biography sx={{ display: ['block', null, 'none', 'block'], mb: [3, null, 0] }} />
             </Box>
           </Flex>
           <Biography sx={{ display: ['none', null, 'block', 'none'] }} />
