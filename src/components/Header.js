@@ -54,7 +54,7 @@ export default ({ headerHeight, sidebarWidth, footerHeight }) => {
           bottom: -10,
           width: '100%',
           height: 10,
-          background: `linear-gradient(0deg, rgba(0,0,0,0) 0%, ${theme.colors.muted} 100%)`
+          background: `linear-gradient(0deg, rgba(255,255,255,0) 0%, ${theme.colors.muted} 100%)`
         }
       }}
     >
