@@ -10,6 +10,8 @@ import {
   // sponsorsEmoji
 } from '../content/sidebar';
 
+import { titleLink as sponsorTitle, sponsorLink } from '../content/sponsors';
+
 const linkStyles = {
   borderTop: 'thin',
   borderColor: 'lightGray',
@@ -74,9 +76,9 @@ export const SidebarCTAs = ({ headerHeight }) => (
       px: [3, null, 4]
     }}
   >
-    {/* <Button variant="black" as="a" target="_blank" href={speakerLink} mr={3}>
-      {speakerTitle}
-    </Button> */}
+    <Button variant="black" as="a" target="_blank" href={sponsorLink} mr={3}>
+      {sponsorTitle.slice(0, -2)}
+    </Button>
     <Button variant="black" as="a" target="_blank" href={registerLink}>
       {registerTitle}
     </Button>

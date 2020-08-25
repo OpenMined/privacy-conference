@@ -42,10 +42,7 @@ export const schedule = [
   // SATURDAY
   {
     datetime: dayjs.utc('2020-09-26|14:30:00', timeFormat),
-    speakers: [
-      getSpeakerByName('Laurens van der Maaten'),
-      getSpeakerByName('Awni Hannun')
-    ],
+    speakers: [getSpeakerByName('Laurens van der Maaten'), getSpeakerByName('Awni Hannun')],
     title: 'The Trade-Offs of Private Prediction',
     description:
       'This talk presents recent empirical results on the performance trade-offs of differentially private prediction techniques.'
@@ -167,7 +164,7 @@ export const schedule = [
     title: 'TUTORIAL: SyferText 0.1.0: Privacy-preserving NLP over PyGrid',
     description:
       'This tutorial session presents SyferText 0.1.0 - its vision, with hands-on examples on how to create a pipeline (including pre-processing component + PySyft model), deploy it to PyGrid, load it, and use it.'
-  },
+  }
 ];
 
 export const agenda = groupSchedule(schedule);
