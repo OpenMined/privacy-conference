@@ -66,7 +66,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|16:30:00', timeFormat),
     speakers: [getSpeakerByName('Fatemehsadat Mireshghallah')],
-    title: 'Privacy-preserving Natural language processing',
+    title: 'Privacy-preserving Natural Language Processing',
     description:
       'The work presented explains the differences between correlated and correlated data, and the challenges that exist in protecting correlated data, which is normally in the format of sequences, and how differential privacy cannot always be used there. This talk introduces some papers in this topic, such as papers that introduce privacy preserving mechanisms for sensor data and location. The talk will conclude with a short introduction to pufferfish framework, which is normally used for correlated data.'
   },
@@ -106,12 +106,12 @@ export const schedule = [
       getSpeakerByName('Jackson Cummings'),
       getSpeakerByName('Morgan Mahlock')
     ],
-    title: 'Why VCs are interested in privacy investing now',
+    title: 'Why VCs are Interested in Privacy Investing Now',
     description:
       'This talk poses the question "Can VCs make money in privacy startups?" Increasingly the answer is yes - but entirely new business models need to be examined. This talk details how the tide has changed and how privacy is now a hot new area of investing.'
   },
   {
-    datetime: dayjs.utc('2020-09-27|17:30:00', timeFormat),
+    datetime: dayjs.utc('2020-09-27|17:45:00', timeFormat),
     speakers: [getSpeakerByName('M Sadegh Riazi')],
     title: 'From Homomorphic Encryption to Silicon',
     description:

@@ -103,7 +103,7 @@ export const speakers = [
     image: fatemehsadat,
     pixelImage: pixelate(fatemehsadat),
     name: 'Fatemehsadat Mireshghallah',
-    title: 'PhD student at UC San Diego',
+    title: 'PhD Student at UC San Diego',
     about: [
       'Fatemehsadat is a 3rd year CS Ph.D. student at UC San Diego. She is a recipient of the National Center for Women & IT (NCWIT) Aspirations in Computing Collegiate award in 2020, for her work on light-weight privacy-preserving DNN inference. She received her B.Sc. in Computer Engineering with honors from Sharif University of Technology in 2018. She works at the intersection of ML, Systems Privacy, and fairness. She has interned with Microsoft Research AI and Western Digital.'
     ],
@@ -113,7 +113,7 @@ export const speakers = [
     image: daniel,
     pixelImage: pixelate(daniel),
     name: 'Daniel Escudero',
-    title: 'PhD student at Aarhus University, Denmark',
+    title: 'PhD Student at Aarhus University, Denmark',
     about: [
       'Daniel is a PhD student at Aarhus University, Denmark, working on Multiparty Computation (MPC) and related technologies. He enjoys applying these techniques to solve real-world problems, including the task of privacy-preserving machine learning, a field he has been exploring recently. Daniel is looking forward to meeting the OpenMined community in order to share thoughts and ideas.'
     ],
