@@ -159,6 +159,13 @@ export const schedule = [
       'Machine learning has seen a tremendous amount of improvement in recent years, primarily attributable to the ongoing success of deep neural networks. In the age of big data and powerful learning algorithms, privacy is of paramount importance to prevent the leakage of information. Differential privacy is one such approach, however it suffers from the drawback of being slow on most modern architectures. The work in this talk proposes an approach to this by combining differential privacy with existing software frameworks that yield massive speedups in the domain of differential privacy. The primary algorithm focused on is Differentially Private Stochastic Gradient Descent (DPSGD) since it is the most commonly used optimization technique for deep neural networks. Furthermore, the work describes a thorough set of experiments ranging from vision to text and elucidate the drastic improvements in the speed. The speaker hopes that the evaluation allows for a wider adoption of privacy-preserving machine learning techniques and takes a step towards practical differential privacy. This talk is based on joint work with Gautam Kamath.'
   },
   {
+    datetime: dayjs.utc('2020-09-27|18:10:00', timeFormat),
+    speakers: [getSpeakerByName('Jason Mancuso')],
+    title: 'Pragmatic Security for Collaborative Learning',
+    description:
+      'Traditional operational security practices have been used to secure deployments of machine learning in industry, largely viewing ML models as "just another microservice" in a larger infrastructure. This talk revisits this in the context of collaborative learning, motivating the need for a more privacy-preserving machine learning (PPML) practice from foundational security engineering principles. After reviewing well-known ML privacy primitives in this context, the speaker explores a gap between their theory and practice. The speaker argues that in order to address this gap and support broad industry adoption, the community must unify PPML techniques into a common analytical framework for securing end-to-end machine learning workflows.'
+  },
+  {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Alan Aboudib')],
     title: 'TUTORIAL: SyferText 0.1.0: Privacy-preserving NLP over PyGrid',

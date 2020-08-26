@@ -20,6 +20,7 @@ import sasi from '../assets/default-speaker.jpg';
 import georgios from '../assets/default-speaker.jpg';
 import madeleine from '../assets/default-speaker.jpg';
 import krzysztof from '../assets/default-speaker.jpg';
+import jason from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -273,6 +274,16 @@ export const speakers = [
     title: 'Research Scientist at Google',
     about: [
       "Krzysztof is a Research Scientist at Google, where he is leading the TensorFlow Federated (TFF) team. Before joining Google, he did his Ph.D. and postdoc in distributed systems and programming languages at Cornell University."
+    ],
+    social: []
+  },
+  {
+    image: jason,
+    pixelImage: pixelate(jason),
+    name: 'Jason Mancuso',
+    title: 'Research Engineer at Cape Privacy',
+    about: [
+      "Jason is a research engineer working on pragmatic deployment of PPML at Cape Privacy. He lives in New York City."
     ],
     social: []
   }
