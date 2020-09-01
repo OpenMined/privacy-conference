@@ -21,6 +21,29 @@ import georgios from '../assets/default-speaker.jpg';
 import madeleine from '../assets/default-speaker.jpg';
 import krzysztof from '../assets/default-speaker.jpg';
 import jason from '../assets/default-speaker.jpg';
+import andrew from '../assets/default-speaker.jpg';
+import tbc from '../assets/default-speaker.jpg';
+import peter from '../assets/default-speaker.jpg';
+import nick from '../assets/default-speaker.jpg';
+import ronnie from '../assets/default-speaker.jpg';
+import pia from '../assets/default-speaker.jpg';
+import nathan from '../assets/default-speaker.jpg';
+import sachin from '../assets/default-speaker.jpg';
+import ken from '../assets/default-speaker.jpg';
+import amber from '../assets/default-speaker.jpg';
+import miguel from '../assets/default-speaker.jpg';
+import kristin from '../assets/default-speaker.jpg';
+import sameer from '../assets/default-speaker.jpg';
+import mayank from '../assets/default-speaker.jpg';
+import varun from '../assets/default-speaker.jpg';
+import vova from '../assets/default-speaker.jpg';
+import eric from '../assets/default-speaker.jpg';
+import robin from '../assets/default-speaker.jpg';
+import pavlos from '../assets/default-speaker.jpg';
+import adam from '../assets/default-speaker.jpg';
+import emily from '../assets/default-speaker.jpg';
+import hadrien from '../assets/default-speaker.jpg';
+import patrick from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -286,5 +309,236 @@ export const speakers = [
       "Jason is a research engineer working on pragmatic deployment of PPML at Cape Privacy. He lives in New York City."
     ],
     social: []
+  },
+  {
+    image: andrew,
+    pixelImage: pixelate(andrew),
+    name: 'Andrew Trask',
+    title: 'Leader at OpenMined',
+    about: [
+      'Andrew leads the OpenMined community. He is a doctoral candidate in computer science at the University of Oxford, a Senior Research Scientist at DeepMind, a Research Affiliate at Oxford\'s Centre for the Governance of AI, and a member of the United Nations Privacy Task Force. He is also the author of "Grokking Deep Learning" (Manning, 2019).'
+    ],
+    social: [{ type: 'twitter', url: 'https://twitter.com/iamtrask' }]
+  },
+  {
+    image: tbc,
+    pixelImage: pixelate(tbc),
+    name: 'TBC',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: peter,
+    pixelImage: pixelate(peter),
+    name: 'Peter Kairouz',
+    title: 'Google',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: nick,
+    pixelImage: pixelate(nick),
+    name: 'Nick Rose',
+    title: 'OpenMined',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: ronnie,
+    pixelImage: pixelate(ronnie),
+    name: 'Ronnie Falcon',
+    title: 'OpenMined',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: pia,
+    pixelImage: pixelate(pia),
+    name: 'Pia Mancini',
+    title: 'Open Collective',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: nathan,
+    pixelImage: pixelate(nathan),
+    name: 'Nathan Benaich',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: sachin,
+    pixelImage: pixelate(sachin),
+    name: 'Sachin Despante',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: ken,
+    pixelImage: pixelate(ken),
+    name: 'Kenneth Cukier',
+    title: 'Senior Editor at Economist',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: amber,
+    pixelImage: pixelate(amber),
+    name: 'Amber Trask',
+    title: 'OpenMined',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: miguel,
+    pixelImage: pixelate(miguel),
+    name: 'Miguel Guevara',
+    title: 'Product Manager at Google',
+    about: [
+      "Miguel is Google's Product Manager for Differential Privacy. In this capacity, Miguel has helped envision Google's DP infrastructure that was open-sourced last year. As part of his work, Miguel tries to understand internal and external use-cases of DP, and define requirements, while providing strategic direction to the overall effort. Miguel also works on the ML aspects of DP alongside the TensorFlow Privacy team. Finally, Miguel contributes to Google's Transparency Report, by managing the reports pertaining to freedom of speech and human rights."
+    ],
+    social: []
+  },
+  {
+    image: kristin,
+    pixelImage: pixelate(kristin),
+    name: 'Kristin Lauter',
+    title: 'Principal Researcher and Partner Research Manager at Microsoft Research',
+    about: [
+      "Kristin is a Principal Researcher and Partner Research Manager at Microsoft Research. She leads the Cryptography and Privacy Research group, and the Urban Innovation team with projects on “Private AI” and “AI for Cities”. She works at the interface between Machine Learning and Cryptography, with a focus on cloud security and health and genomic privacy. She is particularly known for her work on homomorphic encryption, elliptic curve cryptography, and for introducing supersingular isogeny graphs as a solution for post-quantum cryptography."
+    ],
+    social: []
+  },
+  {
+    image: sameer,
+    pixelImage: pixelate(sameer),
+    name: 'Sameer Wagh',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: mayank,
+    pixelImage: pixelate(mayank),
+    name: 'Mayank Varia',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: varun,
+    pixelImage: pixelate(varun),
+    name: 'Varun Khare',
+    title: 'OpenMined',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: vova,
+    pixelImage: pixelate(vova),
+    name: 'Vova Manannikov',
+    title: 'OpenMined',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: eric,
+    pixelImage: pixelate(eric),
+    name: 'Eric Verner',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: robin,
+    pixelImage: pixelate(robin),
+    name: 'Robin Rohm',
+    title: 'Apheris AI',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: pavlos,
+    pixelImage: pixelate(pavlos),
+    name: 'Pavlos Papaduopoulos',
+    title: 'Apheris AI',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: adam,
+    pixelImage: pixelate(adam),
+    name: 'Adam Hall',
+    title: 'OpenMined',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: emily,
+    pixelImage: pixelate(emily),
+    name: 'Emily Glanz',
+    title: 'Google',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: hadrien,
+    pixelImage: pixelate(hadrien),
+    name: 'Hadrien Lautraite',
+    title: 'Data Scientist at National Bank of Canada',
+    about: [
+      'Hadrien is a data scientist at National Bank of Canada. He graduated from HEC Montreal with a Msc. Business Intelligence. At National Bank of Canada, Hadrien applies state of the art machine learning techniques to various real-word problems in different units of the bank. He is very curious on how to better protect the bank customers’ data and started a project with his colleague Patrick on generating transactional profiles using deep learning techniques.'
+    ],
+    social: []
+  },
+  {
+    image: patrick,
+    pixelImage: pixelate(patrick),
+    name: 'Patrick Mesana',
+    title: 'Data Science Manager at National Bank of Canada',
+    about: [
+      'Patrick is a data science manager for National Bank of Canada. He has a Software Engineering degree and graduated from HEC Montreal with a Msc. Business Analytics. At National Bank of Canada, Patrick manages a team of data scientists and data engineers, solving various real-word problems in different units of the bank. He is passionate about data privacy and wants to understand how to better protect the bank’s data using innovations such as generating transactional profile using deep learning techniques.'
+    ],
+    social: []
   }
+
 ];

@@ -41,11 +41,32 @@ const timeFormat = 'YYYY-MM-DD|HH:mm:ss';
 export const schedule = [
   // SATURDAY
   {
+    datetime: dayjs.utc('2020-09-26|14:00:00', timeFormat),
+    speakers: [getSpeakerByName('Andrew Trask')],
+    title: 'Welcome Talk and Conference Overview',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|14:10:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'Keynote',
+    description:
+      'TBC'
+  },
+  {
     datetime: dayjs.utc('2020-09-26|14:30:00', timeFormat),
     speakers: [getSpeakerByName('Laurens van der Maaten'), getSpeakerByName('Awni Hannun')],
     title: 'The Trade-Offs of Private Prediction',
     description:
       'This talk presents recent empirical results on the performance trade-offs of differentially private prediction techniques.'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|14:45:00', timeFormat),
+    speakers: [getSpeakerByName('Peter Kairouz')],
+    title: 'TBC',
+    description:
+      'TBC'
   },
   {
     datetime: dayjs.utc('2020-09-26|15:00:00', timeFormat),
@@ -60,6 +81,48 @@ export const schedule = [
     title: 'Tempered Sigmoid Activations for Deep Learning with Differential Privacy',
     description:
       'Because learning sometimes involves sensitive data, machine learning algorithms have been extended to offer privacy for training data. In practice, this has been mostly an afterthought, with privacy-preserving models obtained by re-running training with a different optimizer, but using the model architectures that already performed well in a non-privacy-preserving setting. This approach leads to less than ideal privacy/utility tradeoffs, as the speaker shows in this talk. Instead, the speaker propose that model architectures are chosen ab initio explicitly for privacy-preserving training. To provide guarantees under the gold standard of differential privacy, one must bound as strictly as possible how individual training points can possibly affect model updates. In this work, the speaker observes that the choice of activation function is central to bounding the sensitivity of privacy-preserving deep learning. The speaker demonstrates analytically and experimentally how a general family of bounded activation functions, the tempered sigmoids, consistently outperform unbounded activation functions like ReLU. Using this paradigm, we achieve new state-of-the-art accuracy on MNIST, FashionMNIST, and CIFAR10 without any modification of the learning procedure fundamentals or differential privacy analysis.'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|15:30:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'Keynote',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|16:30:00', timeFormat),
+    speakers: [getSpeakerByName('Andrew Trask')],
+    title: 'OpenMined High Level Roadmap',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|16:50:00', timeFormat),
+    speakers: [getSpeakerByName('Nick Rose')],
+    title: 'OpenMined Science Roadmap',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|17:10:00', timeFormat),
+    speakers: [getSpeakerByName('Ronnie Falcon')],
+    title: 'Governance Roadmap',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|17:30:00', timeFormat),
+    speakers: [getSpeakerByName('Pia Mancini')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|18:00:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
   },
   {
     datetime: dayjs.utc('2020-09-26|18:15:00', timeFormat),
@@ -77,6 +140,20 @@ export const schedule = [
       'This talk describes the process of creating a library enabling PPML on medical imaging from experimentation to deployment. The speaker shows how CLI tools integrating the state of the art from PySyft, PyGrid and CrypTen, alongside technical developments from his work (decentralised hyperparameter tuning, federated averaging, secure aggregation, privacy-enhancing decentralised data augmentation, catastrophic forgetting prevention etc.) for federated learning and the provision of encrypted inference as a service on medical images. The talk concludes with a large-scale real-world case study with multi-institutional medical imaging data to test and validate the results.'
   },
   {
+    datetime: dayjs.utc('2020-09-26|18:45:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Nathan Benaich')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
     datetime: dayjs.utc('2020-09-26|19:20:00', timeFormat),
     speakers: [
       getSpeakerByName('Austin Arensberg'),
@@ -86,6 +163,13 @@ export const schedule = [
     title: 'Why VCs are Interested in Privacy Investing Now',
     description:
       'This talk poses the question "Can VCs make money in privacy startups?" Increasingly the answer is yes - but entirely new business models need to be examined. This talk details how the tide has changed and how privacy is now a hot new area of investing.'
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|19:40:00', timeFormat),
+    speakers: [getSpeakerByName('Sachin Despante')],
+    title: 'TBC',
+    description:
+      'TBC'
   },
   {
     datetime: dayjs.utc('2020-09-26|20:00:00', timeFormat),
@@ -135,14 +219,49 @@ export const schedule = [
     description:
       "When building machine learning models using sensitive data, organizations should ensure that the data processed in such systems is adequately protected. For projects involving machine learning on personal data, Article 35 of the GDPR mandates it to perform a Data Protection Impact Assessment (DPIA). In addition to the threats of illegitimate access to data through security breaches, machine learning models pose an additional privacy risk to the data by indirectly revealing about it through the model predictions and parameters. Guidances released by the Information Commissioner's Office (UK) and the National Institute of Standards and Technology (US) emphasize on the threat to data from models and recommend organizations to account for and estimate these risks to comply with data protection regulations. Hence, there is an immediate need for a tool that can quantify the privacy risk to data from models.  The speaker presents ML Privacy Meter, a tool that can quantify the privacy risk to data from models through state of the art membership inference attack techniques. This talk will discuss how this tool can help practitioners in compliance with data protection regulations, when deploying machine learning models."
   },
+  {
+    datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
+    speakers: [getSpeakerByName('Kenneth Cukier')],
+    title: 'Shame on all of us: How technologists, privacy advocates, government and business failed the public for covid contact-tracing—and better not fail again',
+    description:
+      'TBC'
+  },
 
   // SUNDAY
+  {
+    datetime: dayjs.utc('2020-09-27|14:00:00', timeFormat),
+    speakers: [getSpeakerByName('Amber Trask')],
+    title: 'Where do you fit within our community?',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|16:00:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'Keynote',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|17:00:00', timeFormat),
+    speakers: [getSpeakerByName('Miguel Guevara')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
   {
     datetime: dayjs.utc('2020-09-27|17:15:00', timeFormat),
     speakers: [getSpeakerByName('Krzysztof Ostrowski')],
     title: 'TensorFlow Federated',
     description:
       'This talk presents TensorFlow Federated (TFF), an OSS platform for computations on decentralized data, and discusses its relationship to the OpenMined ecosystem.'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|17:30:00', timeFormat),
+    speakers: [getSpeakerByName('Kristin Lauter')],
+    title: 'TBC',
+    description:
+      'TBC'
   },
   {
     datetime: dayjs.utc('2020-09-27|17:45:00', timeFormat),
@@ -166,11 +285,130 @@ export const schedule = [
       'Traditional operational security practices have been used to secure deployments of machine learning in industry, largely viewing ML models as "just another microservice" in a larger infrastructure. This talk revisits this in the context of collaborative learning, motivating the need for a more privacy-preserving machine learning (PPML) practice from foundational security engineering principles. After reviewing well-known ML privacy primitives in this context, the speaker explores a gap between their theory and practice. The speaker argues that in order to address this gap and support broad industry adoption, the community must unify PPML techniques into a common analytical framework for securing end-to-end machine learning workflows.'
   },
   {
+    datetime: dayjs.utc('2020-09-27|18:20:00', timeFormat),
+    speakers: [getSpeakerByName('Sameer Wagh')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|18:30:00', timeFormat),
+    speakers: [getSpeakerByName('Mayank Varia')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|18:40:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|18:50:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Alan Aboudib')],
     title: 'TUTORIAL: SyferText 0.1.0: Privacy-preserving NLP over PyGrid',
     description:
       'This tutorial session presents SyferText 0.1.0 - its vision, with hands-on examples on how to create a pipeline (including pre-processing component + PySyft model), deploy it to PyGrid, load it, and use it.'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Varun Khare')],
+    title: 'TUTORIAL: How to build a Federated Learning Android App',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Vova Manannikov')],
+    title: 'TUTORIAL: How to build a Federated Learning Website',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Nick Rose'), getSpeakerByName('Andrew Trask')],
+    title: 'TUTORIAL: Duet Demo - How to do data science on data owned by a different organization',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Eric Verner')],
+    title: 'TUTORIAL: COINSTAC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Robin Rohm'), getSpeakerByName('Pavlos Papaduopoulos')],
+    title: 'TUTORIAL: Apheris AI Vertical Federated Learning with PySyft and PyVertical ',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Adam Hall')],
+    title: 'TUTORIAL: OpenMined Security and Identity Demo',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Krzysztof Ostrowski'), getSpeakerByName('Emily Glanz')],
+    title: 'TUTORIAL: TensorFlow Federated',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Georgios Kaissis')],
+    title: 'TUTORIAL: PriMIA demo',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|20:00:00', timeFormat),
+    speakers: [getSpeakerByName('Hadrien Lautraite'), getSpeakerByName('Patrick Mesana')],
+    title: 'Generating credit card transactional profiles with GAN',
+    description:
+      "While being of great value, financial institution's data contain particularly sensitive information. Transactional data are a key example for this matter, they can be used for numerous valuable applications (fraud detection, customer profile clustering, consumption behavior) while representing an important privacy matter. Even if anonymized, such data can be used to extract sensitive information about someone. There is a natural struggle between data science team that want access to a large volume of data in order to train their model and security team which is concerned by the risk of massive data breach. The speakers propose to resolve this problem by using deep learning techniques to generate fake transactional profiles (amount of money spent monthly in particular industries) with similar distribution as the original one. One of the key issues with transactional profiles is its sparseness. The speakers show that Generative Adversarial Networks can generate valuable synthetic data and lead to better results than Variable Auto Encoders when working with such sparse data. The speakers measure the usefulness of synthetic data by comparing some known statistics and basic insights used by the bank on both the original and generated datasets. Finally, the speakers compare the training with and without Differential Privacy."
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|20:15:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|20:30:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|20:45:00', timeFormat),
+    speakers: [getSpeakerByName('TBC')],
+    title: 'TBC',
+    description:
+      'TBC'
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|21:00:00', timeFormat),
+    speakers: [getSpeakerByName('Andrew Trask')],
+    title: 'Closing ceremony',
+    description:
+      'TBC'
   }
 ];
 
