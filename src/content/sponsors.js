@@ -3,7 +3,7 @@ import austin from '../assets/austin-arensberg.jpg';
 // TODO: Copy
 export const title = 'Sponsors';
 export const titleLink = 'Become a Sponsor →';
-export const sponsorLink = 'https://opencollective.com/openmined-primary';
+export const sponsorLink = 'https://drive.google.com/file/d/1-9_KZ7H0q0_lOhONOFzLTGYGp2VtKqOH/view';
 export const sponsors = [
   {
     image: austin,

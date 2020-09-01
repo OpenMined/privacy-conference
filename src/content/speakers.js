@@ -13,6 +13,14 @@ import borja from '../assets/borja-balle.jpg';
 import kartik from '../assets/default-speaker.jpg';
 import sadegh from '../assets/m-sadegh-riazi.jpg';
 import nicolas from '../assets/nicolas-papernot.jpg';
+import lucile from '../assets/default-speaker.jpg';
+import dmitrii from '../assets/default-speaker.jpg';
+import zarreen from '../assets/default-speaker.jpg';
+import sasi from '../assets/default-speaker.jpg';
+import georgios from '../assets/default-speaker.jpg';
+import madeleine from '../assets/default-speaker.jpg';
+import krzysztof from '../assets/default-speaker.jpg';
+import jason from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -103,7 +111,7 @@ export const speakers = [
     image: fatemehsadat,
     pixelImage: pixelate(fatemehsadat),
     name: 'Fatemehsadat Mireshghallah',
-    title: 'PhD student at UC San Diego',
+    title: 'PhD Student at UC San Diego',
     about: [
       'Fatemehsadat is a 3rd year CS Ph.D. student at UC San Diego. She is a recipient of the National Center for Women & IT (NCWIT) Aspirations in Computing Collegiate award in 2020, for her work on light-weight privacy-preserving DNN inference. She received her B.Sc. in Computer Engineering with honors from Sharif University of Technology in 2018. She works at the intersection of ML, Systems Privacy, and fairness. She has interned with Microsoft Research AI and Western Digital.'
     ],
@@ -113,7 +121,7 @@ export const speakers = [
     image: daniel,
     pixelImage: pixelate(daniel),
     name: 'Daniel Escudero',
-    title: 'PhD student at Aarhus University, Denmark',
+    title: 'PhD Student at Aarhus University, Denmark',
     about: [
       'Daniel is a PhD student at Aarhus University, Denmark, working on Multiparty Computation (MPC) and related technologies. He enjoys applying these techniques to solve real-world problems, including the task of privacy-preserving machine learning, a field he has been exploring recently. Daniel is looking forward to meeting the OpenMined community in order to share thoughts and ideas.'
     ],
@@ -126,6 +134,36 @@ export const speakers = [
     title: 'MSc student at IIIT Hyderabad & Differential Privacy Research Team Lead at OpenMined',
     about: [
       "Kritika leads the Differential Privacy Research Team at OpenMined. She is a Masters' student at the Machine Learning Lab, IIIT Hyderabad. Her areas of interest are Deep Learning and DIfferential Privacy."
+    ],
+    social: []
+  },
+  {
+    image: lucile,
+    pixelImage: pixelate(lucile),
+    name: 'Lucile Saulnier',
+    title: 'Data Scientist at Arkhn',
+    about: [
+      "After her engineering studies at Ecole Centrale Paris, Lucile is about to specialize in data science research with the MVA master's degree in Applied Mathematics at ENS Paris Saclay. She is also a Data Scientist at Arkhn where she works on medical data valorization projects. Her interest being naturally focused on the field of privacy-preserving machine learning, she actively contributes, among others, to a project of the OpenMined community, pj_dp_fl_demo, of which she is the team lead."
+    ],
+    social: []
+  },
+  {
+    image: dmitrii,
+    pixelImage: pixelate(dmitrii),
+    name: 'Dmitrii Usynin',
+    title: 'PhD Student at Technical University of Munich & Imperial College London',
+    about: [
+      "Dmitrii has just graduated from Imperial College London with a distinguished masters project on privacy-preserving machine learning in the medical domain. He is about to start his PhD on a joint program between Imperial College London and Technical University of Munich, specializing in private federated learning in oncology. His interests are privacy engineering, attacks on machine learning models and collaborative machine learning."
+    ],
+    social: []
+  },
+  {
+    image: zarreen,
+    pixelImage: pixelate(zarreen),
+    name: 'Zarreen Naowal Reza',
+    title: 'Data Scientist at Thales Canada',
+    about: [
+      "Zarreen is working as a Data Scientist, with keen interest in privacy-preserving machine learning in the field of healthcare and NLP. She has been an active part of different teams in OpenMined including the writing team, education and learning team and Differential Privacy and Federated Learning research team."
     ],
     social: []
   },
@@ -193,10 +231,60 @@ export const speakers = [
     image: nicolas,
     pixelImage: pixelate(nicolas),
     name: 'Nicolas Papernot',
-    title: 'Assistant Professor at Universtiy of Toronto',
+    title: 'Assistant Professor at University of Toronto',
     about: [
       "Nicolas is an Assistant Professor in the Department of Electrical and Computer Engineering and the Department of Computer Science at the University of Toronto. He is also a faculty member at the Vector Institute where he holds a Canada CIFAR AI Chair, and a faculty affiliate at the Schwartz Reisman Institute. His research interests span the security and privacy of machine learning. Nicolas is a Connaught Researcher and was previously a Google PhD Fellow. His work on differentially private machine learning received a best paper award at ICLR 2017. He serves on the program committees of several conferences including ACM CCS, IEEE S&P, and USENIX Security. He is also the co-author of CleverHans and TensorFlow Privacy, two open-source libraries widely adopted in the technical community to benchmark the security and privacy of machine learning. He earned his Ph.D. at the Pennsylvania State University, working with Prof. Patrick McDaniel. Upon graduating, he spent a year as a research scientist at Google Brain in Úlfar Erlingsson's group."
     ],
     social: [{ type: 'twitter', url: 'https://twitter.com/NicolasPapernot' }]
+  },
+  {
+    image: sasi,
+    pixelImage: pixelate(sasi),
+    name: 'Sasi Kumar Murakonda',
+    title: 'Research Assistant at National University of Singapore Data Privacy and Trustworthy ML Research Lab',
+    about: [
+      "Sasi is a research assistant at the National University of Singapore's Data Privacy and Trustworthy ML Research Lab. His work focuses on analysing and quantifying the privacy risks of learning algorithms. He also studies the trade-offs between fairness and robustness in machine learning systems."
+    ],
+    social: []
+  },
+  {
+    image: georgios,
+    pixelImage: pixelate(georgios),
+    name: 'Georgios Kaissis',
+    title: 'Post-doctoral Researcher at Technical University of Munich/Imperial College London & OpenMined Research Scientist',
+    about: [
+      "Georgios is a senior postdoctoral researcher at the Technical University of Munich, Imperial College London and a research scientist at OpenMined. His research is centred around biomedical image analysis with a special focus on probabilistic methods, differentiable programming and on the design and deployment of robust, secure, fair and transparent machine learning algorithms to medical imaging workflows using next-generation privacy-preserving machine learning methods."
+    ],
+    social: []
+  },
+  {
+    image: madeleine,
+    pixelImage: pixelate(madeleine),
+    name: 'Madeleine Shang',
+    title: 'Recommender Systems Team Lead at OpenMined',
+    about: [
+      "Madeleine is currently focused on deep probabilistic models for unsupervised knowledge representation and meta reinforcement learning. Her research interests also include ML for healthy community / marketplace growth. When not working towards interactive and reasoning machines, She is working on diversity and inclusion in tech / entrepreneurship, advises startups and goes on adventures in the wilderness and pilots airplanes. Madeleine founded, built and scaled Women Who Code Data Science from 0 to 2k+ global data professional members in 1yr and is leading the bootcamp efforts at OpenMined Education.  She is also a frequent guest speaker on AI topics for Microsoft. Prior to turning her focus on ML, she studied Mathematics at University of Waterloo, completed CFA Level III, taught herself programming and worked in tech as a VC, 2x Founder and Blockchain engineer."
+    ],
+    social: []
+  },
+  {
+    image: krzysztof,
+    pixelImage: pixelate(krzysztof),
+    name: 'Krzysztof Ostrowski',
+    title: 'Research Scientist at Google',
+    about: [
+      "Krzysztof is a Research Scientist at Google, where he is leading the TensorFlow Federated (TFF) team. Before joining Google, he did his Ph.D. and postdoc in distributed systems and programming languages at Cornell University."
+    ],
+    social: []
+  },
+  {
+    image: jason,
+    pixelImage: pixelate(jason),
+    name: 'Jason Mancuso',
+    title: 'Research Engineer at Cape Privacy',
+    about: [
+      "Jason is a research engineer working on pragmatic deployment of PPML at Cape Privacy. He lives in New York City."
+    ],
+    social: []
   }
 ];
