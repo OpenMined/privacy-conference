@@ -47,7 +47,7 @@ export default () => {
 
               for (let i = eventNum; i < events.length; i++) {
                 if (events[i].group.title === event.group.title) {
-                  lastGroupTime = events[i].datetime;
+                  lastGroupTime = events[i].datetime.add(events[i].duration.as('minutes'), 'minutes');
                 } else break;
               }
 
