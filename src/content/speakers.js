@@ -332,8 +332,8 @@ export const speakers = [
     image: nick,
     pixelImage: pixelate(nick),
     name: 'Nick Rose',
-    title: 'OpenMined',
-    about: ['TBC'],
+    title: 'Product Manager at Google and OpenMined',
+    about: ['Nick is a product manager at OpenMined with a degree in Computer Science from UC Berkeley. He also works as a product manager at Google on YouTube. He loves to talk about space exploration, artificial general intelligence, fundamental physics, and sustainable energy. Find him making lattes, surfing, and skiing in his free time.'],
     social: []
   },
   {

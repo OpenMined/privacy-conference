@@ -196,7 +196,7 @@ export const schedule = [
     speakers: [getSpeakerByName('Nick Rose')],
     title: 'OpenMined Science Roadmap',
     group: groups['roadmap'],
-    description: 'TBC',
+    description: 'This talk presents the OpenMined vision & roadmap for how we want to help accelerate science by solving privacy. The talk provides details on the problems faced by data scientists and researchers, a possible solution, and a path forward to achieving that solution.',
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -370,9 +370,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|17:00:00', timeFormat),
     speakers: [getSpeakerByName('Miguel Guevara')],
-    title: 'TBC',
+    title: 'Building Differential Privacy at Scale',
     group: groups['in-the-research-lab-2'],
-    description: 'TBC',
+    description: 'Differential Privacy has long been recognized as a golden standard in privacy. While the theory has existed for years, it was only recently that it started gaining ground in industry applications. Google first used DP in its Chrome browser. More recently, Google started developing strong primitives for DP. Similar to cryptography, there are many ways in which DP can go wrong. This talk will give an overview of the years-long journey that Google engineers embarked on to develop DP infrastructure at scale.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
