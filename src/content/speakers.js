@@ -76,7 +76,6 @@ const pixelate = (url) => {
 
 export const getSpeakerByName = (input) => speakers.filter(({ name }) => name === input)[0];
 
-// TODO: Copy
 export const title = 'Speakers';
 export const titleLink = 'Submit a Talk →';
 export const speakers = [
@@ -176,7 +175,7 @@ export const speakers = [
     name: 'Dmitrii Usynin',
     title: 'PhD Student at Technical University of Munich & Imperial College London',
     about: [
-      "Dmitrii has just graduated from Imperial College London with a distinguished masters project on privacy-preserving machine learning in the medical domain. He is about to start his PhD on a joint program between Imperial College London and Technical University of Munich, specializing in private federated learning in oncology. His interests are privacy engineering, attacks on machine learning models and collaborative machine learning."
+      'Dmitrii has just graduated from Imperial College London with a distinguished masters project on privacy-preserving machine learning in the medical domain. He is about to start his PhD on a joint program between Imperial College London and Technical University of Munich, specializing in private federated learning in oncology. His interests are privacy engineering, attacks on machine learning models and collaborative machine learning.'
     ],
     social: []
   },
@@ -186,7 +185,7 @@ export const speakers = [
     name: 'Zarreen Naowal Reza',
     title: 'Data Scientist at Thales Canada',
     about: [
-      "Zarreen is working as a Data Scientist, with keen interest in privacy-preserving machine learning in the field of healthcare and NLP. She has been an active part of different teams in OpenMined including the writing team, education and learning team and Differential Privacy and Federated Learning research team."
+      'Zarreen is working as a Data Scientist, with keen interest in privacy-preserving machine learning in the field of healthcare and NLP. She has been an active part of different teams in OpenMined including the writing team, education and learning team and Differential Privacy and Federated Learning research team.'
     ],
     social: []
   },
@@ -264,7 +263,8 @@ export const speakers = [
     image: sasi,
     pixelImage: pixelate(sasi),
     name: 'Sasi Kumar Murakonda',
-    title: 'Research Assistant at National University of Singapore Data Privacy and Trustworthy ML Research Lab',
+    title:
+      'Research Assistant at National University of Singapore Data Privacy and Trustworthy ML Research Lab',
     about: [
       "Sasi is a research assistant at the National University of Singapore's Data Privacy and Trustworthy ML Research Lab. His work focuses on analysing and quantifying the privacy risks of learning algorithms. He also studies the trade-offs between fairness and robustness in machine learning systems."
     ],
@@ -274,9 +274,10 @@ export const speakers = [
     image: georgios,
     pixelImage: pixelate(georgios),
     name: 'Georgios Kaissis',
-    title: 'Post-doctoral Researcher at Technical University of Munich/Imperial College London & OpenMined Research Scientist',
+    title:
+      'Post-doctoral Researcher at Technical University of Munich/Imperial College London & OpenMined Research Scientist',
     about: [
-      "Georgios is a senior postdoctoral researcher at the Technical University of Munich, Imperial College London and a research scientist at OpenMined. His research is centred around biomedical image analysis with a special focus on probabilistic methods, differentiable programming and on the design and deployment of robust, secure, fair and transparent machine learning algorithms to medical imaging workflows using next-generation privacy-preserving machine learning methods."
+      'Georgios is a senior postdoctoral researcher at the Technical University of Munich, Imperial College London and a research scientist at OpenMined. His research is centred around biomedical image analysis with a special focus on probabilistic methods, differentiable programming and on the design and deployment of robust, secure, fair and transparent machine learning algorithms to medical imaging workflows using next-generation privacy-preserving machine learning methods.'
     ],
     social: []
   },
@@ -286,7 +287,7 @@ export const speakers = [
     name: 'Madeleine Shang',
     title: 'Recommender Systems Team Lead at OpenMined',
     about: [
-      "Madeleine is currently focused on deep probabilistic models for unsupervised knowledge representation and meta reinforcement learning. Her research interests also include ML for healthy community / marketplace growth. When not working towards interactive and reasoning machines, She is working on diversity and inclusion in tech / entrepreneurship, advises startups and goes on adventures in the wilderness and pilots airplanes. Madeleine founded, built and scaled Women Who Code Data Science from 0 to 2k+ global data professional members in 1yr and is leading the bootcamp efforts at OpenMined Education.  She is also a frequent guest speaker on AI topics for Microsoft. Prior to turning her focus on ML, she studied Mathematics at University of Waterloo, completed CFA Level III, taught herself programming and worked in tech as a VC, 2x Founder and Blockchain engineer."
+      'Madeleine is currently focused on deep probabilistic models for unsupervised knowledge representation and meta reinforcement learning. Her research interests also include ML for healthy community / marketplace growth. When not working towards interactive and reasoning machines, She is working on diversity and inclusion in tech / entrepreneurship, advises startups and goes on adventures in the wilderness and pilots airplanes. Madeleine founded, built and scaled Women Who Code Data Science from 0 to 2k+ global data professional members in 1yr and is leading the bootcamp efforts at OpenMined Education.  She is also a frequent guest speaker on AI topics for Microsoft. Prior to turning her focus on ML, she studied Mathematics at University of Waterloo, completed CFA Level III, taught herself programming and worked in tech as a VC, 2x Founder and Blockchain engineer.'
     ],
     social: []
   },
@@ -296,7 +297,7 @@ export const speakers = [
     name: 'Krzysztof Ostrowski',
     title: 'Research Scientist at Google',
     about: [
-      "Krzysztof is a Research Scientist at Google, where he is leading the TensorFlow Federated (TFF) team. Before joining Google, he did his Ph.D. and postdoc in distributed systems and programming languages at Cornell University."
+      'Krzysztof is a Research Scientist at Google, where he is leading the TensorFlow Federated (TFF) team. Before joining Google, he did his Ph.D. and postdoc in distributed systems and programming languages at Cornell University.'
     ],
     social: []
   },
@@ -306,7 +307,193 @@ export const speakers = [
     name: 'Jason Mancuso',
     title: 'Research Engineer at Cape Privacy',
     about: [
-      "Jason is a research engineer working on pragmatic deployment of PPML at Cape Privacy. He lives in New York City."
+      'Jason is a research engineer working on pragmatic deployment of PPML at Cape Privacy. He lives in New York City.'
+    ],
+    social: []
+  },
+  {
+    image: andrew,
+    pixelImage: pixelate(andrew),
+    name: 'Andrew Trask',
+    title: 'Leader at OpenMined',
+    about: [
+      'Andrew leads the OpenMined community. He is a doctoral candidate in computer science at the University of Oxford, a Senior Research Scientist at DeepMind, a Research Affiliate at Oxford\'s Centre for the Governance of AI, and a member of the United Nations Privacy Task Force. He is also the author of "Grokking Deep Learning" (Manning, 2019).'
+    ],
+    social: [{ type: 'twitter', url: 'https://twitter.com/iamtrask' }]
+  },
+  {
+    image: peter,
+    pixelImage: pixelate(peter),
+    name: 'Peter Kairouz',
+    title: 'Google',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: nick,
+    pixelImage: pixelate(nick),
+    name: 'Nick Rose',
+    title: 'OpenMined',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: ronnie,
+    pixelImage: pixelate(ronnie),
+    name: 'Ronnie Falcon',
+    title: 'OpenMined',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: pia,
+    pixelImage: pixelate(pia),
+    name: 'Pia Mancini',
+    title: 'Open Collective',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: nathan,
+    pixelImage: pixelate(nathan),
+    name: 'Nathan Benaich',
+    title: '',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: sachin,
+    pixelImage: pixelate(sachin),
+    name: 'Sachin Despante',
+    title: '',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: ken,
+    pixelImage: pixelate(ken),
+    name: 'Kenneth Cukier',
+    title: 'Senior Editor at Economist',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: amber,
+    pixelImage: pixelate(amber),
+    name: 'Amber Trask',
+    title: 'OpenMined',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: miguel,
+    pixelImage: pixelate(miguel),
+    name: 'Miguel Guevara',
+    title: 'Product Manager at Google',
+    about: [
+      "Miguel is Google's Product Manager for Differential Privacy. In this capacity, Miguel has helped envision Google's DP infrastructure that was open-sourced last year. As part of his work, Miguel tries to understand internal and external use-cases of DP, and define requirements, while providing strategic direction to the overall effort. Miguel also works on the ML aspects of DP alongside the TensorFlow Privacy team. Finally, Miguel contributes to Google's Transparency Report, by managing the reports pertaining to freedom of speech and human rights."
+    ],
+    social: []
+  },
+  {
+    image: kristin,
+    pixelImage: pixelate(kristin),
+    name: 'Kristin Lauter',
+    title: 'Principal Researcher and Partner Research Manager at Microsoft Research',
+    about: [
+      'Kristin is a Principal Researcher and Partner Research Manager at Microsoft Research. She leads the Cryptography and Privacy Research group, and the Urban Innovation team with projects on “Private AI” and “AI for Cities”. She works at the interface between Machine Learning and Cryptography, with a focus on cloud security and health and genomic privacy. She is particularly known for her work on homomorphic encryption, elliptic curve cryptography, and for introducing supersingular isogeny graphs as a solution for post-quantum cryptography.'
+    ],
+    social: []
+  },
+  {
+    image: sameer,
+    pixelImage: pixelate(sameer),
+    name: 'Sameer Wagh',
+    title: '',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: mayank,
+    pixelImage: pixelate(mayank),
+    name: 'Mayank Varia',
+    title: '',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: varun,
+    pixelImage: pixelate(varun),
+    name: 'Varun Khare',
+    title: 'OpenMined',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: vova,
+    pixelImage: pixelate(vova),
+    name: 'Vova Manannikov',
+    title: 'OpenMined',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: eric,
+    pixelImage: pixelate(eric),
+    name: 'Eric Verner',
+    title: '',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: robin,
+    pixelImage: pixelate(robin),
+    name: 'Robin Rohm',
+    title: 'Apheris AI',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: pavlos,
+    pixelImage: pixelate(pavlos),
+    name: 'Pavlos Papaduopoulos',
+    title: 'Apheris AI',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: adam,
+    pixelImage: pixelate(adam),
+    name: 'Adam Hall',
+    title: 'OpenMined',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: emily,
+    pixelImage: pixelate(emily),
+    name: 'Emily Glanz',
+    title: 'Google',
+    about: ['TBC'],
+    social: []
+  },
+  {
+    image: hadrien,
+    pixelImage: pixelate(hadrien),
+    name: 'Hadrien Lautraite',
+    title: 'Data Scientist at National Bank of Canada',
+    about: [
+      'Hadrien is a data scientist at National Bank of Canada. He graduated from HEC Montreal with a Msc. Business Intelligence. At National Bank of Canada, Hadrien applies state of the art machine learning techniques to various real-word problems in different units of the bank. He is very curious on how to better protect the bank customers’ data and started a project with his colleague Patrick on generating transactional profiles using deep learning techniques.'
+    ],
+    social: []
+  },
+  {
+    image: patrick,
+    pixelImage: pixelate(patrick),
+    name: 'Patrick Mesana',
+    title: 'Data Science Manager at National Bank of Canada',
+    about: [
+      'Patrick is a data science manager for National Bank of Canada. He has a Software Engineering degree and graduated from HEC Montreal with a Msc. Business Analytics. At National Bank of Canada, Patrick manages a team of data scientists and data engineers, solving various real-word problems in different units of the bank. He is passionate about data privacy and wants to understand how to better protect the bank’s data using innovations such as generating transactional profile using deep learning techniques.'
     ],
     social: []
   },
