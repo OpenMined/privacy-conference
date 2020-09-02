@@ -153,7 +153,6 @@ export default () => {
                     src={speaker.image}
                     alt={speaker.name}
                     sx={{
-                      filter: 'grayscale(1)',
                       position: 'absolute',
                       top: 0,
                       left: 0,
