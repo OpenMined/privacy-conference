@@ -52,7 +52,7 @@ export default () => {
               }
 
               GroupHeading = (
-                <Box sx={{ my: 4 }}>
+                <Box sx={{ mt: 5, mb: 4 }}>
                   <Text
                     sx={{
                       color: 'red.500',
@@ -68,7 +68,7 @@ export default () => {
                   <Heading as="h4" sx={{ fontSize: 4, mb: 3 }}>
                     {event.group.title}
                   </Heading>
-                  <Text sx={{ fontSize: 3, color: 'darkGray', maxWidth: 460 }}>
+                  <Text sx={{ fontSize: 2, color: 'darkGray', maxWidth: 460 }}>
                     {event.group.description}
                   </Text>
                 </Box>
