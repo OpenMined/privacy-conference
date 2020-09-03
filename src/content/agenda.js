@@ -273,7 +273,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|19:40:00', timeFormat),
-    speakers: [getSpeakerByName('Sachin Despante')],
+    speakers: [getSpeakerByName('Sachin Deshpande')],
     title: 'TBC',
     group: groups['investing'],
     description: 'TBC',
@@ -344,7 +344,7 @@ export const schedule = [
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
     title:
-      'Shame on all of us: How technologists, privacy advocates, government and business failed the public for covid contact-tracing—and better not fail again',
+      'Shame on All of Us: How Technologists, Privacy Advocates, Government and Business Failed the Public for COVID Contact-tracing — and Better Not Fail Again',
     group: groups['closing-session-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
@@ -354,7 +354,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|14:00:00', timeFormat),
     speakers: [getSpeakerByName('Amber Trask')],
-    title: 'Where do you fit within our community?',
+    title: 'Where Do You Fit Within Our Community?',
     group: groups['teams'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 120 })
@@ -422,9 +422,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|18:20:00', timeFormat),
     speakers: [getSpeakerByName('Sameer Wagh')],
-    title: 'TBC',
+    title: 'Falcon: Honest-Majority Maliciously Secure Framework for Private Deep Learning',
     group: groups['research-lightning-2'],
-    description: 'TBC',
+    description: 'In this talk, the speaker briefly describes Falcon, a new multi-party computation based framework for privacy-preserving machine learning. The talk outlines the key contributions of Falcon before showcasing some of the important results of the work.',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
@@ -463,7 +463,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Varun Khare')],
-    title: 'How to build a Federated Learning Android App',
+    title: 'How to Build a Federated Learning Android App',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
@@ -471,7 +471,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Vova Manannikov')],
-    title: 'How to build a Federated Learning Website',
+    title: 'How to Build a Federated Learning Website',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
@@ -479,7 +479,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nick Rose'), getSpeakerByName('Andrew Trask')],
-    title: 'Duet Demo - How to do data science on data owned by a different organization',
+    title: 'Duet Demo - How to Do Data Science on Data Owned by a Different Organization',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
@@ -495,7 +495,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Robin Rohm'), getSpeakerByName('Pavlos Papaduopoulos')],
-    title: 'Apheris AI Vertical Federated Learning with PySyft and PyVertical ',
+    title: 'Apheris AI Vertical Federated Learning with PySyft and PyVertical',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
@@ -519,7 +519,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|20:00:00', timeFormat),
     speakers: [getSpeakerByName('Hadrien Lautraite'), getSpeakerByName('Patrick Mesana')],
-    title: 'Generating credit card transactional profiles with GAN',
+    title: 'Generating Credit Card Transactional Profiles with GANs',
     group: groups['real-world-deployments-2'],
     description:
       "While being of great value, financial institution's data contain particularly sensitive information. Transactional data are a key example for this matter, they can be used for numerous valuable applications (fraud detection, customer profile clustering, consumption behavior) while representing an important privacy matter. Even if anonymized, such data can be used to extract sensitive information about someone. There is a natural struggle between data science team that want access to a large volume of data in order to train their model and security team which is concerned by the risk of massive data breach. The speakers propose to resolve this problem by using deep learning techniques to generate fake transactional profiles (amount of money spent monthly in particular industries) with similar distribution as the original one. One of the key issues with transactional profiles is its sparseness. The speakers show that Generative Adversarial Networks can generate valuable synthetic data and lead to better results than Variable Auto Encoders when working with such sparse data. The speakers measure the usefulness of synthetic data by comparing some known statistics and basic insights used by the bank on both the original and generated datasets. Finally, the speakers compare the training with and without Differential Privacy.",

@@ -363,7 +363,7 @@ export const speakers = [
   {
     image: sachin,
     pixelImage: pixelate(sachin),
-    name: 'Sachin Despante',
+    name: 'Sachin Deshpande',
     title: '',
     about: ['TBC'],
     social: []
@@ -408,8 +408,8 @@ export const speakers = [
     image: sameer,
     pixelImage: pixelate(sameer),
     name: 'Sameer Wagh',
-    title: '',
-    about: ['TBC'],
+    title: 'Postdoctoral Researcher at University of California, Berkeley',
+    about: ['Sameer is a postdoctoral researcher at University of California, Berkeley and received his PhD from Princeton University. His research is in the area of privacy enhancing technologies, with a common goal to make these technologies practical and deployed within our current digital infrastructure. His research has been a finalist for the best dissertation award and received awards from organizations such as Qualcomm and Facebook. Before joining Princeton, Sameer graduated with B.Tech. with Honors in Engineering Physics from IIT Madras.'],
     social: []
   },
   {
