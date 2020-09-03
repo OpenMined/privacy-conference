@@ -36,7 +36,6 @@ import kristin from '../assets/kristin-lauter.jpg';
 import sameer from '../assets/default-speaker.jpg';
 import mayank from '../assets/default-speaker.jpg';
 import varun from '../assets/varun-khare.jpg';
-import vova from '../assets/default-speaker.jpg';
 import eric from '../assets/default-speaker.jpg';
 import robin from '../assets/default-speaker.jpg';
 import pavlos from '../assets/default-speaker.jpg';
@@ -424,14 +423,6 @@ export const speakers = [
     image: varun,
     pixelImage: pixelate(varun),
     name: 'Varun Khare',
-    title: 'OpenMined',
-    about: ['TBC'],
-    social: []
-  },
-  {
-    image: vova,
-    pixelImage: pixelate(vova),
-    name: 'Vova Manannikov',
     title: 'OpenMined',
     about: ['TBC'],
     social: []

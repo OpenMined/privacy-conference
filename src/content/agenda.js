@@ -71,7 +71,7 @@ export const groups = {
   'investing': {
     title: 'Privacy is Profit: why are VCs Investing in Privacy-enhancing Tech?',
     description:
-      'In a world where many view privacy as an opponent to innovation, these thought-leaders in the Venture Capital space see things differently. Come and here why privacy-enhancing startups are going to outperform the previous generation on both ethics and economics.'
+      'In a world where many view privacy as an opponent to innovation, these thought-leaders in the Venture Capital space see things differently. Come and hear why privacy-enhancing startups are going to outperform the previous generation on both ethics and economics.'
   },
   'research-lightning-1': {
     title: 'Research Lightning: Hot-off-the-press Privacy Research',
@@ -464,14 +464,6 @@ export const schedule = [
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Varun Khare')],
     title: 'How to Build a Federated Learning Android App',
-    group: groups['tutorials'],
-    description: 'TBC',
-    duration: dayjs.duration({ minutes: 60 })
-  },
-  {
-    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Vova Manannikov')],
-    title: 'How to Build a Federated Learning Website',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
