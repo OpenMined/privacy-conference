@@ -470,14 +470,6 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Vova Manannikov')],
-    title: 'How to Build a Federated Learning Website',
-    group: groups['tutorials'],
-    description: 'TBC',
-    duration: dayjs.duration({ minutes: 60 })
-  },
-  {
-    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nick Rose'), getSpeakerByName('Andrew Trask')],
     title: 'Duet Demo - How to Do Data Science on Data Owned by a Different Organization',
     group: groups['tutorials'],
