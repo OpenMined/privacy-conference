@@ -42,6 +42,11 @@ import pavlos from '../assets/default-speaker.jpg';
 import adam from '../assets/default-speaker.jpg';
 import hadrien from '../assets/hadrien-lautraite.jpg';
 import patrick from '../assets/patrick-mesana.jpg';
+import alex from '../assets/default-speaker.jpg';
+import jonathan from '../assets/default-speaker.jpg';
+import jim from '../assets/default-speaker.jpg';
+import john from '../assets/default-speaker.jpg'
+import emily from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -215,7 +220,7 @@ export const speakers = [
     about: [
       'Pranav is a recent graduate from the University Of Waterloo in Computer Science and Combinatorics and Optimization. He is interested in the area of Differential Privacy, in particular with issues surrounding practical implementations of privacy preserving machine learning models.'
     ],
-    social: []
+    social: [{ type: 'twitter', url: 'https://twitter.com/PranavSubramani' }]
   },
   {
     image: borja,
@@ -438,17 +443,17 @@ export const speakers = [
   {
     image: robin,
     pixelImage: pixelate(robin),
-    name: 'Robin Rohm',
-    title: 'Apheris AI',
-    about: ['TBC'],
+    name: 'Robin Roehm',
+    title: 'Co-founder & CEO at Apheris AI',
+    about: ['Robin is the co-founder and CEO of Apheris - a company that empowers large enterprise customers to collaborate and analyse data securely without compromising privacy. Robin has studied Medicine, Philosophy and Mathematics, has been trained in global banking and is a successful serial entrepreneur.'],
     social: []
   },
   {
     image: pavlos,
     pixelImage: pixelate(pavlos),
     name: 'Pavlos Papaduopoulos',
-    title: 'Apheris AI',
-    about: ['TBC'],
+    title: 'PhD Student at Edinburgh Napier University & Researcher at Apheris AI',
+    about: ['Pavlos is currently a PhD student in Privacy-Preserving Systems around Trust and Identity at Edinburgh Napier University. Pavlos is also a researcher at Apheris AI and a member of OpenMined Security & Identity team. His research interests include Cybersecurity, Distributed Ledger Technology and Privacy-Preserving Machine Learning.'],
     social: []
   },
   {
@@ -476,6 +481,56 @@ export const speakers = [
     title: 'Data Science Manager at National Bank of Canada',
     about: [
       'Patrick is a data science manager for National Bank of Canada. He has a Software Engineering degree and graduated from HEC Montreal with a Msc. Business Analytics. At National Bank of Canada, Patrick manages a team of data scientists and data engineers, solving various real-word problems in different units of the bank. He is passionate about data privacy and wants to understand how to better protect the bank’s data using innovations such as generating transactional profile using deep learning techniques.'
+    ],
+    social: []
+  },
+  {
+    image: alex,
+    pixelImage: pixelate(alex),
+    name: 'Alex Ziller',
+    title: 'PhD Student at Technical University of Munich & Research Scientist at OpenMined',
+    about: [
+      "Alex is a Ph.D. student at the Institute for Radiology and the Institute of Data Science and Artificial Intelligence in Healthcare at the Technical University of Munich. Furthermore he's a Research Scientist at OpenMined. His research interests include developing novel AI methods in cancer diagnostics and survival prediction as well as secure and private AI in Healthcare."
+    ],
+    social: []
+  },
+  {
+    image: jonathan,
+    pixelImage: pixelate(jonathan),
+    name: 'Jonathan Passerat-Palmbach',
+    title: '',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: jim,
+    pixelImage: pixelate(jim),
+    name: "Jim O'Leary",
+    title: 'VP of Engineering at Signal',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: john,
+    pixelImage: pixelate(john),
+    name: "John Farkas",
+    title: 'CEO at Golden Spiral',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
+  {
+    image: emily,
+    pixelImage: pixelate(emily),
+    name: "Emily Glanz",
+    title: 'Google',
+    about: [
+      'TBC'
     ],
     social: []
   },
