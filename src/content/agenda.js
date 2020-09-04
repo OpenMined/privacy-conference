@@ -244,7 +244,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|18:45:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
+    speakers: [getSpeakerByName("Jim O'Leary")],
     title: 'TBC',
     group: groups['real-world-deployments-1'],
     description: 'TBC',
@@ -486,10 +486,10 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Robin Rohm'), getSpeakerByName('Pavlos Papaduopoulos')],
-    title: 'Apheris AI Vertical Federated Learning with PySyft and PyVertical',
+    speakers: [getSpeakerByName('Robin Roehm'), getSpeakerByName('Pavlos Papaduopoulos')],
+    title: 'Privacy Preserving Vertically Distributed machine learning',
     group: groups['tutorials'],
-    description: 'TBC',
+    description: 'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -502,10 +502,10 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Georgios Kaissis')],
-    title: 'PriMIA demo',
+    speakers: [getSpeakerByName('Georgios Kaissis'), getSpeakerByName('Alex Ziller'), getSpeakerByName('Jonathan Passerat-Palmbach')],
+    title: 'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
     group: groups['tutorials'],
-    description: 'TBC',
+    description: 'This session will provide a first look at the design and features of PriMIA, a library for privacy-preserving deep learning for medical imaging, jointly developed by the Technical University of Munich, Imperial College London and OpenMined. A brief introduction to the project will be given (ca. 10 minutes), after which participants will be given insight into how PriMIA performs federated learning and encrypted inference, as well as be introduced to the challenges of medical image analysis in a real-life environment using actual medical images and the Jupyter Notebook environment. (ca. 20 minutes). Lastly, opportunity will be provided for dicussion and participant questions (ca. 15 minutes).',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -519,8 +519,8 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|20:15:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'TBC',
+    speakers: [getSpeakerByName('John Farkas')],
+    title: 'Building a Privacy Brand',
     group: groups['real-world-deployments-2'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
