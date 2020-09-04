@@ -45,7 +45,8 @@ import patrick from '../assets/patrick-mesana.jpg';
 import alex from '../assets/default-speaker.jpg';
 import jonathan from '../assets/default-speaker.jpg';
 import jim from '../assets/default-speaker.jpg';
-import john from '../assets/default-speaker.jpg';
+import john from '../assets/default-speaker.jpg'
+import emily from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -523,7 +524,16 @@ export const speakers = [
     ],
     social: []
   },
-
+  {
+    image: emily,
+    pixelImage: pixelate(emily),
+    name: "Emily Glanz",
+    title: 'Google',
+    about: [
+      'TBC'
+    ],
+    social: []
+  },
   {
     image: tbc,
     pixelImage: pixelate(tbc),

@@ -453,6 +453,15 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Emily Glanz')],
+    title: 'TensorFlow Federated',
+    group: groups['tutorials'],
+    description:
+      '',
+    duration: dayjs.duration({ minutes: 60 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Alan Aboudib')],
     title: 'SyferText 0.1.0: Privacy-preserving NLP over PyGrid',
     group: groups['tutorials'],
