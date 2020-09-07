@@ -28,21 +28,21 @@ import nick from '../assets/nick-rose.jpg';
 import ronnie from '../assets/default-speaker.jpg';
 import pia from '../assets/default-speaker.jpg';
 import nathan from '../assets/default-speaker.jpg';
-import sachin from '../assets/default-speaker.jpg';
+import sachin from '../assets/sachin-deshpande.jpg';
 import ken from '../assets/default-speaker.jpg';
-import amber from '../assets/default-speaker.jpg';
+import amber from '../assets/amber-trask.jpg';
 import miguel from '../assets/miguel-guevara.jpg';
 import kristin from '../assets/kristin-lauter.jpg';
 import sameer from '../assets/default-speaker.jpg';
 import mayank from '../assets/default-speaker.jpg';
 import varun from '../assets/varun-khare.jpg';
 import eric from '../assets/default-speaker.jpg';
-import robin from '../assets/default-speaker.jpg';
-import pavlos from '../assets/default-speaker.jpg';
+import robin from '../assets/robin-roehm.jpg';
+import pavlos from '../assets/pavlos-papadopoulos.jpg';
 import adam from '../assets/default-speaker.jpg';
 import hadrien from '../assets/hadrien-lautraite.jpg';
 import patrick from '../assets/patrick-mesana.jpg';
-import alex from '../assets/default-speaker.jpg';
+import alex from '../assets/alex-ziller.jpg';
 import jonathan from '../assets/default-speaker.jpg';
 import jim from '../assets/default-speaker.jpg';
 import john from '../assets/default-speaker.jpg'
@@ -376,8 +376,8 @@ export const speakers = [
     image: ken,
     pixelImage: pixelate(ken),
     name: 'Kenneth Cukier',
-    title: 'Senior Editor at Economist',
-    about: ['TBC'],
+    title: 'Senior Editor at The Economist',
+    about: ['Kenneth is a senior editor at The Economist and host of its weekly tech podcast, Babbage. He is the coauthor of the New York Times bestselling book “Big Data” with Viktor Mayer-Schönberger, translated in over 20 languages. Kenn is a board director of Chatham House, and an associate fellow at Oxford’s Saïd Business School. He is a member of the Council on Foreign Relations.'],
     social: []
   },
   {
@@ -428,8 +428,8 @@ export const speakers = [
     image: varun,
     pixelImage: pixelate(varun),
     name: 'Varun Khare',
-    title: 'OpenMined',
-    about: ['TBC'],
+    title: 'KotlinSyft Core Developer at OpenMined',
+    about: ['Varun is an Al enthusiast trying to decipher the principles behind cognition while ensuring the privacy and safety of the people. He graduated in computer science from IIT Kanpur and since then has worked in multiple research labs in neuroscience, program synthesis and computer vision. At OpenMined, he is primarily responsible for leading the development of Kotlin Syft which is the android worker for secure on device learning.'],
     social: []
   },
   {
@@ -451,7 +451,7 @@ export const speakers = [
   {
     image: pavlos,
     pixelImage: pixelate(pavlos),
-    name: 'Pavlos Papaduopoulos',
+    name: 'Pavlos Papadopoulos',
     title: 'PhD Student at Edinburgh Napier University & Researcher at Apheris AI',
     about: ['Pavlos is currently a PhD student in Privacy-Preserving Systems around Trust and Identity at Edinburgh Napier University. Pavlos is also a researcher at Apheris AI and a member of OpenMined Security & Identity team. His research interests include Cybersecurity, Distributed Ledger Technology and Privacy-Preserving Machine Learning.'],
     social: []

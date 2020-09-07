@@ -472,9 +472,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Varun Khare')],
-    title: 'How to Build a Federated Learning Android App',
+    title: 'Deploying Federated Learning on Android with KotlinSyft',
     group: groups['tutorials'],
-    description: 'TBC',
+    description: 'In this interactive session, the speakers will perform a code walkthrough of the mobile federated learning ecosystem developed at OpenMined that is PySyft, PyGrid and KotlinSyft.The talk will start with creating neural networks in PySyft and deploying them on PyGrid with JSON Web Token authentication. The speakers show how to build an android application to train the hosted model on privately held data using KotlinSyft. Diving deeper, the talk will go through the various features of KotlinSyft like change detection, wifi detection and RX support. The session will end with the new features that are in progress and will soon be added to KotlinSyft like peer to peer SMPC protocols.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -495,7 +495,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Robin Roehm'), getSpeakerByName('Pavlos Papaduopoulos')],
+    speakers: [getSpeakerByName('Robin Roehm'), getSpeakerByName('Pavlos Papadopoulos')],
     title: 'Privacy Preserving Vertically Distributed machine learning',
     group: groups['tutorials'],
     description: 'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
