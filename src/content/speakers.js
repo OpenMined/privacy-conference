@@ -29,11 +29,11 @@ import ronnie from '../assets/default-speaker.jpg';
 import pia from '../assets/default-speaker.jpg';
 import nathan from '../assets/default-speaker.jpg';
 import sachin from '../assets/sachin-deshpande.jpg';
-import ken from '../assets/default-speaker.jpg';
+import ken from '../assets/kenneth-cukier.jpg';
 import amber from '../assets/amber-trask.jpg';
 import miguel from '../assets/miguel-guevara.jpg';
 import kristin from '../assets/kristin-lauter.jpg';
-import sameer from '../assets/default-speaker.jpg';
+import sameer from '../assets/sameer-wagh.jpg';
 import mayank from '../assets/default-speaker.jpg';
 import varun from '../assets/varun-khare.jpg';
 import eric from '../assets/default-speaker.jpg';
@@ -43,7 +43,7 @@ import adam from '../assets/default-speaker.jpg';
 import hadrien from '../assets/hadrien-lautraite.jpg';
 import patrick from '../assets/patrick-mesana.jpg';
 import alex from '../assets/alex-ziller.jpg';
-import jonathan from '../assets/default-speaker.jpg';
+import jonathan from '../assets/jonathan-passerat-palmbach.jpg';
 import jim from '../assets/default-speaker.jpg';
 import john from '../assets/default-speaker.jpg'
 import emily from '../assets/default-speaker.jpg';
@@ -498,9 +498,9 @@ export const speakers = [
     image: jonathan,
     pixelImage: pixelate(jonathan),
     name: 'Jonathan Passerat-Palmbach',
-    title: '',
+    title: 'Research Scientist at ConsenSys Health, Imperial College London & OpenMined',
     about: [
-      'TBC'
+      'Jonathan is a research scientist at ConsenSys Health, Imperial College London and OpenMined. His current research focuses on privacy preserving machine learning and decentralisation. Jonathan is exploring the potential of bringing together techniques such as Federated Learning, Secure Computing (Trusted Execution Environments - TEEs, MPC, FHE), Verifiable Computing (TEEs, Zero-Knowledge Proofs) and Blockchains to build a new generation of healthcare systems. '
     ],
     social: []
   },
