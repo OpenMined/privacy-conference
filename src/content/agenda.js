@@ -46,12 +46,12 @@ export const groups = {
   'in-the-research-lab-1': {
     title: 'In The Research Lab',
     description:
-      'In this session, we will hear from several of the world\'s foremost privacy experts talking about the latest in their privacy research at the world\'s largest tech institutions. This is the research that protects the data sitting in your pocket right now.'
+      'Several of the world\'s foremost privacy experts talk about the latest in their privacy research at the world\'s largest tech firms. This is the innovation that protects the data sitting in your pocket right now.'
   },
   'keynote-1': {
     title: 'Keynote',
     description:
-      'In this keynote, we will hear from a legend of the privacy community - whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
+      'Hear from a legend of the privacy community - whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
   },
   'roadmap': {
     title: 'Privacy Technology Roadmap - What\'s Coming Next?',
@@ -66,7 +66,7 @@ export const groups = {
   'real-world-deployments-1': {
     title: 'Real World Deployment Series: What is it Like to Deploy Privacy Today?',
     description:
-      'In this session, you\'ll hear from leading privacy-tech startups deploying state-of-the-art privacy tech at scale. This should help you understand the current state of the technology straight from the champions on the front line!'
+      'Hear from leading privacy-tech startups deploying state-of-the-art privacy tech at scale. This should help you understand the current state of the technology straight from the champions on the front line!'
   },
   'investing': {
     title: 'Privacy is Profit: why are VCs Investing in Privacy-enhancing Tech?',
@@ -76,17 +76,17 @@ export const groups = {
   'research-lightning-1': {
     title: 'Research Lightning: Hot-off-the-press Privacy Research',
     description:
-      'In this session, you\'ll hear 10 minute lightning talks about ongoing and recently published privacy research from some of the brightest minds in the field.'
+      '10 minute lightning talks about ongoing and recently published privacy research from some of the brightest minds in the field.'
   },
   'closing-session-1': {
     title: 'Closing Session',
     description:
-      'In this session, we\'ll hear a grounding perspective on the gap between what society needs and what we, the privacy community, have yet to provide. This is the mountain we have yet to climb.'
+      'Hear a grounding perspective on the gap between what society needs and what we, the privacy community, have yet to provide. This is the mountain we have yet to climb.'
   },
   'teams': {
     title: 'Where Do I Fit In?',
     description:
-      'The first session on Sunday gives you a closer look at the organisational structure of OpenMined and will help you find where you can make impact among our thriving teams.'
+      'A closer look at the organisational structure of OpenMined and will help you find where you can make impact among our thriving teams.'
   },
   'keynote-2': {
     title: 'Keynote',
@@ -96,12 +96,12 @@ export const groups = {
   'in-the-research-lab-2': {
     title: 'In The Research Lab',
     description:
-      'In this session, we will hear from several of the world\'s foremost privacy experts talking about the latest in their privacy research at the world\'s largest tech institutions. This is the research that protects the data sitting in your pocket right now.'
+      'Several of the world\'s foremost privacy experts talk about the latest in their privacy research at the world\'s largest tech firms. This is the innovation that protects the data sitting in your pocket right now.'
   },
   'research-lightning-2': {
     title: 'Research Lightning: Hot-off-the-press Privacy Research',
     description:
-      'In this session, you\'ll hear 10 minute lightning talks about ongoing and recently published privacy research from some of the brightest minds in the field.'
+      '10 minute lightning talks about ongoing and recently published privacy research from some of the brightest minds in the field.'
   },
   'tutorials': {
     title: 'Tutorial Breakout Sessions',
@@ -111,7 +111,7 @@ export const groups = {
   'real-world-deployments-2': {
     title: 'Real World Deployment Series: What is it Like to Deploy Privacy Today?',
     description:
-      'In this session, you\'ll hear from leading privacy-tech startups deploying state-of-the-art privacy tech at scale. This should help you understand the current state of the technology straight from the champions on the front line!'
+      'Hear from leading privacy-tech startups deploying state-of-the-art privacy tech at scale. This should help you understand the current state of the technology straight from the champions on the front line!'
   },
   'closing-session-2': {
     title: 'Closing Session',
