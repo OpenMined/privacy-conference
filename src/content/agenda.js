@@ -344,7 +344,7 @@ export const schedule = [
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
     title:
-      'Shame on All of Us: How Technologists, Privacy Advocates, Government and Business Failed the Public for COVID Contact-tracing — and Better Not Fail Again',
+      'Contact $%#! tracing: The shameful failure of tech, law and us',
     group: groups['closing-session-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
