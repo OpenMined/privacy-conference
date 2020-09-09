@@ -510,7 +510,7 @@ export const speakers = [
     name: "Jim O'Leary",
     title: 'VP of Engineering at Signal',
     about: [
-      'TBC'
+      'Jim runs engineering at Signal; he delights in brief biographies.'
     ],
     social: []
   },
