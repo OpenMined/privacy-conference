@@ -245,9 +245,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|18:45:00', timeFormat),
     speakers: [getSpeakerByName("Jim O'Leary")],
-    title: 'TBC',
+    title: 'Powering the World’s Private Communications',
     group: groups['real-world-deployments-1'],
-    description: 'TBC',
+    description: 'Signal is a 501c3 non-profit organization committed to providing open-source private and secure communication tools to the world. You may know them best from Signal Protocol, which currently provides end-to-end encrypted messaging for billions of people worldwide. Join the speaker for some quick, recent tales of developing and deploying technology that protects free expression and enables global communication.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
@@ -344,7 +344,7 @@ export const schedule = [
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
     title:
-      'Shame on All of Us: How Technologists, Privacy Advocates, Government and Business Failed the Public for COVID Contact-tracing — and Better Not Fail Again',
+      'Contact $%#! tracing: The shameful failure of tech, law and us',
     group: groups['closing-session-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
