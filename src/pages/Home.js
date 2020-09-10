@@ -83,7 +83,7 @@ const Carousel = ({ slides }) => {
               slides={slides}
               prevSlide={prevSlide}
               nextSlide={nextSlide}
-              sx={{ position: 'absolute', display: ['none', null, null, 'flex'], bottom: 0 }}
+              sx={{ position: 'absolute', display: ['none', null, null, 'none'], bottom: 0 }}
             />
           </Box>
         </Box>
@@ -93,7 +93,7 @@ const Carousel = ({ slides }) => {
         slides={slides}
         prevSlide={prevSlide}
         nextSlide={nextSlide}
-        sx={{ mt: 3, mx: 'auto', display: ['flex', null, null, 'none'] }}
+        sx={{ mt: 3, mx: 'auto', display: ['flex', null, null, 'flex'] }}
       />
     </Box>
   );

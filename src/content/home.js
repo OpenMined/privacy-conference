@@ -4,7 +4,8 @@ import { Text, Link } from 'theme-ui';
 import { registerLink } from './sidebar';
 import { agenda } from './agenda';
 
-import carousel1 from '../assets/carousel-1.jpg';
+import intro from '../assets/carousel-intro.png'
+import tickets from '../assets/carousel-tickets.jpg';
 
 export const title = 'OpenMined Privacy Conference';
 export const description = `Join us on ${agenda[0].datetime.format('DD.MM.YYYY')} - ${agenda[
@@ -12,7 +13,20 @@ export const description = `Join us on ${agenda[0].datetime.format('DD.MM.YYYY')
 ].datetime.format('DD.MM.YYYY')}`;
 export const slides = [
   {
-    image: carousel1,
+    image: intro,
+    title: "Let's solve privacy.",
+    text: () => (
+      <Text>
+        Researchers, engineers, policy makers, VCs, Mentors, entrepreneurs, philanthropies, and more...
+        <br />
+        They are all here.
+        <br /><br />
+        Come with your questions.
+      </Text>
+    )
+  },
+  {
+    image: tickets,
     title: 'Tickets have now been released!',
     text: () => (
       <Text>
