@@ -47,6 +47,7 @@ import jonathan from '../assets/jonathan-passerat-palmbach.jpg';
 import jim from '../assets/default-speaker.jpg';
 import john from '../assets/default-speaker.jpg'
 import emily from '../assets/default-speaker.jpg';
+import bob from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -520,7 +521,7 @@ export const speakers = [
     name: "John Farkas",
     title: 'CEO at Golden Spiral',
     about: [
-      'TBC'
+      'John Farkas is the Founder, CEO, and Storyteller at Golden Spiral, an integrated marketing team built to help B2B tech companies generate demand and REALIZE their market potential. John\'s passion is to help organizations working for positive, technology-empowered change uncover and tell their stories in ways that accelerate transformation. "We find ourselves consistently working with B2B organizations deploying AI in a wide variety of contexts to solve complex business problems,” Farkas reflects. “Every day I am face to face with the critical nature of preserving privacy, so it only makes sense that our agency would align with and support this effort in any way we can."'
     ],
     social: []
   },
@@ -531,6 +532,16 @@ export const speakers = [
     title: 'Google',
     about: [
       'TBC'
+    ],
+    social: []
+  },
+  {
+    image: bob,
+    pixelImage: pixelate(bob),
+    name: 'Bob Rogers',
+    title: 'Expert in Residence for AI at University of California San Francisco SmarterHealth',
+    about: [
+      'Bob is Expert in Residence for AI at University of California San Francisco SmarterHealth, where he applies his experience solving problems with advanced analytics and Artificial Intelligence (AI) to help build world-class medical AI technologies. He is a member of the Board of Advisors to the Harvard Institute for Applied Computational Science and has recently contributed a chapter to the book “De-mystifying Big Data and Machine Learning for Healthcare.” Prior to UCSF, Bob was Chief Data Scientist in the Data Center Group at Intel, and was also co-founder and Chief Scientist at Apixio, a healthcare AIcompany. Bob began his career as an astrophysicist, developing computer models of physical processes near supermassive black holes. His research expanded to include artificial neural networks. He co-authored the book, Artificial Neural Networks: Forecasting Time Series, which led to a 12-year career co-managing a quantitative futures trading fund. In 2006, Bob transitioned into healthcare as a medical device product manager. He received his BA in physics at University of California, Berkeley and his PhD in physics at Harvard.'
     ],
     social: []
   },
