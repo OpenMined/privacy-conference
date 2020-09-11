@@ -538,7 +538,7 @@ export const speakers = [
   {
     image: bob,
     pixelImage: pixelate(bob),
-    name: 'Bob Rodgers',
+    name: 'Bob Rogers',
     title: 'Expert in Residence for AI at University of California San Francisco SmarterHealth',
     about: [
       'Bob is Expert in Residence for AI at University of California San Francisco SmarterHealth, where he applies his experience solving problems with advanced analytics and Artificial Intelligence (AI) to help build world-class medical AI technologies. He is a member of the Board of Advisors to the Harvard Institute for Applied Computational Science and has recently contributed a chapter to the book “De-mystifying Big Data and Machine Learning for Healthcare.” Prior to UCSF, Bob was Chief Data Scientist in the Data Center Group at Intel, and was also co-founder and Chief Scientist at Apixio, a healthcare AIcompany. Bob began his career as an astrophysicist, developing computer models of physical processes near supermassive black holes. His research expanded to include artificial neural networks. He co-authored the book, Artificial Neural Networks: Forecasting Time Series, which led to a 12-year career co-managing a quantitative futures trading fund. In 2006, Bob transitioned into healthcare as a medical device product manager. He received his BA in physics at University of California, Berkeley and his PhD in physics at Harvard.'
