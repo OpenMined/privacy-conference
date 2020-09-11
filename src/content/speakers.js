@@ -520,7 +520,7 @@ export const speakers = [
     name: "John Farkas",
     title: 'CEO at Golden Spiral',
     about: [
-      'TBC'
+      'John Farkas is the Founder, CEO, and Storyteller at Golden Spiral, an integrated marketing team built to help B2B tech companies generate demand and REALIZE their market potential. John\'s passion is to help organizations working for positive, technology-empowered change uncover and tell their stories in ways that accelerate transformation. "We find ourselves consistently working with B2B organizations deploying AI in a wide variety of contexts to solve complex business problems,” Farkas reflects. “Every day I am face to face with the critical nature of preserving privacy, so it only makes sense that our agency would align with and support this effort in any way we can."'
     ],
     social: []
   },

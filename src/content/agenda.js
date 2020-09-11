@@ -531,7 +531,7 @@ export const schedule = [
     speakers: [getSpeakerByName('John Farkas')],
     title: 'Building a Privacy Brand',
     group: groups['real-world-deployments-2'],
-    description: 'TBC',
+    description: "In the new world shaped by GDPR, organizations often see privacy as a hurdle, NOT a brand opportunity. As new technologies afford the ability to harvest insight from private data without compromising privacy, a clear opportunity is emerging to build trust into your brand. What privacy story is your organization telling? How can you create a culture and a brand narrative that brings the preservation of your customers' privacy to the forefront and showcases your respect and regard for them? This talk explores the opportunity and teaches why now is the right time to make it happen.",
     duration: dayjs.duration({ minutes: 15 })
   },
   {
