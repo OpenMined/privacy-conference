@@ -53,7 +53,7 @@ const Carousel = ({ slides }) => {
             alignItems: ['flex-start', null, null, 'stretch']
           }}
         >
-          <Box sx={{ width: ['100%', null, null, 540] }}>
+          <Box sx={{ width: ['100%', null, null, 540], minWidth: ['100%', null, null, 540] }}>
             <Image
               src={image}
               alt={title}
