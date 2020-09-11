@@ -217,7 +217,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|18:00:00', timeFormat),
-    speakers: [getSpeakerByName('Bob Rodgers')],
+    speakers: [getSpeakerByName('Bob Rogers')],
     title: 'TBC',
     group: groups['real-world-deployments-1'],
     description: 'TBC',
