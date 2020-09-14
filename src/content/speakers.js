@@ -44,10 +44,10 @@ import hadrien from '../assets/hadrien-lautraite.jpg';
 import patrick from '../assets/patrick-mesana.jpg';
 import alex from '../assets/alex-ziller.jpg';
 import jonathan from '../assets/jonathan-passerat-palmbach.jpg';
-import jim from '../assets/default-speaker.jpg';
-import john from '../assets/default-speaker.jpg'
+import jim from '../assets/jim-o-leary.jpg';
+import john from '../assets/john-farkas.jpg'
 import emily from '../assets/default-speaker.jpg';
-import bob from '../assets/default-speaker.jpg';
+import bob from '../assets/bob-rogers.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -329,8 +329,8 @@ export const speakers = [
     image: peter,
     pixelImage: pixelate(peter),
     name: 'Peter Kairouz',
-    title: 'Google',
-    about: ['TBC'],
+    title: 'Researcher at Google',
+    about: ["Peter is a researcher at Google, where he leads research efforts on federated, privacy-preserving, and robust machine learning. Prior to joining Google, he was a postdoctoral research fellow at Stanford University, and before that, he was a PhD student at the University of Illinois Urbana-Champaign (UIUC). He is the recipient of the 2012 Roberto Padovani Scholarship from Qualcomm's Research Center, the 2015 ACM SIGMETRICS Best Paper Award, the 2015 Qualcomm Innovation Fellowship Finalist Award, and the 2016 Harold L. Olesen Award for Excellence in Undergraduate Teaching from UIUC."],
     social: []
   },
   {
@@ -361,16 +361,16 @@ export const speakers = [
     image: nathan,
     pixelImage: pixelate(nathan),
     name: 'Nathan Benaich',
-    title: '',
-    about: ['TBC'],
+    title: 'Founder and General Partner at Air Street Capital & Managing Trustee at The RAAIS Foundation',
+    about: ['Nathan is the Founder and General Partner of Air Street Capital, a venture capital firm investing in early-stage AI-first technology and life science companies. The team’s investments include Mapillary (acq. Facebook), Graphcore, Thought Machine, Tractable, and LabGenius. Nathan is Managing Trustee of The RAAIS Foundation, a non-profit with a mission to advance education and open-source research in common good AI. This includes running the annual RAAIS summit and funding fellowships at OpenMined. Nathan holds a Ph.D. in cancer biology from the University of Cambridge and a BA from Williams College.'],
     social: []
   },
   {
     image: sachin,
     pixelImage: pixelate(sachin),
     name: 'Sachin Deshpande',
-    title: '',
-    about: ['TBC'],
+    title: 'Technology Marketing at OpenMined',
+    about: ["Sachin was most recently at Facebook, where he led their AI and AR/VR competitive intelligence and also served as a PM on cutting-edge AI initiatives. Prior to that, he was a venture capitalist at Qualcomm Ventures, where he led their Series A investment into Zoom (NASDAQ: ZM) and a Series A investment into Owlchemy VR (acquired by Google in 2017)."],
     social: []
   },
   {

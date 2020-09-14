@@ -152,9 +152,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|14:45:00', timeFormat),
     speakers: [getSpeakerByName('Peter Kairouz')],
-    title: 'TBC',
+    title: 'Advances and Open Problems in Federated Learning ',
     group: groups['in-the-research-lab-1'],
-    description: 'TBC',
+    description: 'Motivated by the explosive growth in federated learning research, 22 Google researchers and 36 academics from 24 institutions collaborated on a paper titled Advances and Open Problems in Federated Learning. This talk briefly touches on the main advances and open problems surveyed in the paper, emphasizing the privacy challenges and overviewing recent results in the shuffled model of federated learning and privacy amplification via random check-ins.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
@@ -253,9 +253,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nathan Benaich')],
-    title: 'TBC',
+    title: 'Building An AI-first, Privacy-preserving Technology Company',
     group: groups['investing'],
-    description: 'TBC',
+    description: 'In this talk, the speaker addresses the opportunity for building privacy-preserving software products with a focus on AI-first products. The speaker discusses both headwinds and tailwinds for privacy-preserving products, the use case contexts in which it makes sense to build in such a fashion, and how to consider value creation and value capture. This talk is targeted at those interested in building startups using privacy-preserving technology.',
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -274,9 +274,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|19:40:00', timeFormat),
     speakers: [getSpeakerByName('Sachin Deshpande')],
-    title: 'TBC',
+    title: 'Privacy AI Startups & The OpenMined Open-source Community',
     group: groups['investing'],
-    description: 'TBC',
+    description: 'OpenMined has built vibrant relationships with numerous startups, who are leveraging privacy AI technologies as a core part of their offering. This panel will discuss these symbiotic relationships, and how they are likely to grow in the future.',
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -344,7 +344,7 @@ export const schedule = [
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
     title:
-      'Contact $%#! tracing: The shameful failure of tech, law and us',
+      'Contact $%#! Tracing: The Shameful Failure of Tech, Law and Us',
     group: groups['closing-session-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
