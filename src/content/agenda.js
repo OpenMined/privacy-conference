@@ -46,19 +46,19 @@ export const groups = {
   'in-the-research-lab-1': {
     title: 'In The Research Lab',
     description:
-      'Several of the world\'s foremost privacy experts talk about the latest in their privacy research at the world\'s largest tech firms. This is the innovation that protects the data sitting in your pocket right now.'
+      "Several of the world's foremost privacy experts talk about the latest in their privacy research at the world's largest tech firms. This is the innovation that protects the data sitting in your pocket right now."
   },
   'keynote-1': {
     title: 'Keynote',
     description:
       'Hear from a legend of the privacy community - whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
   },
-  'roadmap': {
-    title: 'Privacy Technology Roadmap - What\'s Coming Next?',
+  roadmap: {
+    title: "Privacy Technology Roadmap - What's Coming Next?",
     description:
       'We have fancy privacy technologies. We know the privacy-preserving world we want. This series of talks seeks to answer the question, "How do we get there?" and "What privacy-preserving products should we build first?"'
   },
-  'philanthropy': {
+  philanthropy: {
     title: 'Change Begins with a Gift: The Role of Philanthropy in Privacy Tech',
     description:
       'The first movers in any great revolution are those willing to make investments even in extremely uncertain and risky strategies. Such is the role of the great philanthropies throughout history. In this session, you will hear from a few of the leading privacy tech charities about how they support the development of privacy-enhancing infrastructure.'
@@ -68,7 +68,7 @@ export const groups = {
     description:
       'Hear from leading privacy-tech startups deploying state-of-the-art privacy tech at scale. This should help you understand the current state of the technology straight from the champions on the front line!'
   },
-  'investing': {
+  investing: {
     title: 'Privacy is Profit: why are VCs Investing in Privacy-enhancing Tech?',
     description:
       'In a world where many view privacy as an opponent to innovation, these thought-leaders in the Venture Capital space see things differently. Come and hear why privacy-enhancing startups are going to outperform the previous generation on both ethics and economics.'
@@ -83,27 +83,26 @@ export const groups = {
     description:
       'Hear a grounding perspective on the gap between what society needs and what we, the privacy community, have yet to provide. This is the mountain we have yet to climb.'
   },
-  'teams': {
+  teams: {
     title: 'Where Do I Fit In?',
     description:
       'A closer look at the organisational structure of OpenMined and will help you find where you can make impact among our thriving teams.'
   },
   'keynote-2': {
     title: 'Keynote',
-    description:
-      'Stay tuned to find out who our exciting day 2 keynote speaker is...'
+    description: 'Stay tuned to find out who our exciting day 2 keynote speaker is...'
   },
   'in-the-research-lab-2': {
     title: 'In The Research Lab',
     description:
-      'Several of the world\'s foremost privacy experts talk about the latest in their privacy research at the world\'s largest tech firms. This is the innovation that protects the data sitting in your pocket right now.'
+      "Several of the world's foremost privacy experts talk about the latest in their privacy research at the world's largest tech firms. This is the innovation that protects the data sitting in your pocket right now."
   },
   'research-lightning-2': {
     title: 'Research Lightning: Hot-off-the-press Privacy Research',
     description:
       '10 minute lightning talks about ongoing and recently published privacy research from some of the brightest minds in the field.'
   },
-  'tutorials': {
+  tutorials: {
     title: 'Tutorial Breakout Sessions',
     description:
       'Learn by doing! These hour-long tutorial sessions will all run in parallel. On the day, simply pick a session that interests you most and dive in!'
@@ -115,8 +114,7 @@ export const groups = {
   },
   'closing-session-2': {
     title: 'Closing Session',
-    description:
-      'Andrew recaps the highlights from the conference.'
+    description: 'Andrew recaps the highlights from the conference.'
   }
 };
 
@@ -134,10 +132,10 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|14:10:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'Keynote',
+    speakers: [getSpeakerByName('Peter Eckersley')],
+    title: 'Is Privacy Enhancing Technology Actually Possible?',
     group: groups['opening-session'],
-    description: 'TBC',
+    description: `The Web, smartphones, social networking and modern machine learning methods have on the whole been incredibly useful to humans, but they have hugely increased the ability of governments, corporations, and nosey individuals to know about the details of most people's lives. Privacy is endangered, but humans are clearly unwilling to let it go extinct. Privacy enhancing technologies are one field of efforts to restore some of the confidentiality that was readily available before the last three decades of digital progress, and in some cases to make it possible to build new applications that use huge amounts of personal or sensitive information, without gathering it in one place or revealing it to anyone. This is the “encrypt your cake and eat it too” approach to privacy. This talk will examine a range of applications of this approach, from reducing surveillance of the Web and instant messaging through to COVID-19 contact tracing and the design of social media feeds. In some of these domains we have successes or grounds for optimism, but in others, optimism is simply not justified - we don't even have good stories for how privacy should work let alone good designs for software to get us there.To grapple with the hard cases, we'll go back to the philosophical and political question of why different groups may want or need privacy in the first place, and try to assess technical developments as being useful (or not) in these terms. Which types of privacy do we still need in 2020, and how can we possibly get them?`,
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -154,7 +152,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Peter Kairouz')],
     title: 'Advances and Open Problems in Federated Learning ',
     group: groups['in-the-research-lab-1'],
-    description: 'Motivated by the explosive growth in federated learning research, 22 Google researchers and 36 academics from 24 institutions collaborated on a paper titled Advances and Open Problems in Federated Learning. This talk briefly touches on the main advances and open problems surveyed in the paper, emphasizing the privacy challenges and overviewing recent results in the shuffled model of federated learning and privacy amplification via random check-ins.',
+    description:
+      'Motivated by the explosive growth in federated learning research, 22 Google researchers and 36 academics from 24 institutions collaborated on a paper titled Advances and Open Problems in Federated Learning. This talk briefly touches on the main advances and open problems surveyed in the paper, emphasizing the privacy challenges and overviewing recent results in the shuffled model of federated learning and privacy amplification via random check-ins.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
@@ -196,7 +195,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Nick Rose')],
     title: 'OpenMined Science Roadmap',
     group: groups['roadmap'],
-    description: 'This talk presents the OpenMined vision & roadmap for how we want to help accelerate science by solving privacy. The talk provides details on the problems faced by data scientists and researchers, a possible solution, and a path forward to achieving that solution.',
+    description:
+      'This talk presents the OpenMined vision & roadmap for how we want to help accelerate science by solving privacy. The talk provides details on the problems faced by data scientists and researchers, a possible solution, and a path forward to achieving that solution.',
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -247,7 +247,8 @@ export const schedule = [
     speakers: [getSpeakerByName("Jim O'Leary")],
     title: 'Powering the World’s Private Communications',
     group: groups['real-world-deployments-1'],
-    description: 'Signal is a 501c3 non-profit organization committed to providing open-source private and secure communication tools to the world. You may know them best from Signal Protocol, which currently provides end-to-end encrypted messaging for billions of people worldwide. Join the speaker for some quick, recent tales of developing and deploying technology that protects free expression and enables global communication.',
+    description:
+      'Signal is a 501c3 non-profit organization committed to providing open-source private and secure communication tools to the world. You may know them best from Signal Protocol, which currently provides end-to-end encrypted messaging for billions of people worldwide. Join the speaker for some quick, recent tales of developing and deploying technology that protects free expression and enables global communication.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
@@ -255,7 +256,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Nathan Benaich')],
     title: 'Building An AI-first, Privacy-preserving Technology Company',
     group: groups['investing'],
-    description: 'In this talk, the speaker addresses the opportunity for building privacy-preserving software products with a focus on AI-first products. The speaker discusses both headwinds and tailwinds for privacy-preserving products, the use case contexts in which it makes sense to build in such a fashion, and how to consider value creation and value capture. This talk is targeted at those interested in building startups using privacy-preserving technology.',
+    description:
+      'In this talk, the speaker addresses the opportunity for building privacy-preserving software products with a focus on AI-first products. The speaker discusses both headwinds and tailwinds for privacy-preserving products, the use case contexts in which it makes sense to build in such a fashion, and how to consider value creation and value capture. This talk is targeted at those interested in building startups using privacy-preserving technology.',
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -276,7 +278,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Sachin Deshpande')],
     title: 'Privacy AI Startups & The OpenMined Open-source Community',
     group: groups['investing'],
-    description: 'OpenMined has built vibrant relationships with numerous startups, who are leveraging privacy AI technologies as a core part of their offering. This panel will discuss these symbiotic relationships, and how they are likely to grow in the future.',
+    description:
+      'OpenMined has built vibrant relationships with numerous startups, who are leveraging privacy AI technologies as a core part of their offering. This panel will discuss these symbiotic relationships, and how they are likely to grow in the future.',
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -343,8 +346,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
-    title:
-      'Contact $%#! Tracing: The Shameful Failure of Tech, Law and Us',
+    title: 'Contact $%#! Tracing: The Shameful Failure of Tech, Law and Us',
     group: groups['closing-session-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
@@ -372,7 +374,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Miguel Guevara')],
     title: 'Building Differential Privacy at Scale',
     group: groups['in-the-research-lab-2'],
-    description: 'Differential Privacy has long been recognized as a golden standard in privacy. While the theory has existed for years, it was only recently that it started gaining ground in industry applications. Google first used DP in its Chrome browser. More recently, Google started developing strong primitives for DP. Similar to cryptography, there are many ways in which DP can go wrong. This talk will give an overview of the years-long journey that Google engineers embarked on to develop DP infrastructure at scale.',
+    description:
+      'Differential Privacy has long been recognized as a golden standard in privacy. While the theory has existed for years, it was only recently that it started gaining ground in industry applications. Google first used DP in its Chrome browser. More recently, Google started developing strong primitives for DP. Similar to cryptography, there are many ways in which DP can go wrong. This talk will give an overview of the years-long journey that Google engineers embarked on to develop DP infrastructure at scale.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
@@ -424,7 +427,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Sameer Wagh')],
     title: 'Falcon: Honest-Majority Maliciously Secure Framework for Private Deep Learning',
     group: groups['research-lightning-2'],
-    description: 'In this talk, the speaker briefly describes Falcon, a new multi-party computation based framework for privacy-preserving machine learning. The talk outlines the key contributions of Falcon before showcasing some of the important results of the work.',
+    description:
+      'In this talk, the speaker briefly describes Falcon, a new multi-party computation based framework for privacy-preserving machine learning. The talk outlines the key contributions of Falcon before showcasing some of the important results of the work.',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
@@ -456,8 +460,7 @@ export const schedule = [
     speakers: [getSpeakerByName('Emily Glanz')],
     title: 'TensorFlow Federated',
     group: groups['tutorials'],
-    description:
-      '',
+    description: '',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -474,7 +477,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Varun Khare')],
     title: 'Deploying Federated Learning on Android with KotlinSyft',
     group: groups['tutorials'],
-    description: 'In this interactive session, the speakers will perform a code walkthrough of the mobile federated learning ecosystem developed at OpenMined that is PySyft, PyGrid and KotlinSyft.The talk will start with creating neural networks in PySyft and deploying them on PyGrid with JSON Web Token authentication. The speakers show how to build an android application to train the hosted model on privately held data using KotlinSyft. Diving deeper, the talk will go through the various features of KotlinSyft like change detection, wifi detection and RX support. The session will end with the new features that are in progress and will soon be added to KotlinSyft like peer to peer SMPC protocols.',
+    description:
+      'In this interactive session, the speakers will perform a code walkthrough of the mobile federated learning ecosystem developed at OpenMined that is PySyft, PyGrid and KotlinSyft.The talk will start with creating neural networks in PySyft and deploying them on PyGrid with JSON Web Token authentication. The speakers show how to build an android application to train the hosted model on privately held data using KotlinSyft. Diving deeper, the talk will go through the various features of KotlinSyft like change detection, wifi detection and RX support. The session will end with the new features that are in progress and will soon be added to KotlinSyft like peer to peer SMPC protocols.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -498,7 +502,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Robin Roehm'), getSpeakerByName('Pavlos Papadopoulos')],
     title: 'Privacy Preserving Vertically Distributed machine learning',
     group: groups['tutorials'],
-    description: 'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
+    description:
+      'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -511,10 +516,16 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Georgios Kaissis'), getSpeakerByName('Alex Ziller'), getSpeakerByName('Jonathan Passerat-Palmbach')],
-    title: 'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
+    speakers: [
+      getSpeakerByName('Georgios Kaissis'),
+      getSpeakerByName('Alex Ziller'),
+      getSpeakerByName('Jonathan Passerat-Palmbach')
+    ],
+    title:
+      'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
     group: groups['tutorials'],
-    description: 'This session will provide a first look at the design and features of PriMIA, a library for privacy-preserving deep learning for medical imaging, jointly developed by the Technical University of Munich, Imperial College London and OpenMined. A brief introduction to the project will be given (ca. 10 minutes), after which participants will be given insight into how PriMIA performs federated learning and encrypted inference, as well as be introduced to the challenges of medical image analysis in a real-life environment using actual medical images and the Jupyter Notebook environment. (ca. 20 minutes). Lastly, opportunity will be provided for dicussion and participant questions (ca. 15 minutes).',
+    description:
+      'This session will provide a first look at the design and features of PriMIA, a library for privacy-preserving deep learning for medical imaging, jointly developed by the Technical University of Munich, Imperial College London and OpenMined. A brief introduction to the project will be given (ca. 10 minutes), after which participants will be given insight into how PriMIA performs federated learning and encrypted inference, as well as be introduced to the challenges of medical image analysis in a real-life environment using actual medical images and the Jupyter Notebook environment. (ca. 20 minutes). Lastly, opportunity will be provided for dicussion and participant questions (ca. 15 minutes).',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -531,7 +542,8 @@ export const schedule = [
     speakers: [getSpeakerByName('John Farkas')],
     title: 'Building a Privacy Brand',
     group: groups['real-world-deployments-2'],
-    description: "In the new world shaped by GDPR, organizations often see privacy as a hurdle, NOT a brand opportunity. As new technologies afford the ability to harvest insight from private data without compromising privacy, a clear opportunity is emerging to build trust into your brand. What privacy story is your organization telling? How can you create a culture and a brand narrative that brings the preservation of your customers' privacy to the forefront and showcases your respect and regard for them? This talk explores the opportunity and teaches why now is the right time to make it happen.",
+    description:
+      "In the new world shaped by GDPR, organizations often see privacy as a hurdle, NOT a brand opportunity. As new technologies afford the ability to harvest insight from private data without compromising privacy, a clear opportunity is emerging to build trust into your brand. What privacy story is your organization telling? How can you create a culture and a brand narrative that brings the preservation of your customers' privacy to the forefront and showcases your respect and regard for them? This talk explores the opportunity and teaches why now is the right time to make it happen.",
     duration: dayjs.duration({ minutes: 15 })
   },
   {

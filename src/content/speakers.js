@@ -45,9 +45,10 @@ import patrick from '../assets/patrick-mesana.jpg';
 import alex from '../assets/alex-ziller.jpg';
 import jonathan from '../assets/jonathan-passerat-palmbach.jpg';
 import jim from '../assets/jim-o-leary.jpg';
-import john from '../assets/john-farkas.jpg'
+import john from '../assets/john-farkas.jpg';
 import emily from '../assets/default-speaker.jpg';
 import bob from '../assets/bob-rogers.jpg';
+import eckersley from '../assets/peter-eckersley.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -330,7 +331,9 @@ export const speakers = [
     pixelImage: pixelate(peter),
     name: 'Peter Kairouz',
     title: 'Researcher at Google',
-    about: ["Peter is a researcher at Google, where he leads research efforts on federated, privacy-preserving, and robust machine learning. Prior to joining Google, he was a postdoctoral research fellow at Stanford University, and before that, he was a PhD student at the University of Illinois Urbana-Champaign (UIUC). He is the recipient of the 2012 Roberto Padovani Scholarship from Qualcomm's Research Center, the 2015 ACM SIGMETRICS Best Paper Award, the 2015 Qualcomm Innovation Fellowship Finalist Award, and the 2016 Harold L. Olesen Award for Excellence in Undergraduate Teaching from UIUC."],
+    about: [
+      "Peter is a researcher at Google, where he leads research efforts on federated, privacy-preserving, and robust machine learning. Prior to joining Google, he was a postdoctoral research fellow at Stanford University, and before that, he was a PhD student at the University of Illinois Urbana-Champaign (UIUC). He is the recipient of the 2012 Roberto Padovani Scholarship from Qualcomm's Research Center, the 2015 ACM SIGMETRICS Best Paper Award, the 2015 Qualcomm Innovation Fellowship Finalist Award, and the 2016 Harold L. Olesen Award for Excellence in Undergraduate Teaching from UIUC."
+    ],
     social: []
   },
   {
@@ -338,7 +341,9 @@ export const speakers = [
     pixelImage: pixelate(nick),
     name: 'Nick Rose',
     title: 'Product Manager at Google and OpenMined',
-    about: ['Nick is a product manager at OpenMined with a degree in Computer Science from UC Berkeley. He also works as a product manager at Google on YouTube. He loves to talk about space exploration, artificial general intelligence, fundamental physics, and sustainable energy. Find him making lattes, surfing, and skiing in his free time.'],
+    about: [
+      'Nick is a product manager at OpenMined with a degree in Computer Science from UC Berkeley. He also works as a product manager at Google on YouTube. He loves to talk about space exploration, artificial general intelligence, fundamental physics, and sustainable energy. Find him making lattes, surfing, and skiing in his free time.'
+    ],
     social: []
   },
   {
@@ -361,8 +366,11 @@ export const speakers = [
     image: nathan,
     pixelImage: pixelate(nathan),
     name: 'Nathan Benaich',
-    title: 'Founder and General Partner at Air Street Capital & Managing Trustee at The RAAIS Foundation',
-    about: ['Nathan is the Founder and General Partner of Air Street Capital, a venture capital firm investing in early-stage AI-first technology and life science companies. The team’s investments include Mapillary (acq. Facebook), Graphcore, Thought Machine, Tractable, and LabGenius. Nathan is Managing Trustee of The RAAIS Foundation, a non-profit with a mission to advance education and open-source research in common good AI. This includes running the annual RAAIS summit and funding fellowships at OpenMined. Nathan holds a Ph.D. in cancer biology from the University of Cambridge and a BA from Williams College.'],
+    title:
+      'Founder and General Partner at Air Street Capital & Managing Trustee at The RAAIS Foundation',
+    about: [
+      'Nathan is the Founder and General Partner of Air Street Capital, a venture capital firm investing in early-stage AI-first technology and life science companies. The team’s investments include Mapillary (acq. Facebook), Graphcore, Thought Machine, Tractable, and LabGenius. Nathan is Managing Trustee of The RAAIS Foundation, a non-profit with a mission to advance education and open-source research in common good AI. This includes running the annual RAAIS summit and funding fellowships at OpenMined. Nathan holds a Ph.D. in cancer biology from the University of Cambridge and a BA from Williams College.'
+    ],
     social: []
   },
   {
@@ -370,7 +378,9 @@ export const speakers = [
     pixelImage: pixelate(sachin),
     name: 'Sachin Deshpande',
     title: 'Technology Marketing at OpenMined',
-    about: ["Sachin was most recently at Facebook, where he led their AI and AR/VR competitive intelligence and also served as a PM on cutting-edge AI initiatives. Prior to that, he was a venture capitalist at Qualcomm Ventures, where he led their Series A investment into Zoom (NASDAQ: ZM) and a Series A investment into Owlchemy VR (acquired by Google in 2017)."],
+    about: [
+      'Sachin was most recently at Facebook, where he led their AI and AR/VR competitive intelligence and also served as a PM on cutting-edge AI initiatives. Prior to that, he was a venture capitalist at Qualcomm Ventures, where he led their Series A investment into Zoom (NASDAQ: ZM) and a Series A investment into Owlchemy VR (acquired by Google in 2017).'
+    ],
     social: []
   },
   {
@@ -378,7 +388,9 @@ export const speakers = [
     pixelImage: pixelate(ken),
     name: 'Kenneth Cukier',
     title: 'Senior Editor at The Economist',
-    about: ['Kenneth is a senior editor at The Economist and host of its weekly tech podcast, Babbage. He is the coauthor of the New York Times bestselling book “Big Data” with Viktor Mayer-Schönberger, translated in over 20 languages. Kenn is a board director of Chatham House, and an associate fellow at Oxford’s Saïd Business School. He is a member of the Council on Foreign Relations.'],
+    about: [
+      'Kenneth is a senior editor at The Economist and host of its weekly tech podcast, Babbage. He is the coauthor of the New York Times bestselling book “Big Data” with Viktor Mayer-Schönberger, translated in over 20 languages. Kenn is a board director of Chatham House, and an associate fellow at Oxford’s Saïd Business School. He is a member of the Council on Foreign Relations.'
+    ],
     social: []
   },
   {
@@ -414,7 +426,9 @@ export const speakers = [
     pixelImage: pixelate(sameer),
     name: 'Sameer Wagh',
     title: 'Postdoctoral Researcher at University of California, Berkeley',
-    about: ['Sameer is a postdoctoral researcher at University of California, Berkeley and received his PhD from Princeton University. His research is in the area of privacy enhancing technologies, with a common goal to make these technologies practical and deployed within our current digital infrastructure. His research has been a finalist for the best dissertation award and received awards from organizations such as Qualcomm and Facebook. Before joining Princeton, Sameer graduated with B.Tech. with Honors in Engineering Physics from IIT Madras.'],
+    about: [
+      'Sameer is a postdoctoral researcher at University of California, Berkeley and received his PhD from Princeton University. His research is in the area of privacy enhancing technologies, with a common goal to make these technologies practical and deployed within our current digital infrastructure. His research has been a finalist for the best dissertation award and received awards from organizations such as Qualcomm and Facebook. Before joining Princeton, Sameer graduated with B.Tech. with Honors in Engineering Physics from IIT Madras.'
+    ],
     social: []
   },
   {
@@ -430,7 +444,9 @@ export const speakers = [
     pixelImage: pixelate(varun),
     name: 'Varun Khare',
     title: 'KotlinSyft Core Developer at OpenMined',
-    about: ['Varun is an Al enthusiast trying to decipher the principles behind cognition while ensuring the privacy and safety of the people. He graduated in computer science from IIT Kanpur and since then has worked in multiple research labs in neuroscience, program synthesis and computer vision. At OpenMined, he is primarily responsible for leading the development of Kotlin Syft which is the android worker for secure on device learning.'],
+    about: [
+      'Varun is an Al enthusiast trying to decipher the principles behind cognition while ensuring the privacy and safety of the people. He graduated in computer science from IIT Kanpur and since then has worked in multiple research labs in neuroscience, program synthesis and computer vision. At OpenMined, he is primarily responsible for leading the development of Kotlin Syft which is the android worker for secure on device learning.'
+    ],
     social: []
   },
   {
@@ -446,7 +462,9 @@ export const speakers = [
     pixelImage: pixelate(robin),
     name: 'Robin Roehm',
     title: 'Co-founder & CEO at Apheris AI',
-    about: ['Robin is the co-founder and CEO of Apheris - a company that empowers large enterprise customers to collaborate and analyse data securely without compromising privacy. Robin has studied Medicine, Philosophy and Mathematics, has been trained in global banking and is a successful serial entrepreneur.'],
+    about: [
+      'Robin is the co-founder and CEO of Apheris - a company that empowers large enterprise customers to collaborate and analyse data securely without compromising privacy. Robin has studied Medicine, Philosophy and Mathematics, has been trained in global banking and is a successful serial entrepreneur.'
+    ],
     social: []
   },
   {
@@ -454,7 +472,9 @@ export const speakers = [
     pixelImage: pixelate(pavlos),
     name: 'Pavlos Papadopoulos',
     title: 'PhD Student at Edinburgh Napier University & Researcher at Apheris AI',
-    about: ['Pavlos is currently a PhD student in Privacy-Preserving Systems around Trust and Identity at Edinburgh Napier University. Pavlos is also a researcher at Apheris AI and a member of OpenMined Security & Identity team. His research interests include Cybersecurity, Distributed Ledger Technology and Privacy-Preserving Machine Learning.'],
+    about: [
+      'Pavlos is currently a PhD student in Privacy-Preserving Systems around Trust and Identity at Edinburgh Napier University. Pavlos is also a researcher at Apheris AI and a member of OpenMined Security & Identity team. His research interests include Cybersecurity, Distributed Ledger Technology and Privacy-Preserving Machine Learning.'
+    ],
     social: []
   },
   {
@@ -510,15 +530,13 @@ export const speakers = [
     pixelImage: pixelate(jim),
     name: "Jim O'Leary",
     title: 'VP of Engineering at Signal',
-    about: [
-      'Jim runs engineering at Signal; he delights in brief biographies.'
-    ],
+    about: ['Jim runs engineering at Signal; he delights in brief biographies.'],
     social: []
   },
   {
     image: john,
     pixelImage: pixelate(john),
-    name: "John Farkas",
+    name: 'John Farkas',
     title: 'CEO at Golden Spiral',
     about: [
       'John Farkas is the Founder, CEO, and Storyteller at Golden Spiral, an integrated marketing team built to help B2B tech companies generate demand and REALIZE their market potential. John\'s passion is to help organizations working for positive, technology-empowered change uncover and tell their stories in ways that accelerate transformation. "We find ourselves consistently working with B2B organizations deploying AI in a wide variety of contexts to solve complex business problems,” Farkas reflects. “Every day I am face to face with the critical nature of preserving privacy, so it only makes sense that our agency would align with and support this effort in any way we can."'
@@ -528,11 +546,9 @@ export const speakers = [
   {
     image: emily,
     pixelImage: pixelate(emily),
-    name: "Emily Glanz",
+    name: 'Emily Glanz',
     title: 'Google',
-    about: [
-      'TBC'
-    ],
+    about: ['TBC'],
     social: []
   },
   {
@@ -546,13 +562,22 @@ export const speakers = [
     social: []
   },
   {
+    image: eckersley,
+    pixelImage: pixelate(eckersley),
+    name: 'Peter Eckersley',
+    title:
+      'Technology Projects Director and Chief Computer Scientist at Electronic Frontier Foundation',
+    about: [
+      "Peter is an AI ethics, safety and privacy researcher. He has served as Convener of stop-covid.tech, as Director of Research at the Partnership on AI, and for many years as Technology Projects Director and Chief Computer Scientist at the Electronic Frontier Foundation. He has created or co-founded many privacy and security projects including, Panopticlick, Certbot, Let's Encrypt, Privacy Badger, and HTTPS Everywhere."
+    ],
+    social: []
+  },
+  {
     image: tbc,
     pixelImage: pixelate(tbc),
     name: 'TBC',
     title: '',
-    about: [
-      'TBC'
-    ],
+    about: ['TBC'],
     social: []
   }
 ];
