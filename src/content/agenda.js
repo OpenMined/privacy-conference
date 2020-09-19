@@ -218,7 +218,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|18:00:00', timeFormat),
     speakers: [getSpeakerByName('Bob Rogers')],
-    title: 'TBC',
+    title: 'BeeKeeperAI: Accelerating Deployment of Healthcare AI by 1000x',
     group: groups['real-world-deployments-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
