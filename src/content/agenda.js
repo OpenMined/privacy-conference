@@ -135,7 +135,7 @@ export const schedule = [
     speakers: [getSpeakerByName('Peter Eckersley')],
     title: 'Is Privacy Enhancing Technology Actually Possible?',
     group: groups['opening-session'],
-    description: `The Web, smartphones, social networking and modern machine learning methods have on the whole been incredibly useful to humans, but they have hugely increased the ability of governments, corporations, and nosey individuals to know about the details of most people's lives. Privacy is endangered, but humans are clearly unwilling to let it go extinct. Privacy enhancing technologies are one field of efforts to restore some of the confidentiality that was readily available before the last three decades of digital progress, and in some cases to make it possible to build new applications that use huge amounts of personal or sensitive information, without gathering it in one place or revealing it to anyone. This is the “encrypt your cake and eat it too” approach to privacy. This talk will examine a range of applications of this approach, from reducing surveillance of the Web and instant messaging through to COVID-19 contact tracing and the design of social media feeds. In some of these domains we have successes or grounds for optimism, but in others, optimism is simply not justified - we don't even have good stories for how privacy should work let alone good designs for software to get us there.To grapple with the hard cases, we'll go back to the philosophical and political question of why different groups may want or need privacy in the first place, and try to assess technical developments as being useful (or not) in these terms. Which types of privacy do we still need in 2020, and how can we possibly get them?`,
+    description: "The Web, smartphones, social networking and modern machine learning methods have on the whole been incredibly useful to humans, but they have hugely increased the ability of governments, corporations, and nosey individuals to know about the details of most people's lives. Privacy is endangered, but humans are clearly unwilling to let it go extinct. Privacy enhancing technologies are one field of efforts to restore some of the confidentiality that was readily available before the last three decades of digital progress, and in some cases to make it possible to build new applications that use huge amounts of personal or sensitive information, without gathering it in one place or revealing it to anyone. This is the “encrypt your cake and eat it too” approach to privacy. This talk will examine a range of applications of this approach, from reducing surveillance of the Web and instant messaging through to COVID-19 contact tracing and the design of social media feeds. In some of these domains we have successes or grounds for optimism, but in others, optimism is simply not justified - we don't even have good stories for how privacy should work let alone good designs for software to get us there.To grapple with the hard cases, we'll go back to the philosophical and political question of why different groups may want or need privacy in the first place, and try to assess technical developments as being useful (or not) in these terms. Which types of privacy do we still need in 2020, and how can we possibly get them?",
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -457,10 +457,11 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Emily Glanz')],
+    speakers: [getSpeakerByName('Emily Glanz'), getSpeakerByName('Weikang Song')],
     title: 'TensorFlow Federated',
     group: groups['tutorials'],
-    description: '',
+    description:
+      'In this tutorial you will learn how you can use TensorFlow Federated, an open-source framework for machine learning and other computations on decentralized data, to explore federated learning. You will walk through several classic machine learning problems while learning about the unique advantages and challenges of the federated setting. You will also see examples of how TFF can be used to enable new research. After this tutorial, you will be equipped to further experiment with federated learning on your own.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -492,9 +493,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Eric Verner')],
-    title: 'COINSTAC',
+    title: 'COINSTAC: A Decentralized, Differentially Private Application for Neuroimaging',
     group: groups['tutorials'],
-    description: 'TBC',
+    description: 'Data sharing is beneficial for science in that it enables researchers to find smaller effects and create more generalized machine learning models. However, data sharing is in some cases difficult or outright impossible because of barriers such as privacy laws, negotiating data usage agreements, infrastructure limitations, or lack of trust. The Collaborative Informatics and Neuroimaging Suite Toolkit for Anonymous Computation (COINSTAC) solves these problems by offering a platform for decentralized and differentially private analyses for neuroimaging researchers. Developed since 2015 by the Joint GSU, Georgia Tech, and Emory Center for Translational Research in Neuroimaging and Data Science (TReNDS) in Atlanta, GA, COINSTAC is a free and open source application in which algorithm developers have implemented various forms of linear regression, classification, and visualization to suit a variety of neuroimaging modalities. COINSTAC enables decentralized regression as well as advanced multivariate and machine learning tools and also enhanced privacy preservation tools such as differential privacy. COINSTAC is an Electron application written in JavaScript that utilizes Docker containers to encapsulate complex neuroimaging and machine learning pipelines. This tutorial will provide an overview of COINSTAC and show a demonstration of a COINSTAC computation.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -508,10 +509,10 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Adam Hall')],
-    title: 'OpenMined Security and Identity Demo',
+    speakers: [getSpeakerByName('Adam Hall'), getSpeakerByName('Lohan Spies'), getSpeakerByName('Tom Titcombe'), getSpeakerByName('Will Abramson')],
+    title: 'Opus and PryVote: The Brave New World of Self Sovereign Identity (SSI)',
     group: groups['tutorials'],
-    description: 'TBC',
+    description: 'This session will demonstrate our new SSI standard development kit. The speakers will discuss the need for decentralised identity and trust, the technologies involved and two flagship SSI applications; Opus and PryVote.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -540,7 +541,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|20:15:00', timeFormat),
     speakers: [getSpeakerByName('John Farkas')],
-    title: 'Building a Privacy Brand',
+    title: 'Making Privacy A Brand Asset',
     group: groups['real-world-deployments-2'],
     description:
       "In the new world shaped by GDPR, organizations often see privacy as a hurdle, NOT a brand opportunity. As new technologies afford the ability to harvest insight from private data without compromising privacy, a clear opportunity is emerging to build trust into your brand. What privacy story is your organization telling? How can you create a culture and a brand narrative that brings the preservation of your customers' privacy to the forefront and showcases your respect and regard for them? This talk explores the opportunity and teaches why now is the right time to make it happen.",

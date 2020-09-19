@@ -23,11 +23,11 @@ import krzysztof from '../assets/krzysztof-ostrowski.jpg';
 import jason from '../assets/jason-mancuso.jpg';
 import andrew from '../assets/andrew-trask.jpg';
 import tbc from '../assets/default-speaker.jpg';
-import peter from '../assets/default-speaker.jpg';
+import peter from '../assets/peter-kairouz.jpg';
 import nick from '../assets/nick-rose.jpg';
 import ronnie from '../assets/default-speaker.jpg';
 import pia from '../assets/default-speaker.jpg';
-import nathan from '../assets/default-speaker.jpg';
+import nathan from '../assets/nathan-benaich.jpg';
 import sachin from '../assets/sachin-deshpande.jpg';
 import ken from '../assets/kenneth-cukier.jpg';
 import amber from '../assets/amber-trask.jpg';
@@ -36,17 +36,21 @@ import kristin from '../assets/kristin-lauter.jpg';
 import sameer from '../assets/sameer-wagh.jpg';
 import mayank from '../assets/default-speaker.jpg';
 import varun from '../assets/varun-khare.jpg';
-import eric from '../assets/default-speaker.jpg';
+import eric from '../assets/eric-verner.jpg';
 import robin from '../assets/robin-roehm.jpg';
 import pavlos from '../assets/pavlos-papadopoulos.jpg';
 import adam from '../assets/default-speaker.jpg';
+import lohan from '../assets/default-speaker.jpg';
+import tom from '../assets/default-speaker.jpg';
+import will from '../assets/default-speaker.jpg';
 import hadrien from '../assets/hadrien-lautraite.jpg';
 import patrick from '../assets/patrick-mesana.jpg';
 import alex from '../assets/alex-ziller.jpg';
 import jonathan from '../assets/jonathan-passerat-palmbach.jpg';
 import jim from '../assets/jim-o-leary.jpg';
-import john from '../assets/john-farkas.jpg';
-import emily from '../assets/default-speaker.jpg';
+import john from '../assets/john-farkas.jpg'
+import emily from '../assets/emily-glanz.jpg';
+import weikang from '../assets/weikang-song.jpg';
 import bob from '../assets/bob-rogers.jpg';
 import eckersley from '../assets/peter-eckersley.jpg';
 
@@ -84,6 +88,16 @@ export const getSpeakerByName = (input) => speakers.filter(({ name }) => name ==
 export const title = 'Speakers';
 export const titleLink = 'Submit a Talk →';
 export const speakers = [
+  {
+    image: eckersley,
+    pixelImage: pixelate(eckersley),
+    name: 'Peter Eckersley',
+    title: 'Technology Projects Director and Chief Computer Scientist at Electronic Frontier Foundation',
+    about: [
+      "Peter is an AI ethics, safety and privacy researcher. He has served as Convener of stop-covid.tech, as Director of Research at the Partnership on AI, and for many years as Technology Projects Director and Chief Computer Scientist at the Electronic Frontier Foundation. He has created or co-founded many privacy and security projects including, Panopticlick, Certbot, Let's Encrypt, Privacy Badger, and HTTPS Everywhere."
+    ],
+    social: []
+  },
   {
     image: austin,
     pixelImage: pixelate(austin),
@@ -397,8 +411,8 @@ export const speakers = [
     image: amber,
     pixelImage: pixelate(amber),
     name: 'Amber Trask',
-    title: 'OpenMined',
-    about: ['TBC'],
+    title: 'Community and Education Team Lead at OpenMined',
+    about: ['Amber leads the Community and Education teams at OpenMined. Coming from a music business background, she has much experience in working with people who are passionate newcomers to a particular field. She is very enthusiastic about helping people find where they fit in to the OpenMined community. Outside of OM, she is also a front-end web developer and designer, as well as a musician.'],
     social: []
   },
   {
@@ -453,8 +467,8 @@ export const speakers = [
     image: eric,
     pixelImage: pixelate(eric),
     name: 'Eric Verner',
-    title: '',
-    about: ['TBC'],
+    title: 'Associate Director of Innovation at Center for Translational Research in Neuroimaging and Data Science',
+    about: ["Eric's mission is to develop real-world applications from research at the TReNDS center. He manages two large software projects at TReNDS called COINSTAC and BrainForge, which handle both centralized and decentralized machine learning and processing of neuroimaging data. These applications both strive to help researchers understand the human brain with the goal of improving the treatment of mental illness. Eric graduated with a B.S. in Engineering from Harvey Mudd College and an M.S. in Electrical Engineering from USC. He has over 20 years of experience in electrical engineering, software engineering, data science, and project management."],
     social: []
   },
   {
@@ -481,8 +495,32 @@ export const speakers = [
     image: adam,
     pixelImage: pixelate(adam),
     name: 'Adam Hall',
+    title: 'Information Security Lead at OpenMined and PhD Student at Blockpass Identity Lab',
+    about: ["Adam is OpenMined's Information Security team lead and a PhD Student at the Blockpass Identity Lab. He is a privacy, security and machine learing enthusiast."],
+    social: []
+  },
+  {
+    image: lohan,
+    pixelImage: pixelate(lohan),
+    name: 'Lohan Spies',
     title: 'OpenMined',
-    about: ['TBC'],
+    about: ["Lohan is a co-founder of various cybersecurity and blockchain-based ventures in digital identity and personal data protection and a member of the Security and Identity teams."],
+    social: []
+  },
+  {
+    image: tom,
+    pixelImage: pixelate(tom),
+    name: 'Tom Titcombe',
+    title: 'OpenMined',
+    about: ["Tom is a consultant data scientist applying privacy-preserving machine learning. Previously he completed his MSc in Machine Learning at Imperial College London."],
+    social: []
+  },
+  {
+    image: will,
+    pixelImage: pixelate(will),
+    name: 'Will Abramson',
+    title: 'Identity Team Lead at OpenMined',
+    about: ["Will is an identity and privacy-preserving cryptography researcher. He is heading up the new OpenMined Identity Team."],
     social: []
   },
   {
@@ -546,9 +584,21 @@ export const speakers = [
   {
     image: emily,
     pixelImage: pixelate(emily),
-    name: 'Emily Glanz',
-    title: 'Google',
-    about: ['TBC'],
+    name: "Emily Glanz",
+    title: 'Software Engineer at Google',
+    about: [
+      "Emily is a software engineer on Google's federated learning team. She studied Electrical Engineering at the University of Iowa prior coming to Google, working in a computational biology lab on a hearing loss diagnostic tool."
+    ],
+    social: []
+  },
+  {
+    image: weikang,
+    pixelImage: pixelate(weikang),
+    name: "Weikang Song",
+    title: 'Software Engineer at Google',
+    about: [
+      "Weikang is a software engineer at Google, where he works on the Federated Learning and Analytics Platform. His research interests include computer vision, machine learning and optimization. Prior to Google, he received a M.S. in computer science from Peking University."
+    ],
     social: []
   },
   {
