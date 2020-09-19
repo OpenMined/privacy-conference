@@ -612,17 +612,6 @@ export const speakers = [
     social: []
   },
   {
-    image: eckersley,
-    pixelImage: pixelate(eckersley),
-    name: 'Peter Eckersley',
-    title:
-      'Technology Projects Director and Chief Computer Scientist at Electronic Frontier Foundation',
-    about: [
-      "Peter is an AI ethics, safety and privacy researcher. He has served as Convener of stop-covid.tech, as Director of Research at the Partnership on AI, and for many years as Technology Projects Director and Chief Computer Scientist at the Electronic Frontier Foundation. He has created or co-founded many privacy and security projects including, Panopticlick, Certbot, Let's Encrypt, Privacy Badger, and HTTPS Everywhere."
-    ],
-    social: []
-  },
-  {
     image: tbc,
     pixelImage: pixelate(tbc),
     name: 'TBC',
