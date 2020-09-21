@@ -1,37 +1,43 @@
-import austin from '../assets/austin-arensberg.jpg';
+import apheris from '../assets/apheris-ai.png';
+import arkhn from '../assets/arkhn.png';
+import cdhi from '../assets/cdhi.png';
+import datafleets from '../assets/data-fleets.png';
+import goldenspiral from '../assets/golden-spiral.png';
+import inpher from '../assets/inpher.png';
+
 
 export const title = 'Sponsors';
 export const titleLink = 'Become a Sponsor →';
 export const sponsorLink = 'https://drive.google.com/file/d/1-9_KZ7H0q0_lOhONOFzLTGYGp2VtKqOH/view';
 export const sponsors = [
   {
-    image: austin,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
+    image: apheris,
+    name: 'Apheris AI',
+    url: 'https://www.apheris.com/'
   },
   {
-    image: austin,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
+    image: arkhn,
+    name: 'Arkhn',
+    url: 'https://arkhn.com/en/'
   },
   {
-    image: austin,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
+    image: cdhi,
+    name: 'University of California San Francisco Centre for Digital Health Innovation',
+    url: 'https://www.centerfordigitalhealthinnovation.org/'
   },
   {
-    image: austin,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
+    image: datafleets,
+    name: 'Data Fleets',
+    url: 'https://www.datafleets.com/'
   },
   {
-    image: austin,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
+    image: goldenspiral,
+    name: 'Golden Spiral',
+    url: 'https://goldenspiralmarketing.com/'
   },
   {
-    image: austin,
-    name: 'OpenMined',
-    url: 'https://openmined.org'
-  }
+    image: inpher,
+    name: 'Inpher',
+    url: 'https://www.inpher.io/'
+  },
 ];
