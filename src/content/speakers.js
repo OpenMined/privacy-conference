@@ -34,7 +34,7 @@ import amber from '../assets/amber-trask.jpg';
 import miguel from '../assets/miguel-guevara.jpg';
 import kristin from '../assets/kristin-lauter.jpg';
 import sameer from '../assets/sameer-wagh.jpg';
-import mayank from '../assets/default-speaker.jpg';
+import mayank from '../assets/mayank-varia.jpg';
 import varun from '../assets/varun-khare.jpg';
 import eric from '../assets/eric-verner.jpg';
 import robin from '../assets/robin-roehm.jpg';

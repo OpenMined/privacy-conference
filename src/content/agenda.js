@@ -346,7 +346,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
-    title: 'Contact $%#! Tracing: The Shameful Failure of Tech, Law and Us',
+    title: 'The Contact-Tracing Tragedy: A Failure of Technology and the State to Save Lives While Preserving Privacy',
     group: groups['closing-session-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 15 })
