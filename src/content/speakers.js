@@ -39,10 +39,10 @@ import varun from '../assets/varun-khare.jpg';
 import eric from '../assets/eric-verner.jpg';
 import robin from '../assets/robin-roehm.jpg';
 import pavlos from '../assets/pavlos-papadopoulos.jpg';
-import adam from '../assets/default-speaker.jpg';
-import lohan from '../assets/default-speaker.jpg';
-import tom from '../assets/default-speaker.jpg';
-import will from '../assets/default-speaker.jpg';
+import adam from '../assets/adam-hall.jpg';
+import lohan from '../assets/lohan-spies.jpg';
+import tom from '../assets/tom-titcombe.jpg';
+import will from '../assets/will-abramson.jpg';
 import hadrien from '../assets/hadrien-lautraite.jpg';
 import patrick from '../assets/patrick-mesana.jpg';
 import alex from '../assets/alex-ziller.jpg';
@@ -53,11 +53,11 @@ import emily from '../assets/emily-glanz.jpg';
 import weikang from '../assets/weikang-song.jpg';
 import bob from '../assets/bob-rogers.jpg';
 import eckersley from '../assets/peter-eckersley.jpg';
-import luca from '../assets/default-speaker.jpg';
-import davide from '../assets/default-speaker.jpg';
-import chinmay from '../assets/default-speaker.jpg';
-import theo from '../assets/default-speaker.jpg';
-import michael from '../assets/default-speaker.jpg';
+import luca from '../assets/luca-belli.jpg';
+import davide from '../assets/davide-testuggine.jpg';
+import chinmay from '../assets/chinmay-shah.jpg';
+import theo from '../assets/theo-ryffel.jpg';
+import michael from '../assets/michael-geer.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -454,8 +454,8 @@ export const speakers = [
     image: mayank,
     pixelImage: pixelate(mayank),
     name: 'Mayank Varia',
-    title: '',
-    about: ['TBC'],
+    title: 'Research Associate Professor of Computer Science at Boston University',
+    about: ["Mayank is a Research Associate Professor of Computer Science at Boston University. His research spans cryptography and its application to problems throughout and beyond computer science, including the design of cryptographically secure multi-party computation systems for use in measuring Boston's gender wage gap and identifying repeat offenders of sexual assault. His work has been featured in media outlets like CNET, The Hill, and ZDNet."],
     social: []
   },
   {

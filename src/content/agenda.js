@@ -442,9 +442,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|18:30:00', timeFormat),
     speakers: [getSpeakerByName('Mayank Varia')],
-    title: 'TBC',
+    title: 'Scalable and Accessible Secure Multi-Party Computation',
     group: groups['research-lightning-2'],
-    description: 'TBC',
+    description: 'This talk describes the experience of deploying a web application that securely analyzes the salary data of more than 100,000 employees to compute the gender wage gap. Additionally, the speaker will discuss recent efforts to improve the scalability of cryptographically protected computing in the datacenter.',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
