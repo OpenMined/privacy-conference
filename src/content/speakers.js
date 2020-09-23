@@ -53,6 +53,11 @@ import emily from '../assets/emily-glanz.jpg';
 import weikang from '../assets/weikang-song.jpg';
 import bob from '../assets/bob-rogers.jpg';
 import eckersley from '../assets/peter-eckersley.jpg';
+import luca from '../assets/default-speaker.jpg';
+import davide from '../assets/default-speaker.jpg';
+import chinmay from '../assets/default-speaker.jpg';
+import theo from '../assets/default-speaker.jpg';
+import michael from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -609,6 +614,46 @@ export const speakers = [
     about: [
       'Bob is Expert in Residence for AI at University of California San Francisco SmarterHealth, where he applies his experience solving problems with advanced analytics and Artificial Intelligence (AI) to help build world-class medical AI technologies. He is a member of the Board of Advisors to the Harvard Institute for Applied Computational Science and has recently contributed a chapter to the book “De-mystifying Big Data and Machine Learning for Healthcare.” Prior to UCSF, Bob was Chief Data Scientist in the Data Center Group at Intel, and was also co-founder and Chief Scientist at Apixio, a healthcare AIcompany. Bob began his career as an astrophysicist, developing computer models of physical processes near supermassive black holes. His research expanded to include artificial neural networks. He co-authored the book, Artificial Neural Networks: Forecasting Time Series, which led to a 12-year career co-managing a quantitative futures trading fund. In 2006, Bob transitioned into healthcare as a medical device product manager. He received his BA in physics at University of California, Berkeley and his PhD in physics at Harvard.'
     ],
+    social: []
+  },
+  {
+    image: luca,
+    pixelImage: pixelate(luca),
+    name: 'Luca Belli',
+    title: 'Research Lead in Machine Learning Ethics, Transparency and Accountability (META) at Twitter',
+    about: ['Luca is the research lead for Machine Learning Ethics, Transparency and Accountability (META) at Twitter that he co-created two years ago. In his spare time he complains on Twitter about food and coffee.'],
+    social: []
+  },
+  {
+    image: davide,
+    pixelImage: pixelate(davide),
+    name: 'Davide Testuggine',
+    title: 'Applied Research Scientist at Facebook AI',
+    about: ['Davide is an Applied Research Scientist at Facebook AI, currently working on privacy-preserving machine learning and efficient deep learning models, with a focus on engineering better ML platforms for faster research to production. At Facebook, Davide has worked on a variety of projects spanning Integrity, AI Assistants, and Multimodal AI. Previously, he worked at Microsoft Silicon Valley (2013-2017) and UCSB (2012). He holds a MPhil in Advanced Computer Science from the University of Cambridge.'],
+    social: []
+  },
+  {
+    image: chinmay,
+    pixelImage: pixelate(chinmay),
+    name: 'Chinmay Shah',
+    title: 'PyDP Team Lead at OpenMined',
+    about: ['Chinmay is the PyDP Team Lead at OpenMined'],
+    social: []
+  },
+  {
+    image: theo,
+    pixelImage: pixelate(theo),
+    name: 'Théo Ryffel',
+    title: 'Co-founder at Arkhn & Cryptography Team Lead at OpenMined',
+    about: ['Théo is the OpenMined Cryptography Lead and is a co-founder of Arkhn. Arkhn helps hospitals regain sovereignty over their data, to improve patient care and foster research collaborations all around the world.'],
+    social: []
+  },
+  {
+    image: michael,
+    pixelImage: pixelate(michael),
+    name: 'Michael Geer',
+    title: 'Co-founder at Humanity.health',
+    about: ['Michael is co-founder of Humanity with Peter Ward. Together they have built apps reaching over a billion people. Humanity is an app that enables you to know your rate of aging and slow it down thus staying healthy for longer.'],
     social: []
   },
   {

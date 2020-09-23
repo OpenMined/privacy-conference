@@ -88,9 +88,9 @@ export const groups = {
     description:
       'A closer look at the organisational structure of OpenMined and will help you find where you can make impact among our thriving teams.'
   },
-  'keynote-2': {
-    title: 'Keynote',
-    description: 'Stay tuned to find out who our exciting day 2 keynote speaker is...'
+  'networking': {
+    title: 'Networking',
+    description: 'Use this hour to network on our Gather platform with speakers, OpenMined community members and others interested in privacy technology.'
   },
   'in-the-research-lab-2': {
     title: 'In The Research Lab',
@@ -209,6 +209,14 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|17:30:00', timeFormat),
+    speakers: [],
+    title: 'Break',
+    group: groups['roadmap'],
+    description: 'Short 15 minute break',
+    duration: dayjs.duration({ minutes: 15 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-26|17:45:00', timeFormat),
     speakers: [getSpeakerByName('Pia Mancini')],
     title: 'TBC',
     group: groups['philanthropy'],
@@ -216,22 +224,14 @@ export const schedule = [
     duration: dayjs.duration({ minutes: 30 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|18:00:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|18:15:00', timeFormat),
     speakers: [getSpeakerByName('Bob Rogers')],
     title: 'BeeKeeperAI: Accelerating Deployment of Healthcare AI by 1000x',
     group: groups['real-world-deployments-1'],
-    description: 'TBC',
+    description: 'This talk identifies the data access challenges that block the development of dependable healthcare AI.  The speaker will explain how the BeeKeeperAI platform is leveraging privacy-preserving computing technology to allow healthcare AI developers to validate and train algorithms on multiple, diverse data sets without ever sharing or moving data.',
     duration: dayjs.duration({ minutes: 15 })
   },
-  {
-    datetime: dayjs.utc('2020-09-26|18:15:00', timeFormat),
-    speakers: [getSpeakerByName('Kartik Chopra')],
-    title: 'Secure AI for National Security',
-    group: groups['real-world-deployments-1'],
-    description:
-      'The goal for this presentation will be to increase awareness of the audience and research community on the viability of secure machine learning for national security purposes. The speaker shares deployment strategies of ML models that prevent adversarial attacks from the most challenging nation state actors, and how to preserve the privacy of underlying data during the model development phase. Specifically, the speaker discusses use cases, mission criteria, and teams (what type of engineers, managers and leaders) that are required to tackle these issues for the front line of countries. The speaker also suggests open source frameworks, libraries and technologies that have been leveraged in these environments to really safeguard the models, as well as promoting the work of OpenMined to show how you are democratizing these methods for data scientists in entrenched industries.',
-    duration: dayjs.duration({ minutes: 15 })
-  },
+
   {
     datetime: dayjs.utc('2020-09-26|18:30:00', timeFormat),
     speakers: [getSpeakerByName('Georgios Kaissis')],
@@ -275,7 +275,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|19:40:00', timeFormat),
-    speakers: [getSpeakerByName('Sachin Deshpande')],
+    speakers: [getSpeakerByName('Sachin Deshpande'), getSpeakerByName('Théo Ryffel'), getSpeakerByName('Michael Geer')],
     title: 'Privacy AI Startups & The OpenMined Open-source Community',
     group: groups['investing'],
     description:
@@ -363,11 +363,19 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|16:00:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'Keynote',
-    group: groups['keynote-2'],
-    description: 'TBC',
-    duration: dayjs.duration({ minutes: 60 })
+    speakers: [],
+    title: 'Networking session',
+    group: groups['networking'],
+    description: 'A networking session on our Gather conference platform',
+    duration: dayjs.duration({ minutes: 50 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|16:50:00', timeFormat),
+    speakers: [],
+    title: 'Break',
+    group: groups['networking'],
+    description: 'Short 10 minute break',
+    duration: dayjs.duration({ minutes: 10 })
   },
   {
     datetime: dayjs.utc('2020-09-27|17:00:00', timeFormat),
@@ -441,24 +449,24 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|18:40:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'TBC',
+    speakers: [getSpeakerByName('Luca Belli')],
+    title: 'Challenges in Building the RecSys2020 Dataset',
     group: groups['research-lightning-2'],
-    description: 'TBC',
+    description: 'This talk touches on the issues that Twitter encountered when building the dataset for the RecSys 2020 challenge. In particular the speaker shows how Twitter kept privacy top of mind, while at the same time having a dataset that is useful for research purposes.',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
     datetime: dayjs.utc('2020-09-27|18:50:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'TBC',
+    speakers: [],
+    title: 'Break',
     group: groups['research-lightning-2'],
-    description: 'TBC',
+    description: 'Short 10 minute break',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Emily Glanz'), getSpeakerByName('Weikang Song')],
-    title: 'TensorFlow Federated',
+    title: 'TensorFlow Federated (pre-recorded tutorial)',
     group: groups['tutorials'],
     description:
       'In this tutorial you will learn how you can use TensorFlow Federated, an open-source framework for machine learning and other computations on decentralized data, to explore federated learning. You will walk through several classic machine learning problems while learning about the unique advantages and challenges of the federated setting. You will also see examples of how TFF can be used to enable new research. After this tutorial, you will be equipped to further experiment with federated learning on your own.',
@@ -517,16 +525,29 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [
-      getSpeakerByName('Georgios Kaissis'),
-      getSpeakerByName('Alex Ziller'),
-      getSpeakerByName('Jonathan Passerat-Palmbach')
-    ],
-    title:
-      'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
+    speakers: [getSpeakerByName('Georgios Kaissis'), getSpeakerByName('Alex Ziller'), getSpeakerByName('Jonathan Passerat-Palmbach')],
+    title: 'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
     group: groups['tutorials'],
     description:
       'This session will provide a first look at the design and features of PriMIA, a library for privacy-preserving deep learning for medical imaging, jointly developed by the Technical University of Munich, Imperial College London and OpenMined. A brief introduction to the project will be given (ca. 10 minutes), after which participants will be given insight into how PriMIA performs federated learning and encrypted inference, as well as be introduced to the challenges of medical image analysis in a real-life environment using actual medical images and the Jupyter Notebook environment. (ca. 20 minutes). Lastly, opportunity will be provided for dicussion and participant questions (ca. 15 minutes).',
+    duration: dayjs.duration({ minutes: 60 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Davide Testuggine')],
+    title: 'Differentially Private Model Training with Opacus',
+    group: groups['tutorials'],
+    description:
+      'In this session, the speaker will go over the DP-SGD technique to train differentially private models and will then show how to train your own private model using Opacus, a PyTorch lib for fast and accessible DP-SGD training.',
+    duration: dayjs.duration({ minutes: 60 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Chinmay Shah')],
+    title: 'Differential Privacy using PyDP',
+    group: groups['tutorials'],
+    description:
+      'This tutorial aims to provide a brief overview of differential privacy. Further, it will cover the new PyDP vision as well as applying differential privacy using PyDP.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -540,6 +561,14 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|20:15:00', timeFormat),
+    speakers: [getSpeakerByName('Kartik Chopra')],
+    title: 'Secure AI for National Security',
+    group: groups['real-world-deployments-2'],
+    description: 'The goal for this presentation will be to increase awareness of the audience and research community on the viability of secure machine learning for national security purposes. The speaker shares deployment strategies of ML models that prevent adversarial attacks from the most challenging nation state actors, and how to preserve the privacy of underlying data during the model development phase. Specifically, the speaker discusses use cases, mission criteria, and teams (what type of engineers, managers and leaders) that are required to tackle these issues for the front line of countries. The speaker also suggests open source frameworks, libraries and technologies that have been leveraged in these environments to really safeguard the models, as well as promoting the work of OpenMined to show how you are democratizing these methods for data scientists in entrenched industries.',
+    duration: dayjs.duration({ minutes: 15 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|20:30:00', timeFormat),
     speakers: [getSpeakerByName('John Farkas')],
     title: 'Making Privacy A Brand Asset',
     group: groups['real-world-deployments-2'],
@@ -548,23 +577,7 @@ export const schedule = [
     duration: dayjs.duration({ minutes: 15 })
   },
   {
-    datetime: dayjs.utc('2020-09-27|20:30:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'TBC',
-    group: groups['real-world-deployments-2'],
-    description: 'TBC',
-    duration: dayjs.duration({ minutes: 15 })
-  },
-  {
     datetime: dayjs.utc('2020-09-27|20:45:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
-    title: 'TBC',
-    group: groups['real-world-deployments-2'],
-    description: 'TBC',
-    duration: dayjs.duration({ minutes: 15 })
-  },
-  {
-    datetime: dayjs.utc('2020-09-27|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Andrew Trask')],
     title: 'Closing ceremony',
     group: groups['closing-session-2'],
