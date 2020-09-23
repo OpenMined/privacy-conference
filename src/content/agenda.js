@@ -348,7 +348,7 @@ export const schedule = [
     speakers: [getSpeakerByName('Kenneth Cukier')],
     title: 'The Contact-Tracing Tragedy: A Failure of Technology and the State to Save Lives While Preserving Privacy',
     group: groups['closing-session-1'],
-    description: 'TBC',
+    description: "At the outset of the pandemic, many countries wanted to do digital contact tracing to improve on manual systems. But they basically failed -- not because of technology but privacy, and public health suffered. So shame on technologists, policymakers and media. Let's start a nuanced conversation on how to overcome the challenges so society can have both contact-tracing and privacy.",
     duration: dayjs.duration({ minutes: 15 })
   },
 
