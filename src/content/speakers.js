@@ -378,8 +378,8 @@ export const speakers = [
     image: pia,
     pixelImage: pixelate(pia),
     name: 'Pia Mancini',
-    title: 'Open Collective',
-    about: ['TBC'],
+    title: 'Co-founder & CEO at Open Collective',
+    about: ["Pia is a democracy activist, open source sustainer, co-founder & CEO at Open Collective and Chair of DemocracyEarth Foundation. She has worked in politics in Argentina and developed technology for democracy around the world. YC Alum, YGL (World Economic Forum),  globe-trotter and Roma's mum."],
     social: []
   },
   {
