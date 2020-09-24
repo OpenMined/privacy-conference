@@ -10,8 +10,6 @@ dayjs.extend(duration);
 const groupSchedule = (schedule) => {
   let agenda = [];
 
-  schedule = schedule.sort((a, b) => (a.datetime.isBefore(b.datetime) ? -1 : 1));
-
   schedule.forEach(({ datetime }) => {
     let match = false;
 
@@ -88,9 +86,10 @@ export const groups = {
     description:
       'A closer look at the organisational structure of OpenMined and will help you find where you can make impact among our thriving teams.'
   },
-  'networking': {
+  networking: {
     title: 'Networking',
-    description: 'Use this hour to network on our Gather platform with speakers, OpenMined community members and others interested in privacy technology.'
+    description:
+      'Use this hour to network on our Gather platform with speakers, OpenMined community members and others interested in privacy technology.'
   },
   'in-the-research-lab-2': {
     title: 'In The Research Lab',
@@ -135,7 +134,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Peter Eckersley')],
     title: 'Is Privacy Enhancing Technology Actually Possible?',
     group: groups['opening-session'],
-    description: "The Web, smartphones, social networking and modern machine learning methods have on the whole been incredibly useful to humans, but they have hugely increased the ability of governments, corporations, and nosey individuals to know about the details of most people's lives. Privacy is endangered, but humans are clearly unwilling to let it go extinct. Privacy enhancing technologies are one field of efforts to restore some of the confidentiality that was readily available before the last three decades of digital progress, and in some cases to make it possible to build new applications that use huge amounts of personal or sensitive information, without gathering it in one place or revealing it to anyone. This is the “encrypt your cake and eat it too” approach to privacy. This talk will examine a range of applications of this approach, from reducing surveillance of the Web and instant messaging through to COVID-19 contact tracing and the design of social media feeds. In some of these domains we have successes or grounds for optimism, but in others, optimism is simply not justified - we don't even have good stories for how privacy should work let alone good designs for software to get us there.To grapple with the hard cases, we'll go back to the philosophical and political question of why different groups may want or need privacy in the first place, and try to assess technical developments as being useful (or not) in these terms. Which types of privacy do we still need in 2020, and how can we possibly get them?",
+    description:
+      "The Web, smartphones, social networking and modern machine learning methods have on the whole been incredibly useful to humans, but they have hugely increased the ability of governments, corporations, and nosey individuals to know about the details of most people's lives. Privacy is endangered, but humans are clearly unwilling to let it go extinct. Privacy enhancing technologies are one field of efforts to restore some of the confidentiality that was readily available before the last three decades of digital progress, and in some cases to make it possible to build new applications that use huge amounts of personal or sensitive information, without gathering it in one place or revealing it to anyone. This is the “encrypt your cake and eat it too” approach to privacy. This talk will examine a range of applications of this approach, from reducing surveillance of the Web and instant messaging through to COVID-19 contact tracing and the design of social media feeds. In some of these domains we have successes or grounds for optimism, but in others, optimism is simply not justified - we don't even have good stories for how privacy should work let alone good designs for software to get us there.To grapple with the hard cases, we'll go back to the philosophical and political question of why different groups may want or need privacy in the first place, and try to assess technical developments as being useful (or not) in these terms. Which types of privacy do we still need in 2020, and how can we possibly get them?",
     duration: dayjs.duration({ minutes: 20 })
   },
   {
@@ -228,7 +228,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Bob Rogers')],
     title: 'BeeKeeperAI: Accelerating Deployment of Healthcare AI by 1000x',
     group: groups['real-world-deployments-1'],
-    description: 'This talk identifies the data access challenges that block the development of dependable healthcare AI.  The speaker will explain how the BeeKeeperAI platform is leveraging privacy-preserving computing technology to allow healthcare AI developers to validate and train algorithms on multiple, diverse data sets without ever sharing or moving data.',
+    description:
+      'This talk identifies the data access challenges that block the development of dependable healthcare AI.  The speaker will explain how the BeeKeeperAI platform is leveraging privacy-preserving computing technology to allow healthcare AI developers to validate and train algorithms on multiple, diverse data sets without ever sharing or moving data.',
     duration: dayjs.duration({ minutes: 15 })
   },
 
@@ -275,7 +276,11 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|19:40:00', timeFormat),
-    speakers: [getSpeakerByName('Sachin Deshpande'), getSpeakerByName('Théo Ryffel'), getSpeakerByName('Michael Geer')],
+    speakers: [
+      getSpeakerByName('Sachin Deshpande'),
+      getSpeakerByName('Théo Ryffel'),
+      getSpeakerByName('Michael Geer')
+    ],
     title: 'Privacy AI Startups & The OpenMined Open-source Community',
     group: groups['investing'],
     description:
@@ -346,9 +351,11 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Kenneth Cukier')],
-    title: 'The Contact-Tracing Tragedy: A Failure of Technology and the State to Save Lives While Preserving Privacy',
+    title:
+      'The Contact-Tracing Tragedy: A Failure of Technology and the State to Save Lives While Preserving Privacy',
     group: groups['closing-session-1'],
-    description: "At the outset of the pandemic, many countries wanted to do digital contact tracing to improve on manual systems. But they basically failed -- not because of technology but privacy, and public health suffered. So shame on technologists, policymakers and media. Let's start a nuanced conversation on how to overcome the challenges so society can have both contact-tracing and privacy.",
+    description:
+      "At the outset of the pandemic, many countries wanted to do digital contact tracing to improve on manual systems. But they basically failed -- not because of technology but privacy, and public health suffered. So shame on technologists, policymakers and media. Let's start a nuanced conversation on how to overcome the challenges so society can have both contact-tracing and privacy.",
     duration: dayjs.duration({ minutes: 15 })
   },
 
@@ -444,7 +451,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Mayank Varia')],
     title: 'Scalable and Accessible Secure Multi-Party Computation',
     group: groups['research-lightning-2'],
-    description: 'This talk describes the experience of deploying a web application that securely analyzes the salary data of more than 100,000 employees to compute the gender wage gap. Additionally, the speaker will discuss recent efforts to improve the scalability of cryptographically protected computing in the datacenter.',
+    description:
+      'This talk describes the experience of deploying a web application that securely analyzes the salary data of more than 100,000 employees to compute the gender wage gap. Additionally, the speaker will discuss recent efforts to improve the scalability of cryptographically protected computing in the datacenter.',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
@@ -452,7 +460,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Luca Belli')],
     title: 'Challenges in Building the RecSys2020 Dataset',
     group: groups['research-lightning-2'],
-    description: 'This talk touches on the issues that Twitter encountered when building the dataset for the RecSys 2020 challenge. In particular the speaker shows how Twitter kept privacy top of mind, while at the same time having a dataset that is useful for research purposes.',
+    description:
+      'This talk touches on the issues that Twitter encountered when building the dataset for the RecSys 2020 challenge. In particular the speaker shows how Twitter kept privacy top of mind, while at the same time having a dataset that is useful for research purposes.',
     duration: dayjs.duration({ minutes: 10 })
   },
   {
@@ -503,7 +512,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Eric Verner')],
     title: 'COINSTAC: A Decentralized, Differentially Private Application for Neuroimaging',
     group: groups['tutorials'],
-    description: 'Data sharing is beneficial for science in that it enables researchers to find smaller effects and create more generalized machine learning models. However, data sharing is in some cases difficult or outright impossible because of barriers such as privacy laws, negotiating data usage agreements, infrastructure limitations, or lack of trust. The Collaborative Informatics and Neuroimaging Suite Toolkit for Anonymous Computation (COINSTAC) solves these problems by offering a platform for decentralized and differentially private analyses for neuroimaging researchers. Developed since 2015 by the Joint GSU, Georgia Tech, and Emory Center for Translational Research in Neuroimaging and Data Science (TReNDS) in Atlanta, GA, COINSTAC is a free and open source application in which algorithm developers have implemented various forms of linear regression, classification, and visualization to suit a variety of neuroimaging modalities. COINSTAC enables decentralized regression as well as advanced multivariate and machine learning tools and also enhanced privacy preservation tools such as differential privacy. COINSTAC is an Electron application written in JavaScript that utilizes Docker containers to encapsulate complex neuroimaging and machine learning pipelines. This tutorial will provide an overview of COINSTAC and show a demonstration of a COINSTAC computation.',
+    description:
+      'Data sharing is beneficial for science in that it enables researchers to find smaller effects and create more generalized machine learning models. However, data sharing is in some cases difficult or outright impossible because of barriers such as privacy laws, negotiating data usage agreements, infrastructure limitations, or lack of trust. The Collaborative Informatics and Neuroimaging Suite Toolkit for Anonymous Computation (COINSTAC) solves these problems by offering a platform for decentralized and differentially private analyses for neuroimaging researchers. Developed since 2015 by the Joint GSU, Georgia Tech, and Emory Center for Translational Research in Neuroimaging and Data Science (TReNDS) in Atlanta, GA, COINSTAC is a free and open source application in which algorithm developers have implemented various forms of linear regression, classification, and visualization to suit a variety of neuroimaging modalities. COINSTAC enables decentralized regression as well as advanced multivariate and machine learning tools and also enhanced privacy preservation tools such as differential privacy. COINSTAC is an Electron application written in JavaScript that utilizes Docker containers to encapsulate complex neuroimaging and machine learning pipelines. This tutorial will provide an overview of COINSTAC and show a demonstration of a COINSTAC computation.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -517,16 +527,27 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Adam Hall'), getSpeakerByName('Lohan Spies'), getSpeakerByName('Tom Titcombe'), getSpeakerByName('Will Abramson')],
+    speakers: [
+      getSpeakerByName('Adam Hall'),
+      getSpeakerByName('Lohan Spies'),
+      getSpeakerByName('Tom Titcombe'),
+      getSpeakerByName('Will Abramson')
+    ],
     title: 'Opus and PryVote: The Brave New World of Self Sovereign Identity (SSI)',
     group: groups['tutorials'],
-    description: 'This session will demonstrate our new SSI standard development kit. The speakers will discuss the need for decentralised identity and trust, the technologies involved and two flagship SSI applications; Opus and PryVote.',
+    description:
+      'This session will demonstrate our new SSI standard development kit. The speakers will discuss the need for decentralised identity and trust, the technologies involved and two flagship SSI applications; Opus and PryVote.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
-    speakers: [getSpeakerByName('Georgios Kaissis'), getSpeakerByName('Alex Ziller'), getSpeakerByName('Jonathan Passerat-Palmbach')],
-    title: 'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
+    speakers: [
+      getSpeakerByName('Georgios Kaissis'),
+      getSpeakerByName('Alex Ziller'),
+      getSpeakerByName('Jonathan Passerat-Palmbach')
+    ],
+    title:
+      'Privacy-preserving Medical Imaging Analysis with OpenMined PriMIA. A Sneak Peek at Features and Concepts',
     group: groups['tutorials'],
     description:
       'This session will provide a first look at the design and features of PriMIA, a library for privacy-preserving deep learning for medical imaging, jointly developed by the Technical University of Munich, Imperial College London and OpenMined. A brief introduction to the project will be given (ca. 10 minutes), after which participants will be given insight into how PriMIA performs federated learning and encrypted inference, as well as be introduced to the challenges of medical image analysis in a real-life environment using actual medical images and the Jupyter Notebook environment. (ca. 20 minutes). Lastly, opportunity will be provided for dicussion and participant questions (ca. 15 minutes).',
@@ -564,7 +585,8 @@ export const schedule = [
     speakers: [getSpeakerByName('Kartik Chopra')],
     title: 'Secure AI for National Security',
     group: groups['real-world-deployments-2'],
-    description: 'The goal for this presentation will be to increase awareness of the audience and research community on the viability of secure machine learning for national security purposes. The speaker shares deployment strategies of ML models that prevent adversarial attacks from the most challenging nation state actors, and how to preserve the privacy of underlying data during the model development phase. Specifically, the speaker discusses use cases, mission criteria, and teams (what type of engineers, managers and leaders) that are required to tackle these issues for the front line of countries. The speaker also suggests open source frameworks, libraries and technologies that have been leveraged in these environments to really safeguard the models, as well as promoting the work of OpenMined to show how you are democratizing these methods for data scientists in entrenched industries.',
+    description:
+      'The goal for this presentation will be to increase awareness of the audience and research community on the viability of secure machine learning for national security purposes. The speaker shares deployment strategies of ML models that prevent adversarial attacks from the most challenging nation state actors, and how to preserve the privacy of underlying data during the model development phase. Specifically, the speaker discusses use cases, mission criteria, and teams (what type of engineers, managers and leaders) that are required to tackle these issues for the front line of countries. The speaker also suggests open source frameworks, libraries and technologies that have been leveraged in these environments to really safeguard the models, as well as promoting the work of OpenMined to show how you are democratizing these methods for data scientists in entrenched industries.',
     duration: dayjs.duration({ minutes: 15 })
   },
   {
@@ -595,4 +617,7 @@ export const schedule = [
   }
 ];
 
-export const agenda = groupSchedule(schedule);
+const sortedSchedule = schedule.sort((a, b) => (a.datetime.isBefore(b.datetime) ? -1 : 1));
+
+export const hasConferenceStarted = dayjs().isAfter(sortedSchedule[0].datetime);
+export const agenda = groupSchedule(sortedSchedule);

@@ -1,3 +1,5 @@
+import { hasConferenceStarted } from './agenda';
+
 import apheris from '../assets/apheris-ai.png';
 import arkhn from '../assets/arkhn.png';
 import cdhi from '../assets/cdhi.png';
@@ -5,10 +7,11 @@ import datafleets from '../assets/data-fleets.png';
 import goldenspiral from '../assets/golden-spiral.png';
 import inpher from '../assets/inpher.jpg';
 
-
 export const title = 'Sponsors';
-export const titleLink = 'Become a Sponsor →';
-export const sponsorLink = 'https://drive.google.com/file/d/1-9_KZ7H0q0_lOhONOFzLTGYGp2VtKqOH/view';
+export const titleLink = hasConferenceStarted ? 'Donate →' : 'Become a Sponsor →';
+export const sponsorLink = hasConferenceStarted
+  ? 'https://opencollective.com/openmined'
+  : 'https://drive.google.com/file/d/1-9_KZ7H0q0_lOhONOFzLTGYGp2VtKqOH/view';
 export const sponsors = [
   {
     image: apheris,
@@ -39,5 +42,5 @@ export const sponsors = [
     image: inpher,
     name: 'Inpher',
     url: 'https://www.inpher.io/'
-  },
+  }
 ];

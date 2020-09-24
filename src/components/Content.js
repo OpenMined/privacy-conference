@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Speakers from '../pages/Speakers';
 import Agenda from '../pages/Agenda';
 import Sponsors from '../pages/Sponsors';
+import Resources from '../pages/Resources';
 import Home from '../pages/Home';
 
 import theme from '../theme';
@@ -34,6 +35,9 @@ export default ({ headerHeight, sidebarWidth, footerHeight }) => {
           </Route>
           <Route path="/sponsors">
             <Sponsors />
+          </Route>
+          <Route path="/resources">
+            <Resources />
           </Route>
           <Route path="/">
             <Home />
