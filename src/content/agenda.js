@@ -556,7 +556,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Davide Testuggine')],
-    title: 'Differentially Private Model Training with Opacus',
+    title: 'Differentially Private Model Training With Opacus',
     group: groups['tutorials'],
     description:
       'In this session, the speaker will go over the DP-SGD technique to train differentially private models and will then show how to train your own private model using Opacus, a PyTorch lib for fast and accessible DP-SGD training.',
@@ -565,7 +565,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Chinmay Shah')],
-    title: 'Differential Privacy using PyDP',
+    title: 'Differential Privacy Using PyDP',
     group: groups['tutorials'],
     description:
       'This tutorial aims to provide a brief overview of differential privacy. Further, it will cover the new PyDP vision as well as applying differential privacy using PyDP.',
