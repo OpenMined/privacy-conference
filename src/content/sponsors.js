@@ -3,7 +3,7 @@ import arkhn from '../assets/arkhn.png';
 import cdhi from '../assets/cdhi.png';
 import datafleets from '../assets/data-fleets.png';
 import goldenspiral from '../assets/golden-spiral.png';
-import inpher from '../assets/inpher.png';
+import inpher from '../assets/inpher.jpg';
 
 
 export const title = 'Sponsors';

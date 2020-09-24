@@ -578,6 +578,15 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|20:45:00', timeFormat),
+    speakers: [getSpeakerByName('Nick Elledge')],
+    title: 'TBC',
+    group: groups['real-world-deployments-2'],
+    description:
+      "TBC",
+    duration: dayjs.duration({ minutes: 15 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Andrew Trask')],
     title: 'Closing ceremony',
     group: groups['closing-session-2'],
