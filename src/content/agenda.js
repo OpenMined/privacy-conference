@@ -579,10 +579,10 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|20:45:00', timeFormat),
     speakers: [getSpeakerByName('Nick Elledge')],
-    title: 'TBC',
+    title: 'Crossing the Chasm: Driving Enterprise Adoption of Federated Learning and Differential Privacy in Healthcare, Banking, and Retail',
     group: groups['real-world-deployments-2'],
     description:
-      "TBC",
+      "Why aren’t privacy-enhancing technologies (PETs) being adopted faster in business and government? This talk illustrates what is needed beyond technology to get PETs working, provides six criteria for how enterprise buyers evaluate private AI software, and discusses case studies of real-world deployments of differential privacy, federated learning, and homomorphic encryption. The speaker offers use cases within public policy and international development, drawing on the speaker's experience in Africa.",
     duration: dayjs.duration({ minutes: 15 })
   },
   {

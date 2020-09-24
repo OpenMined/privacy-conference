@@ -661,8 +661,8 @@ export const speakers = [
     image: datafleets,
     pixelImage: pixelate(datafleets),
     name: 'Nick Elledge',
-    title: 'Data Fleets',
-    about: [''],
+    title: 'Co-founder at DataFleets',
+    about: ['Nick is co-founder of DataFleets, a privacy-preserving analytics platform. He previously was VP and Chief Investment Officer of EL Rothschild, an innovation consultant to the United Nations World Food Programme, and a business analyst at McKinsey & Company. He holds a Stanford MBA and a Harvard MPA in economic development. He loves international travel, ultimate frisbee, and improv comedy.'],
     social: []
   },
   {
