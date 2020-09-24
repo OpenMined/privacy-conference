@@ -22,11 +22,11 @@ import madeleine from '../assets/maddie-shang.jpg';
 import krzysztof from '../assets/krzysztof-ostrowski.jpg';
 import jason from '../assets/jason-mancuso.jpg';
 import andrew from '../assets/andrew-trask.jpg';
-import helen from '../assets/default-speaker.jpg';
+import helen from '../assets/helen-nissenbaum.jpg';
 import peter from '../assets/peter-kairouz.jpg';
 import nick from '../assets/nick-rose.jpg';
 import ronnie from '../assets/default-speaker.jpg';
-import pia from '../assets/default-speaker.jpg';
+import pia from '../assets/pia-mancini.jpg';
 import nathan from '../assets/nathan-benaich.jpg';
 import sachin from '../assets/sachin-deshpande.jpg';
 import ken from '../assets/kenneth-cukier.jpg';
@@ -58,7 +58,7 @@ import davide from '../assets/davide-testuggine.jpg';
 import chinmay from '../assets/chinmay-shah.jpg';
 import theo from '../assets/theo-ryffel.jpg';
 import michael from '../assets/michael-geer.jpg';
-import datafleets from '../assets/default-speaker.jpg';
+import datafleets from '../assets/nick-elledge.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
