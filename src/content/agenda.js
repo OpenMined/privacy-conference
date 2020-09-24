@@ -519,7 +519,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Robin Roehm'), getSpeakerByName('Pavlos Papadopoulos')],
-    title: 'Privacy Preserving Vertically Distributed machine learning',
+    title: 'Privacy Preserving Vertically Distributed Machine Learning',
     group: groups['tutorials'],
     description:
       'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
