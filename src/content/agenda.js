@@ -176,7 +176,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|15:30:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
+    speakers: [getSpeakerByName('Helen Nissenbaum')],
     title: 'Keynote',
     group: groups['keynote-1'],
     description: 'TBC',
@@ -519,7 +519,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Robin Roehm'), getSpeakerByName('Pavlos Papadopoulos')],
-    title: 'Privacy Preserving Vertically Distributed machine learning',
+    title: 'Privacy Preserving Vertically Distributed Machine Learning',
     group: groups['tutorials'],
     description:
       'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
@@ -556,7 +556,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Davide Testuggine')],
-    title: 'Differentially Private Model Training with Opacus',
+    title: 'Differentially Private Model Training With Opacus',
     group: groups['tutorials'],
     description:
       'In this session, the speaker will go over the DP-SGD technique to train differentially private models and will then show how to train your own private model using Opacus, a PyTorch lib for fast and accessible DP-SGD training.',
@@ -565,7 +565,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Chinmay Shah')],
-    title: 'Differential Privacy using PyDP',
+    title: 'Differential Privacy Using PyDP',
     group: groups['tutorials'],
     description:
       'This tutorial aims to provide a brief overview of differential privacy. Further, it will cover the new PyDP vision as well as applying differential privacy using PyDP.',
@@ -601,9 +601,10 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|20:45:00', timeFormat),
     speakers: [getSpeakerByName('Nick Elledge')],
-    title: 'TBC',
+    title: 'Crossing the Chasm: Driving Enterprise Adoption of Federated Learning and Differential Privacy in Healthcare, Banking, and Retail',
     group: groups['real-world-deployments-2'],
-    description: 'TBC',
+    description:
+      "Why aren’t privacy-enhancing technologies (PETs) being adopted faster in business and government? This talk illustrates what is needed beyond technology to get PETs working, provides six criteria for how enterprise buyers evaluate private AI software, and discusses case studies of real-world deployments of differential privacy, federated learning, and homomorphic encryption. The speaker offers use cases within public policy and international development, drawing on the speaker's experience in Africa.",
     duration: dayjs.duration({ minutes: 15 })
   },
   {

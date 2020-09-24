@@ -42,6 +42,15 @@ export default () => (
               >
                 {talk.title}
               </Heading>
+              <Text
+                key={`link-${section.title}-${talk.description}`}
+                sx={{
+                  as: 'p',
+                  mb: 3
+                }}
+              >
+                {talk.description}
+              </Text>
               <Grid gap={[3, null, null, 4]} columns={[1, 2, 1, 2]}>
                 {talk.links.map((link) => (
                   <Text

@@ -8,7 +8,7 @@ import {
   speakersEmoji,
   agendaEmoji,
   sponsorsEmoji,
-  resourcesEmoji
+  // resourcesEmoji
 } from '../content/sidebar';
 
 import { titleLink as sponsorTitle, sponsorLink } from '../content/sponsors';

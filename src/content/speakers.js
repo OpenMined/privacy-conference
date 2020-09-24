@@ -22,11 +22,11 @@ import madeleine from '../assets/maddie-shang.jpg';
 import krzysztof from '../assets/krzysztof-ostrowski.jpg';
 import jason from '../assets/jason-mancuso.jpg';
 import andrew from '../assets/andrew-trask.jpg';
-import tbc from '../assets/default-speaker.jpg';
+import helen from '../assets/helen-nissenbaum.jpg';
 import peter from '../assets/peter-kairouz.jpg';
 import nick from '../assets/nick-rose.jpg';
 import ronnie from '../assets/default-speaker.jpg';
-import pia from '../assets/default-speaker.jpg';
+import pia from '../assets/pia-mancini.jpg';
 import nathan from '../assets/nathan-benaich.jpg';
 import sachin from '../assets/sachin-deshpande.jpg';
 import ken from '../assets/kenneth-cukier.jpg';
@@ -58,7 +58,7 @@ import davide from '../assets/davide-testuggine.jpg';
 import chinmay from '../assets/chinmay-shah.jpg';
 import theo from '../assets/theo-ryffel.jpg';
 import michael from '../assets/michael-geer.jpg';
-import datafleets from '../assets/default-speaker.jpg';
+import datafleets from '../assets/nick-elledge.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -378,8 +378,8 @@ export const speakers = [
     image: pia,
     pixelImage: pixelate(pia),
     name: 'Pia Mancini',
-    title: 'Open Collective',
-    about: ['TBC'],
+    title: 'Co-founder & CEO at Open Collective',
+    about: ["Pia is a democracy activist, open source sustainer, co-founder & CEO at Open Collective and Chair of DemocracyEarth Foundation. She has worked in politics in Argentina and developed technology for democracy around the world. YC Alum, YGL (World Economic Forum),  globe-trotter and Roma's mum."],
     social: []
   },
   {
@@ -661,16 +661,16 @@ export const speakers = [
     image: datafleets,
     pixelImage: pixelate(datafleets),
     name: 'Nick Elledge',
-    title: 'Data Fleets',
-    about: [''],
+    title: 'Co-founder & COO at DataFleets',
+    about: ['Nick is co-founder and COO of DataFleets, a privacy-preserving analytics platform. He previously was VP and Chief Investment Officer of EL Rothschild, a venture capital investor at Andreessen Horowitz, an innovation consultant to the United Nations World Food Programme, and a business analyst at McKinsey & Company. He holds a Stanford MBA and a Harvard MPA in international development economics. He loves international travel, ultimate frisbee, and improv comedy.'],
     social: []
   },
   {
-    image: tbc,
-    pixelImage: pixelate(tbc),
-    name: 'TBC',
-    title: '',
-    about: ['TBC'],
+    image: helen,
+    pixelImage: pixelate(helen),
+    name: 'Helen Nissenbaum',
+    title: 'Professor of Information Science at Cornell Tech',
+    about: ["Helen is Professor of Information Science at Cornell Tech.  Her work spans societal, ethical, and political dimensions of information technology and digital media. Prof. Nissenbaum’s books include Obfuscation: A User's Guide for Privacy and Protest, with Finn Brunton (MIT Press, 2015), Values at Play in Digital Games, with Mary Flanagan (MIT Press, 2014), and Privacy in Context: Technology, Policy, and the Integrity of Social Life (Stanford, 2010). Grants from the National Science Foundation, Air Force Office of Scientific Research, Ford Foundation, the U.S. Department of Health and Human Services Office of the National Coordinator, and the Defense Advanced Research Projects Agency have supported her research.  Recipient of the 2014 Barwise Prize of the American Philosophical Association, Prof. Nissenbaum has contributed to privacy-enhancing software, including TrackMeNot (for protecting against profiling based on Web search) and AdNauseam (protecting against profiling based on ad clicks). Both are free and freely available. Prof. Nissenbaum holds a Ph.D. in philosophy from Stanford University and a B.A. (Hons) from the University of the Witwatersrand. She received an honorary doctorate from Leuphana University at Lüneberg in 2017. She previously served as Associate Director of the Center for Human Values at Princeton University."],
     social: []
   }
 ];
