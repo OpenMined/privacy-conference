@@ -176,7 +176,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|15:30:00', timeFormat),
-    speakers: [getSpeakerByName('TBC')],
+    speakers: [getSpeakerByName('Helen Nissenbaum')],
     title: 'Keynote',
     group: groups['keynote-1'],
     description: 'TBC',
