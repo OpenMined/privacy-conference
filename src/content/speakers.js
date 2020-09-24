@@ -58,6 +58,7 @@ import davide from '../assets/davide-testuggine.jpg';
 import chinmay from '../assets/chinmay-shah.jpg';
 import theo from '../assets/theo-ryffel.jpg';
 import michael from '../assets/michael-geer.jpg';
+import datafleets from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -654,6 +655,14 @@ export const speakers = [
     name: 'Michael Geer',
     title: 'Co-founder at Humanity.health',
     about: ['Michael is co-founder of Humanity with Peter Ward. Together they have built apps reaching over a billion people. Humanity is an app that enables you to know your rate of aging and slow it down thus staying healthy for longer.'],
+    social: []
+  },
+  {
+    image: datafleets,
+    pixelImage: pixelate(datafleets),
+    name: 'Nick Elledge',
+    title: 'Data Fleets',
+    about: [''],
     social: []
   },
   {
