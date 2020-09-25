@@ -3,15 +3,15 @@ import { Box, Text, Button, Flex, Link, Image } from 'theme-ui';
 import { Link as RRDLink } from 'react-router-dom';
 
 import {
-  registerTitle,
-  registerLink,
+  streamTitle,
+  streamLink,
+  chatTitle,
+  chatLink,
   speakersEmoji,
   agendaEmoji,
   sponsorsEmoji,
   // resourcesEmoji
 } from '../content/sidebar';
-
-import { titleLink as sponsorTitle, sponsorLink } from '../content/sponsors';
 
 const linkStyles = {
   borderTop: 'thin',
@@ -82,11 +82,11 @@ export const SidebarCTAs = ({ headerHeight }) => (
       px: [3, null, 4]
     }}
   >
-    <Button variant="black" as="a" target="_blank" href={sponsorLink} mr={3}>
-      {sponsorTitle.slice(0, -2)}
+    <Button variant="black" as="a" target="_blank" href={chatLink} mr={3}>
+      {chatTitle}
     </Button>
-    <Button variant="black" as="a" target="_blank" href={registerLink}>
-      {registerTitle}
+    <Button variant="black" as="a" target="_blank" href={streamLink}>
+      {streamTitle}
     </Button>
   </Flex>
 );
