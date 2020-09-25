@@ -212,16 +212,16 @@ export const schedule = [
     speakers: [],
     title: 'Break',
     group: groups['roadmap'],
-    description: 'Short 25 minute break',
-    duration: dayjs.duration({ minutes: 25 })
+    description: 'Short 15 minute break',
+    duration: dayjs.duration({ minutes: 15 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|17:45:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|17:35:00', timeFormat),
     speakers: [getSpeakerByName('Pia Mancini')],
     title: 'TBC',
     group: groups['philanthropy'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 30 })
+    duration: dayjs.duration({ minutes: 40 })
   },
   {
     datetime: dayjs.utc('2020-09-26|18:15:00', timeFormat),
