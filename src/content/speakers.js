@@ -61,6 +61,7 @@ import michael from '../assets/michael-geer.jpg';
 import datafleets from '../assets/nick-elledge.jpg';
 import mariya from '../assets/default-speaker.jpg';
 import nicolasinpher from '../assets/default-speaker.jpg';
+import sarah from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -689,6 +690,14 @@ export const speakers = [
     name: 'Nicolas Gama',
     title: 'Chief Scientist at Inpher',
     about: ["Nicolas Gama is chief scientist at Inpher, inc. and associate professor at University of Versailles. His research focuses on lattice-based cryptography, and efficient privacy preserving computations. He is one of the creators of the TFHE homomorphic encryption library."],
+    social: []
+  },
+  {
+    image: sarah,
+    pixelImage: pixelate(sarah),
+    name: 'Sarah Aoun',
+    title: '',
+    about: [""],
     social: []
   }
 ];
