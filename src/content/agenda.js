@@ -177,7 +177,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|15:30:00', timeFormat),
     speakers: [getSpeakerByName('Helen Nissenbaum')],
-    title: 'Keynote',
+    title: 'Privacy, Contextual Integrity, and Obfuscation',
     group: groups['keynote-1'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 30 })
