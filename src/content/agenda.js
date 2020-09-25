@@ -405,9 +405,9 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|17:30:00', timeFormat),
     speakers: [getSpeakerByName('Kristin Lauter')],
-    title: 'TBC',
+    title: 'Private AI: Machine Learning on Encrypted Data',
     group: groups['in-the-research-lab-2'],
-    description: 'TBC',
+    description: "As the world adopts Artificial Intelligence, the privacy risks are many.  AI can improve our lives, but may leak or misuse our private data.  Private AI is based on Homomorphic Encryption (HE), a new encryption paradigm which allows the cloud to operate on private data in encrypted form, without ever decrypting it, enabling private training and private prediction.  The speaker's 2016 ICML CryptoNets paper showed for the first time that it was possible to evaluate neural nets on homomorphically encrypted data, and opened new research directions combining machine learning and cryptography. The security of Homomorphic Encryption is based on hard problems in mathematics involving lattices, a candidate for post-quantum cryptography.  This talk will explain Homomorphic Encryption, Private AI, and show demos of HE in action.",
     duration: dayjs.duration({ minutes: 15 })
   },
   {
