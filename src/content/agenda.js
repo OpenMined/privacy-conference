@@ -356,7 +356,7 @@ export const schedule = [
     group: groups['closing-session-1'],
     description:
       "At the outset of the pandemic, many countries wanted to do digital contact tracing to improve on manual systems. But they basically failed -- not because of technology but privacy, and public health suffered. So shame on technologists, policymakers and media. Let's start a nuanced conversation on how to overcome the challenges so society can have both contact-tracing and privacy.",
-    duration: dayjs.duration({ minutes: 15 })
+    duration: dayjs.duration({ minutes: 25 })
   },
 
   // SUNDAY
