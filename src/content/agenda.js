@@ -205,15 +205,7 @@ export const schedule = [
     title: 'Governance Roadmap',
     group: groups['roadmap'],
     description: "This talk presents OpenMined's vision & roadmap to the Economies and Governance verticals. The speaker demonstrates how changes in the way we store and manage personal data can incentivize Businesses and Governments to serve us, their consumers, better.",
-    duration: dayjs.duration({ minutes: 20 })
-  },
-  {
-    datetime: dayjs.utc('2020-09-26|17:20:00', timeFormat),
-    speakers: [],
-    title: 'Break',
-    group: groups['roadmap'],
-    description: 'Short 15 minute break',
-    duration: dayjs.duration({ minutes: 15 })
+    duration: dayjs.duration({ minutes: 35 })
   },
   {
     datetime: dayjs.utc('2020-09-26|17:35:00', timeFormat),
