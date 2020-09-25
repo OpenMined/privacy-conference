@@ -204,7 +204,7 @@ export const schedule = [
     speakers: [getSpeakerByName('Ronnie Falcon')],
     title: 'Governance Roadmap',
     group: groups['roadmap'],
-    description: 'TBC',
+    description: "This talk presents OpenMined's vision & roadmap to the Economies and Governance verticals. The speaker demonstrates how changes in the way we store and manage personal data can incentivize Businesses and Governments to serve us, their consumers, better.",
     duration: dayjs.duration({ minutes: 20 })
   },
   {
