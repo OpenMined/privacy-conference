@@ -212,7 +212,7 @@ export const schedule = [
     speakers: [],
     title: 'Break',
     group: groups['roadmap'],
-    description: 'Short 15 minute break',
+    description: 'Short 25 minute break',
     duration: dayjs.duration({ minutes: 25 })
   },
   {
