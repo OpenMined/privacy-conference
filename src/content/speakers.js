@@ -373,8 +373,8 @@ export const speakers = [
     image: ronnie,
     pixelImage: pixelate(ronnie),
     name: 'Ronnie Falcon',
-    title: 'OpenMined',
-    about: ['TBC'],
+    title: 'Project Manager at OpenMined',
+    about: ['Ronnie is a Product Manager at OpenMined focusing on the Economies and the Governance verticals. With a degree in Computer Science from Imperial College London she has a wide experience launching large scale Machine Learning based products. Ex-Product Manager at Google, and currently a Product Lead at River Search. '],
     social: []
   },
   {
