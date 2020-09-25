@@ -25,7 +25,7 @@ import andrew from '../assets/andrew-trask.jpg';
 import helen from '../assets/helen-nissenbaum.jpg';
 import peter from '../assets/peter-kairouz.jpg';
 import nick from '../assets/nick-rose.jpg';
-import ronnie from '../assets/default-speaker.jpg';
+import ronnie from '../assets/ronnie-falcon.jpg';
 import pia from '../assets/pia-mancini.jpg';
 import nathan from '../assets/nathan-benaich.jpg';
 import sachin from '../assets/sachin-deshpande.jpg';
@@ -59,8 +59,9 @@ import chinmay from '../assets/chinmay-shah.jpg';
 import theo from '../assets/theo-ryffel.jpg';
 import michael from '../assets/michael-geer.jpg';
 import datafleets from '../assets/nick-elledge.jpg';
-import mariya from '../assets/default-speaker.jpg';
-import nicolasinpher from '../assets/default-speaker.jpg';
+import mariya from '../assets/mariya-georgieva.jpg';
+import nicolasinpher from '../assets/nicolas-gama.jpg';
+import sarah from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -689,6 +690,14 @@ export const speakers = [
     name: 'Nicolas Gama',
     title: 'Chief Scientist at Inpher',
     about: ["Nicolas Gama is chief scientist at Inpher, inc. and associate professor at University of Versailles. His research focuses on lattice-based cryptography, and efficient privacy preserving computations. He is one of the creators of the TFHE homomorphic encryption library."],
+    social: []
+  },
+  {
+    image: sarah,
+    pixelImage: pixelate(sarah),
+    name: 'Sarah Aoun',
+    title: '',
+    about: [""],
     social: []
   }
 ];

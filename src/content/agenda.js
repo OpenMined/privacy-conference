@@ -217,7 +217,7 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-26|17:35:00', timeFormat),
-    speakers: [getSpeakerByName('Pia Mancini')],
+    speakers: [getSpeakerByName('Pia Mancini'), getSpeakerByName('Andrew Trask'), getSpeakerByName('Nathan Benaich'), getSpeakerByName('Sarah Aoun')],
     title: 'Privacy Philanthropy Panel',
     group: groups['philanthropy'],
     description: 'TBC',
