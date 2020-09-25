@@ -49,10 +49,10 @@ export const groups = {
   'keynote-1': {
     title: 'Keynote',
     description:
-      'Hear from a legend of the privacy community - whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
+      'Hear from a legend of the privacy community — whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
   },
   roadmap: {
-    title: "Privacy Technology Roadmap - What's Coming Next?",
+    title: "Privacy Technology Roadmap — What's Coming Next?",
     description:
       'We have fancy privacy technologies. We know the privacy-preserving world we want. This series of talks seeks to answer the question, "How do we get there?" and "What privacy-preserving products should we build first?"'
   },
@@ -218,7 +218,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|17:35:00', timeFormat),
     speakers: [getSpeakerByName('Pia Mancini')],
-    title: 'TBC',
+    title: 'Privacy Philanthropy Panel',
     group: groups['philanthropy'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 40 })
@@ -255,7 +255,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nathan Benaich')],
-    title: 'Building An AI-first, Privacy-preserving Technology Company',
+    title: 'Building an AI-first, Privacy-preserving Technology Company',
     group: groups['investing'],
     description:
       'In this talk, the speaker addresses the opportunity for building privacy-preserving software products with a focus on AI-first products. The speaker discusses both headwinds and tailwinds for privacy-preserving products, the use case contexts in which it makes sense to build in such a fashion, and how to consider value creation and value capture. This talk is targeted at those interested in building startups using privacy-preserving technology.',
@@ -281,7 +281,7 @@ export const schedule = [
       getSpeakerByName('Théo Ryffel'),
       getSpeakerByName('Michael Geer')
     ],
-    title: 'Privacy AI Startups & The OpenMined Open-source Community',
+    title: 'Privacy AI Startups & the OpenMined Open-source Community',
     group: groups['investing'],
     description:
       'OpenMined has built vibrant relationships with numerous startups, who are leveraging privacy AI technologies as a core part of their offering. This panel will discuss these symbiotic relationships, and how they are likely to grow in the future.',
@@ -371,7 +371,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|16:00:00', timeFormat),
     speakers: [],
-    title: 'Networking session',
+    title: 'Networking Session',
     group: groups['networking'],
     description: 'A networking session on our Gather conference platform',
     duration: dayjs.duration({ minutes: 50 })
@@ -484,7 +484,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Alan Aboudib')],
-    title: 'SyferText 0.1.0: Privacy-preserving NLP over PyGrid',
+    title: 'SyferText 0.1.0: Privacy-preserving NLP Over PyGrid',
     group: groups['tutorials'],
     description:
       'This tutorial session presents SyferText 0.1.0 - its vision, with hands-on examples on how to create a pipeline (including pre-processing component + PySyft model), deploy it to PyGrid, load it, and use it.',
@@ -502,7 +502,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nick Rose'), getSpeakerByName('Andrew Trask')],
-    title: 'Duet Demo - How to Do Data Science on Data Owned by a Different Organization',
+    title: 'Duet Demo — How to Do Data Science on Data Owned by a Different Organization',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
