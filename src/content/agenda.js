@@ -527,6 +527,15 @@ export const schedule = [
   },
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Mariya Georgieva'), getSpeakerByName('Nicolas Gama')],
+    title: 'Introduction to TFHE and Some Applications',
+    group: groups['tutorials'],
+    description:
+      'Homomorphic encryption is a privacy preserving technique allowing a single public cloud to operate on secret data without leaking anything on the data. In this presentation, the speakers recall the capabilities of homomorphic encryption, and its security model. Then they detail the TFHE library, whose API supports efficiently various plaintext computation models, like arbitrary boolean circuits, arithmetic circuits with discrete and continuous logic, and other computational models like deterministic automata or lookup tables. They first demonstrate a few tutorial examples. In the second part of this talk the speakers describe two applications for private genomic studies: private GWAS and private genome imputation (which won the 1st place at Idash 2019), where methods for secure computation have shown significant performance improvements over the last several years, and in particular fully homomorphic encryption becomes a critical path technology for innovative, life-saving research to positively and equally impact the global population.',
+    duration: dayjs.duration({ minutes: 60 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [
       getSpeakerByName('Adam Hall'),
       getSpeakerByName('Lohan Spies'),
