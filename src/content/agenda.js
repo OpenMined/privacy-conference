@@ -180,27 +180,27 @@ export const schedule = [
     title: 'Keynote',
     group: groups['keynote-1'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 60 })
+    duration: dayjs.duration({ minutes: 30 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|16:30:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|16:00:00', timeFormat),
     speakers: [getSpeakerByName('Andrew Trask')],
     title: 'OpenMined High Level Roadmap',
     group: groups['roadmap'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 20 })
+    duration: dayjs.duration({ minutes: 45 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|16:50:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|16:45:00', timeFormat),
     speakers: [getSpeakerByName('Nick Rose')],
     title: 'OpenMined Science Roadmap',
     group: groups['roadmap'],
     description:
       'This talk presents the OpenMined vision & roadmap for how we want to help accelerate science by solving privacy. The talk provides details on the problems faced by data scientists and researchers, a possible solution, and a path forward to achieving that solution.',
-    duration: dayjs.duration({ minutes: 20 })
+    duration: dayjs.duration({ minutes: 15 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|17:10:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|17:00:00', timeFormat),
     speakers: [getSpeakerByName('Ronnie Falcon')],
     title: 'Governance Roadmap',
     group: groups['roadmap'],
@@ -208,12 +208,12 @@ export const schedule = [
     duration: dayjs.duration({ minutes: 20 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|17:30:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|17:20:00', timeFormat),
     speakers: [],
     title: 'Break',
     group: groups['roadmap'],
     description: 'Short 15 minute break',
-    duration: dayjs.duration({ minutes: 15 })
+    duration: dayjs.duration({ minutes: 25 })
   },
   {
     datetime: dayjs.utc('2020-09-26|17:45:00', timeFormat),

@@ -437,7 +437,7 @@ export const speakers = [
     name: 'Kristin Lauter',
     title: 'Principal Researcher and Partner Research Manager at Microsoft Research',
     about: [
-      'Kristin is a Principal Researcher and Partner Research Manager at Microsoft Research. She leads the Cryptography and Privacy Research group, and the Urban Innovation team with projects on “Private AI” and “AI for Cities”. She works at the interface between Machine Learning and Cryptography, with a focus on cloud security and health and genomic privacy. She is particularly known for her work on homomorphic encryption, elliptic curve cryptography, and for introducing supersingular isogeny graphs as a solution for post-quantum cryptography.'
+      'Kristin is a mathematician and cryptographer whose research areas are number theory, algebraic geometry, and applications to cryptography. She is particularly known for her work on homomorphic encryption, elliptic curve cryptography, and post-quantum cryptography. She earned all of her degrees (BA, MS, and PhD) in mathematics at the University of Chicago. She is a Principal Researcher and Partner Research Manager of the Cryptography and Privacy Group at Microsoft Research in Redmond, Washington. She served as President of the Association for Women in Mathematics (AWM) from 2015 –2017, and she currently serves on the Board of Trustees for MSRI. She is a Fellow of the American Mathematical Society (AMS), the Society of Industrial and Applied Mathematics (SIAM), and the Association for Women In Mathematics (AWM). She is the 2018-2020 Polya Lecturer for the Mathematical Association of America (MAA). She has published more than 100 papers, holds more than 50 patents, and has more than 50 female co-authors.'
     ],
     social: []
   },
