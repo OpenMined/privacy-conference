@@ -25,7 +25,7 @@ import andrew from '../assets/andrew-trask.jpg';
 import helen from '../assets/helen-nissenbaum.jpg';
 import peter from '../assets/peter-kairouz.jpg';
 import nick from '../assets/nick-rose.jpg';
-import ronnie from '../assets/default-speaker.jpg';
+import ronnie from '../assets/ronnie-falcon.jpg';
 import pia from '../assets/pia-mancini.jpg';
 import nathan from '../assets/nathan-benaich.jpg';
 import sachin from '../assets/sachin-deshpande.jpg';
@@ -59,6 +59,9 @@ import chinmay from '../assets/chinmay-shah.jpg';
 import theo from '../assets/theo-ryffel.jpg';
 import michael from '../assets/michael-geer.jpg';
 import datafleets from '../assets/nick-elledge.jpg';
+import mariya from '../assets/mariya-georgieva.jpg';
+import nicolasinpher from '../assets/nicolas-gama.jpg';
+import sarah from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -370,8 +373,8 @@ export const speakers = [
     image: ronnie,
     pixelImage: pixelate(ronnie),
     name: 'Ronnie Falcon',
-    title: 'OpenMined',
-    about: ['TBC'],
+    title: 'Project Manager at OpenMined',
+    about: ['Ronnie is a Product Manager at OpenMined focusing on the Economies and the Governance verticals. With a degree in Computer Science from Imperial College London she has a wide experience launching large scale Machine Learning based products. Ex-Product Manager at Google, and currently a Product Lead at River Search. '],
     social: []
   },
   {
@@ -671,6 +674,30 @@ export const speakers = [
     name: 'Helen Nissenbaum',
     title: 'Professor of Information Science at Cornell Tech',
     about: ["Helen is Professor of Information Science at Cornell Tech.  Her work spans societal, ethical, and political dimensions of information technology and digital media. Prof. Nissenbaum’s books include Obfuscation: A User's Guide for Privacy and Protest, with Finn Brunton (MIT Press, 2015), Values at Play in Digital Games, with Mary Flanagan (MIT Press, 2014), and Privacy in Context: Technology, Policy, and the Integrity of Social Life (Stanford, 2010). Grants from the National Science Foundation, Air Force Office of Scientific Research, Ford Foundation, the U.S. Department of Health and Human Services Office of the National Coordinator, and the Defense Advanced Research Projects Agency have supported her research.  Recipient of the 2014 Barwise Prize of the American Philosophical Association, Prof. Nissenbaum has contributed to privacy-enhancing software, including TrackMeNot (for protecting against profiling based on Web search) and AdNauseam (protecting against profiling based on ad clicks). Both are free and freely available. Prof. Nissenbaum holds a Ph.D. in philosophy from Stanford University and a B.A. (Hons) from the University of the Witwatersrand. She received an honorary doctorate from Leuphana University at Lüneberg in 2017. She previously served as Associate Director of the Center for Human Values at Princeton University."],
+    social: []
+  },
+  {
+    image: mariya,
+    pixelImage: pixelate(mariya),
+    name: 'Mariya Georgieva',
+    title: 'Director of Security Innovation at Inpher',
+    about: ["Mariya is a director of security innovation at Inpher, inc. Her research focuses on lattice based reduction algorithms and cryptanalysis, software security, privacy preserving computation and applications. She is one of the creators of the TFHE library and Chimera framework."],
+    social: []
+  },
+  {
+    image: nicolasinpher,
+    pixelImage: pixelate(nicolasinpher),
+    name: 'Nicolas Gama',
+    title: 'Chief Scientist at Inpher',
+    about: ["Nicolas Gama is chief scientist at Inpher, inc. and associate professor at University of Versailles. His research focuses on lattice-based cryptography, and efficient privacy preserving computations. He is one of the creators of the TFHE homomorphic encryption library."],
+    social: []
+  },
+  {
+    image: sarah,
+    pixelImage: pixelate(sarah),
+    name: 'Sarah Aoun',
+    title: '',
+    about: [""],
     social: []
   }
 ];

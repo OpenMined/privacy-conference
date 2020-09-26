@@ -49,10 +49,10 @@ export const groups = {
   'keynote-1': {
     title: 'Keynote',
     description:
-      'Hear from a legend of the privacy community - whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
+      'Hear from a legend of the privacy community — whose groundbreaking philosophical research has defined what "privacy" really is to both layman and academic. Her pivotal work is the foundation upon which our technical advancements rest.'
   },
   roadmap: {
-    title: "Privacy Technology Roadmap - What's Coming Next?",
+    title: "Privacy Technology Roadmap — What's Coming Next?",
     description:
       'We have fancy privacy technologies. We know the privacy-preserving world we want. This series of talks seeks to answer the question, "How do we get there?" and "What privacy-preserving products should we build first?"'
   },
@@ -122,12 +122,12 @@ const timeFormat = 'YYYY-MM-DD|HH:mm:ss';
 export const schedule = [
   // SATURDAY
   {
-    datetime: dayjs.utc('2020-09-26|14:00:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|13:55:00', timeFormat),
     speakers: [getSpeakerByName('Andrew Trask')],
     title: 'Welcome Talk and Conference Overview',
     group: groups['opening-session'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 10 })
+    duration: dayjs.duration({ minutes: 15 })
   },
   {
     datetime: dayjs.utc('2020-09-26|14:10:00', timeFormat),
@@ -204,24 +204,16 @@ export const schedule = [
     speakers: [getSpeakerByName('Ronnie Falcon')],
     title: 'Governance Roadmap',
     group: groups['roadmap'],
-    description: 'TBC',
-    duration: dayjs.duration({ minutes: 20 })
+    description: "This talk presents OpenMined's vision & roadmap to the Economies and Governance verticals. The speaker demonstrates how changes in the way we store and manage personal data can incentivize Businesses and Governments to serve us, their consumers, better.",
+    duration: dayjs.duration({ minutes: 35 })
   },
   {
-    datetime: dayjs.utc('2020-09-26|17:20:00', timeFormat),
-    speakers: [],
-    title: 'Break',
-    group: groups['roadmap'],
-    description: 'Short 15 minute break',
-    duration: dayjs.duration({ minutes: 25 })
-  },
-  {
-    datetime: dayjs.utc('2020-09-26|17:45:00', timeFormat),
-    speakers: [getSpeakerByName('Pia Mancini')],
-    title: 'TBC',
+    datetime: dayjs.utc('2020-09-26|17:35:00', timeFormat),
+    speakers: [getSpeakerByName('Pia Mancini'), getSpeakerByName('Andrew Trask'), getSpeakerByName('Nathan Benaich'), getSpeakerByName('Sarah Aoun')],
+    title: 'Privacy Philanthropy Panel',
     group: groups['philanthropy'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 30 })
+    duration: dayjs.duration({ minutes: 40 })
   },
   {
     datetime: dayjs.utc('2020-09-26|18:15:00', timeFormat),
@@ -255,7 +247,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-26|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nathan Benaich')],
-    title: 'Building An AI-first, Privacy-preserving Technology Company',
+    title: 'Building an AI-first, Privacy-preserving Technology Company',
     group: groups['investing'],
     description:
       'In this talk, the speaker addresses the opportunity for building privacy-preserving software products with a focus on AI-first products. The speaker discusses both headwinds and tailwinds for privacy-preserving products, the use case contexts in which it makes sense to build in such a fashion, and how to consider value creation and value capture. This talk is targeted at those interested in building startups using privacy-preserving technology.',
@@ -281,7 +273,7 @@ export const schedule = [
       getSpeakerByName('Théo Ryffel'),
       getSpeakerByName('Michael Geer')
     ],
-    title: 'Privacy AI Startups & The OpenMined Open-source Community',
+    title: 'Privacy AI Startups & the OpenMined Open-source Community',
     group: groups['investing'],
     description:
       'OpenMined has built vibrant relationships with numerous startups, who are leveraging privacy AI technologies as a core part of their offering. This panel will discuss these symbiotic relationships, and how they are likely to grow in the future.',
@@ -356,7 +348,7 @@ export const schedule = [
     group: groups['closing-session-1'],
     description:
       "At the outset of the pandemic, many countries wanted to do digital contact tracing to improve on manual systems. But they basically failed -- not because of technology but privacy, and public health suffered. So shame on technologists, policymakers and media. Let's start a nuanced conversation on how to overcome the challenges so society can have both contact-tracing and privacy.",
-    duration: dayjs.duration({ minutes: 15 })
+    duration: dayjs.duration({ minutes: 25 })
   },
 
   // SUNDAY
@@ -371,7 +363,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|16:00:00', timeFormat),
     speakers: [],
-    title: 'Networking session',
+    title: 'Networking Session',
     group: groups['networking'],
     description: 'A networking session on our Gather conference platform',
     duration: dayjs.duration({ minutes: 50 })
@@ -484,7 +476,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Alan Aboudib')],
-    title: 'SyferText 0.1.0: Privacy-preserving NLP over PyGrid',
+    title: 'SyferText 0.1.0: Privacy-preserving NLP Over PyGrid',
     group: groups['tutorials'],
     description:
       'This tutorial session presents SyferText 0.1.0 - its vision, with hands-on examples on how to create a pipeline (including pre-processing component + PySyft model), deploy it to PyGrid, load it, and use it.',
@@ -502,7 +494,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
     speakers: [getSpeakerByName('Nick Rose'), getSpeakerByName('Andrew Trask')],
-    title: 'Duet Demo - How to Do Data Science on Data Owned by a Different Organization',
+    title: 'Duet Demo — How to Do Data Science on Data Owned by a Different Organization',
     group: groups['tutorials'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 60 })
@@ -523,6 +515,15 @@ export const schedule = [
     group: groups['tutorials'],
     description:
       'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
+    duration: dayjs.duration({ minutes: 60 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|19:00:00', timeFormat),
+    speakers: [getSpeakerByName('Mariya Georgieva'), getSpeakerByName('Nicolas Gama')],
+    title: 'Introduction to TFHE and Some Applications',
+    group: groups['tutorials'],
+    description:
+      'Homomorphic encryption is a privacy preserving technique allowing a single public cloud to operate on secret data without leaking anything on the data. In this presentation, the speakers recall the capabilities of homomorphic encryption, and its security model. Then they detail the TFHE library, whose API supports efficiently various plaintext computation models, like arbitrary boolean circuits, arithmetic circuits with discrete and continuous logic, and other computational models like deterministic automata or lookup tables. They first demonstrate a few tutorial examples. In the second part of this talk the speakers describe two applications for private genomic studies: private GWAS and private genome imputation (which won the 1st place at Idash 2019), where methods for secure computation have shown significant performance improvements over the last several years, and in particular fully homomorphic encryption becomes a critical path technology for innovative, life-saving research to positively and equally impact the global population.',
     duration: dayjs.duration({ minutes: 60 })
   },
   {
@@ -610,7 +611,7 @@ export const schedule = [
   {
     datetime: dayjs.utc('2020-09-27|21:00:00', timeFormat),
     speakers: [getSpeakerByName('Andrew Trask')],
-    title: 'Closing ceremony',
+    title: 'Closing Ceremony',
     group: groups['closing-session-2'],
     description: 'TBC',
     duration: dayjs.duration({ minutes: 5 })
