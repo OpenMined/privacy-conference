@@ -62,6 +62,7 @@ import datafleets from '../assets/nick-elledge.jpg';
 import mariya from '../assets/mariya-georgieva.jpg';
 import nicolasinpher from '../assets/nicolas-gama.jpg';
 import sarah from '../assets/default-speaker.jpg';
+import zach from '../assets/default-speaker.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
@@ -697,6 +698,14 @@ export const speakers = [
     pixelImage: pixelate(sarah),
     name: 'Sarah Aoun',
     title: '',
+    about: [""],
+    social: []
+  },
+  {
+    image: zach,
+    pixelImage: pixelate(zach),
+    name: 'Zachary Charles',
+    title: 'Google',
     about: [""],
     social: []
   }
