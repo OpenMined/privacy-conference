@@ -17,9 +17,6 @@ export default () => {
         <Text sx={{ fontWeight: 'bold', fontSize: 3, color: 'gray' }} mt={[3, null, 4]}>
           All times are displayed in your local time zone.
         </Text>
-        <Text sx={{ fontWeight: 'bold', fontSize: 3, color: 'red.500' }} mt={[3, null, 4]}>
-          Please note the livestream for day 1 is behind schedule by ~15 minutes
-        </Text>
       </Box>
       {agenda.map(({ datetime, events }, dayNum) => (
         <Box key={`day-${dayNum}`}>
