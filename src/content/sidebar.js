@@ -3,7 +3,7 @@ export const streamTitle = 'Go to the livestream';
 export const chatTitle = 'Network with attendees';
 
 export const speakerLink = 'https://forms.gle/wpKY6cTL6p5k43as7';
-export const streamLink = 'https://www.youtube.com/watch?v=oM_cgRkN6MQ&feature=youtu.be'
+export const streamLink = 'https://www.youtube.com/watch?v=F46lX5VIoas&feature=youtu.be'
 export const registerLink = 'https://www.eventbrite.co.uk/e/openmined-privacy-conference-2020-tickets-116575230653';
 export const chatLink = 'https://gather.town/app/92cJR0nlbiBOifxj/OpenMined'
 
