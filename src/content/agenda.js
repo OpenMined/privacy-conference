@@ -358,23 +358,32 @@ export const schedule = [
     title: 'Where Do You Fit Within Our Community?',
     group: groups['teams'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 120 })
+    duration: dayjs.duration({ minutes: 80 })
   },
   {
-    datetime: dayjs.utc('2020-09-27|16:00:00', timeFormat),
+    datetime: dayjs.utc('2020-09-27|15:20:00', timeFormat),
+    speakers: [],
+    title: 'Break',
+    group: groups['teams'],
+    description: 'Short 10 minute break',
+    duration: dayjs.duration({ minutes: 10 })
+  },
+  {
+    datetime: dayjs.utc('2020-09-27|15:30:00', timeFormat),
     speakers: [],
     title: 'Networking Session',
     group: groups['networking'],
     description: 'A networking session on our Gather conference platform',
-    duration: dayjs.duration({ minutes: 50 })
+    duration: dayjs.duration({ minutes: 75 })
   },
   {
-    datetime: dayjs.utc('2020-09-27|16:50:00', timeFormat),
-    speakers: [],
-    title: 'Break',
-    group: groups['networking'],
-    description: 'Short 10 minute break',
-    duration: dayjs.duration({ minutes: 10 })
+    datetime: dayjs.utc('2020-09-27|16:45:00', timeFormat),
+    speakers: [getSpeakerByName('Zachary Charles')],
+    title: 'Adaptive Federated Optimization',
+    group: groups['in-the-research-lab-2'],
+    description:
+      'TBC',
+    duration: dayjs.duration({ minutes: 15 })
   },
   {
     datetime: dayjs.utc('2020-09-27|17:00:00', timeFormat),
