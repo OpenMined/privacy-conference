@@ -705,8 +705,8 @@ export const speakers = [
     image: zach,
     pixelImage: pixelate(zach),
     name: 'Zachary Charles',
-    title: 'Google',
-    about: [""],
+    title: 'AI Resident at Google',
+    about: ["Zachary is a machine learning researcher currently working as an AI Resident at Google. His research broadly focuses on ensuring that optimization methods for machine learning are efficient and robust. His current focus is designing and analyzing optimization methods for federated learning. He actively contributes to TensorFlow Federated, an open-source framework for federated learning experimentation. Zachary received a PhD in applied mathematics from the University of Wisconsin-Madison under the guidance of Nigel Boston. He was also a postdoctoral researcher with Dimitris Papailiopoulos. In his free time Zachary often bakes."],
     social: []
   }
 ];
