@@ -62,7 +62,7 @@ import datafleets from '../assets/nick-elledge.jpg';
 import mariya from '../assets/mariya-georgieva.jpg';
 import nicolasinpher from '../assets/nicolas-gama.jpg';
 import sarah from '../assets/default-speaker.jpg';
-import zach from '../assets/default-speaker.jpg';
+import zach from '../assets/zachary-charles.jpg';
 
 const pixelate = (url) => {
   // Canvas, context, and image
