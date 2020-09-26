@@ -62,8 +62,8 @@ export default () => {
                       mb: 1
                     }}
                   >
-                    {event.datetime.format('h:mm A UTC')} -{' '}
-                    {lastGroupTime.format('h:mm A UTC')}
+                    {event.datetime.local().format('h:mm A')} -{' '}
+                    {lastGroupTime.local().format('h:mm A')}
                   </Text>
                   <Heading as="h4" sx={{ fontSize: 4, mb: 3 }}>
                     {event.group.title}
@@ -96,10 +96,10 @@ export default () => {
                     }}
                   >
                     <Heading as="h5" sx={{ fontSize: 2, color: 'red.500' }}>
-                      {/* {event.datetime().format('h:mm A')}{' '}
-                      <Text sx={{ display: 'inline', opacity: 0.35 }}> */}
-                      {event.datetime.format('h:mm A UTC')}
-                      {/* </Text> */}
+                      {event.datetime.local().format('h:mm A')}{' '}
+                      <Text sx={{ display: 'inline', opacity: 0.35 }}>
+                        ({event.datetime.format('h:mm A UTC')})
+                      </Text>
                     </Heading>
                     {event.speakers.map((speaker) => (
                       <Box
