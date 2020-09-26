@@ -122,12 +122,12 @@ const timeFormat = 'YYYY-MM-DD|HH:mm:ss';
 export const schedule = [
   // SATURDAY
   {
-    datetime: dayjs.utc('2020-09-26|14:00:00', timeFormat),
+    datetime: dayjs.utc('2020-09-26|13:55:00', timeFormat),
     speakers: [getSpeakerByName('Andrew Trask')],
     title: 'Welcome Talk and Conference Overview',
     group: groups['opening-session'],
     description: 'TBC',
-    duration: dayjs.duration({ minutes: 10 })
+    duration: dayjs.duration({ minutes: 15 })
   },
   {
     datetime: dayjs.utc('2020-09-26|14:10:00', timeFormat),
