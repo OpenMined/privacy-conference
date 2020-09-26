@@ -5,7 +5,7 @@ export const chatTitle = 'Network with attendees';
 export const speakerLink = 'https://forms.gle/wpKY6cTL6p5k43as7';
 export const streamLink = '#'
 export const registerLink = 'https://www.eventbrite.co.uk/e/openmined-privacy-conference-2020-tickets-116575230653';
-export const chatLink = 'https://gather.town/app/5SdKsNyqGcMCz5Pf/PriCon2020'
+export const chatLink = 'https://gather.town/app/92cJR0nlbiBOifxj/OpenMined'
 
 export const speakersEmoji =
   'https://emojis.slackmojis.com/emojis/images/1584726375/8272/blob-cool.gif';
