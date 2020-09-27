@@ -3,10 +3,8 @@ import { Box, Text, Button, Flex, Link, Image } from 'theme-ui';
 import { Link as RRDLink } from 'react-router-dom';
 
 import {
-  // streamTitle,
-  // streamLink,
-  registerTitle,
-  registerLink,
+  streamTitle,
+  streamLink,
   chatTitle,
   chatLink,
   speakersEmoji,
@@ -87,8 +85,8 @@ export const SidebarCTAs = ({ headerHeight }) => (
     <Button variant="black" as="a" target="_blank" href={chatLink} mr={3}>
       {chatTitle}
     </Button>
-    <Button variant="black" as="a" target="_blank" href={registerLink}>
-      {registerTitle}
+    <Button variant="black" as="a" target="_blank" href={streamLink}>
+      {streamTitle}
     </Button>
   </Flex>
 );
