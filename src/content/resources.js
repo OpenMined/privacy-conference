@@ -43,6 +43,10 @@ export const resources = [
             title: 'Go to the live tutorial',
             link: '#'
           },
+          {
+            title: 'Tutorial slides',
+            link: 'https://doi.org/10.5281/zenodo.4053026'
+          },
         ]
       },
       {
@@ -53,6 +57,11 @@ export const resources = [
             title: 'Go to the live tutorial',
             link: '#'
           },
+          {
+            title: 'Tutorial Notebook',
+            link: 'https://github.com/OpenMined/PyVertical/blob/master/examples/PyVertical%20Example.ipynb'
+          },
+
         ]
       },
       {
@@ -126,6 +135,10 @@ export const resources = [
             title: 'Go to the live tutorial',
             link: '#'
           },
+          {
+            title: 'Tutorial slides and notebook',
+            link: 'https://github.com/chinmayshah99/pricon20/tree/master'
+          }
         ]
       }
     ]
