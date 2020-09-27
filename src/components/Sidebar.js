@@ -10,7 +10,7 @@ import {
   speakersEmoji,
   agendaEmoji,
   sponsorsEmoji,
-  // resourcesEmoji
+  resourcesEmoji
 } from '../content/sidebar';
 
 const linkStyles = {
@@ -21,9 +21,7 @@ const linkStyles = {
   p: [3, null, 4],
   display: 'flex',
   alignItems: 'center',
-  height: `${(1 / 3) * 100}%`
-  // TODO: Uncomment the below and delete the above to make resources page live
-  // height: `${(1 / 4) * 100}%`
+  height: `${(1 / 4) * 100}%`
 };
 
 const SidebarLink = ({ to, onClick, text, children }) => {
@@ -62,13 +60,12 @@ export const SidebarContent = ({ headerHeight, onClick }) => (
       <SidebarLink text="Agenda" to="/agenda" onClick={onClick}>
         <Image sx={{ height: 32, ml: 3 }} src={agendaEmoji} alt="Agenda" />
       </SidebarLink>
+      <SidebarLink text="Resources" to="/resources" onClick={onClick}>
+        <Image sx={{ height: 32, ml: 3 }} src={resourcesEmoji} alt="Resources" />
+      </SidebarLink>
       <SidebarLink text="Sponsors" to="/sponsors" onClick={onClick}>
         <Image sx={{ height: 32, ml: 3 }} src={sponsorsEmoji} alt="Sponsors" />
       </SidebarLink>
-      {/* TODO: Uncomment the below to make resources page live */}
-      {/* <SidebarLink text="Resources" to="/resources" onClick={onClick}>
-        <Image sx={{ height: 32, ml: 3 }} src={resourcesEmoji} alt="Resources" />
-      </SidebarLink> */}
     </Flex>
   </Flex>
 );
