@@ -11,7 +11,7 @@ export const resources = [
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/84665866671'
           },
         ]
       },
@@ -21,7 +21,7 @@ export const resources = [
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://zoom.us/j/98559827753'
           },
         ]
       },
@@ -31,7 +31,7 @@ export const resources = [
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/86168750865'
           },
         ]
       },
@@ -41,37 +41,46 @@ export const resources = [
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/89250032365'
+          },
+          {
+            title: 'Tutorial slides',
+            link: 'https://doi.org/10.5281/zenodo.4053026'
           },
         ]
       },
       {
-        title: 'Privacy Preserving Vertically Distributed Machine Learning',
+        title: 'Privacy Preserving Vertically Distributed Machine Learning (Apheris)',
         description: 'The speakers present PyVertical - a system to train machine learning models on vertically distributed data. In a first step, vertically distributed data is linked without exposing membership using Private Set Intersection. Then a Split Neural Network is trained such that privacy is preserved throughout the entire process',
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/86762433956'
           },
+          {
+            title: 'Tutorial Notebook',
+            link: 'https://github.com/OpenMined/PyVertical/blob/master/examples/PyVertical%20Example.ipynb'
+          },
+
         ]
       },
       {
-        title: 'Introduction to TFHE and Some Applications',
+        title: 'Introduction to TFHE and Some Applications (Inpher)',
         description: 'Homomorphic encryption is a privacy preserving technique allowing a single public cloud to operate on secret data without leaking anything on the data. In this presentation, the speakers recall the capabilities of homomorphic encryption, and its security model. Then they detail the TFHE library, whose API supports efficiently various plaintext computation models, like arbitrary boolean circuits, arithmetic circuits with discrete and continuous logic, and other computational models like deterministic automata or lookup tables. They first demonstrate a few tutorial examples. In the second part of this talk the speakers describe two applications for private genomic studies: private GWAS and private genome imputation (which won the 1st place at Idash 2019), where methods for secure computation have shown significant performance improvements over the last several years, and in particular fully homomorphic encryption becomes a critical path technology for innovative, life-saving research to positively and equally impact the global population.',
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/83521611553'
           },
         ]
       },
       {
         title: 'Opus and PryVote: The Brave New World of Self Sovereign Identity (SSI)',
-        descriptin: 'This session will demonstrate our new SSI standard development kit. The speakers will discuss the need for decentralised identity and trust, the technologies involved and two flagship SSI applications; Opus and PryVote.',
+        description: 'This session will demonstrate our new SSI standard development kit. The speakers will discuss the need for decentralised identity and trust, the technologies involved and two flagship SSI applications; Opus and PryVote.',
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/85933285403'
           },
         ]
       },
@@ -81,7 +90,7 @@ export const resources = [
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/87644502325'
           },
         ]
       },
@@ -100,21 +109,12 @@ export const resources = [
         ]
       },
       {
-        title: 'Inpher (TBC)',
-        links: [
-          {
-            title: 'Go to the live tutorial',
-            link: '#'
-          },
-        ]
-      },
-      {
         title: 'Differentially Private Model Training With Opacus',
         description: 'In this session, the speaker will go over the DP-SGD technique to train differentially private models and will then show how to train your own private model using Opacus, a PyTorch lib for fast and accessible DP-SGD training.',
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://zoom.us/j/98598605607'
           },
         ]
       },
@@ -124,8 +124,12 @@ export const resources = [
         links: [
           {
             title: 'Go to the live tutorial',
-            link: '#'
+            link: 'https://us02web.zoom.us/j/82885504399'
           },
+          {
+            title: 'Tutorial slides and notebook',
+            link: 'https://github.com/chinmayshah99/pricon20/tree/master'
+          }
         ]
       }
     ]
